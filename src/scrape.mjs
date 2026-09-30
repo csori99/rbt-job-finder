@@ -1,10 +1,11 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { SOURCES } from './sources.mjs'
 import { EMPLOYERS, jobrapido } from './employers.mjs'
+import { syncDiscards } from './discards.mjs'
 
 const ALL = { ...EMPLOYERS, ...SOURCES, jobrapido }
 import { locate } from './geo.mjs'
-import { classifyArea, normDate, detectBilingual, detectJobType, detectSetting, parsePay, scoreSchedule } from './parse.mjs'
+import { classifyArea, detectShifts, normDate, parseWeeklyHours, detectBilingual, detectJobType, detectSetting, parsePay, scoreSchedule } from './parse.mjs'
 
 const OUT = new URL('../docs/jobs.json', import.meta.url)
 const only = process.argv.slice(2)
@@ -12,6 +13,7 @@ const only = process.argv.slice(2)
 function enrich(j) {
   const blob = [j.title, j.payText, j.jobType, j.description].filter(Boolean).join('\n')
   const pay = parsePay(j.payText || '') || parsePay(j.description || '')
+  const hours = parseWeeklyHours(`${j.title}\n${j.jobType || ''}\n${j.description || ''}`)
   const sched = scoreSchedule(`${j.title}\n${j.jobType || ''}\n${j.description || ''}`)
   return {
     id: j.id,
@@ -26,10 +28,13 @@ function enrich(j) {
     payText: j.payText || '',
     payMin: pay?.min ?? null,
     payMax: pay?.max ?? null,
+    hoursMin: hours?.min ?? null,
+    hoursMax: hours?.max ?? null,
     jobTypes: detectJobType(blob),
     setting: detectSetting(blob),
     bilingual: detectBilingual(blob),
     afternoon: sched.score,
+    shift: detectShifts(`${j.title}\n${j.description || ''}`),
     scheduleHints: sched.hints,
     posted: normDate(j.posted),
     snippet: (j.description || '').slice(0, 600),
@@ -76,6 +81,8 @@ for (const raw of all) {
   if (existing) {
     existing.alsoOn = [...new Set([...(existing.alsoOn || []), j.source])].filter((s) => s !== existing.source)
     if (existing.payMin == null && j.payMin != null) Object.assign(existing, { payMin: j.payMin, payMax: j.payMax, payText: j.payText })
+    if (existing.hoursMin == null && existing.hoursMax == null && (j.hoursMin != null || j.hoursMax != null)) Object.assign(existing, { hoursMin: j.hoursMin, hoursMax: j.hoursMax })
+    if (!existing.shift && j.shift) existing.shift = j.shift
     if (existing.afternoon < j.afternoon) Object.assign(existing, { afternoon: j.afternoon, scheduleHints: j.scheduleHints })
     continue
   }
@@ -93,6 +100,7 @@ for (const [name, s] of Object.entries(status)) {
   }
 }
 
-jobs.sort((a, b) => b.afternoon - a.afternoon || b.direct - a.direct || (b.payMax ?? 0) - (a.payMax ?? 0))
+jobs.sort((a, b) => (a.fromMiami ?? 99) - (b.fromMiami ?? 99) || (b.payMax ?? 0) - (a.payMax ?? 0))
 await writeFile(OUT, JSON.stringify({ updatedAt: now, status, jobs }, null, 1))
 console.log(`wrote ${jobs.length} jobs`)
+console.log('discards', await syncDiscards().catch((e) => ({ ok: false, reason: e.message })))

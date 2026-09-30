@@ -46,7 +46,8 @@ label.tog { display: inline-flex; gap: 6px; align-items: center; font-size: 14px
 .job h2 a { color: inherit; text-decoration: none }
 .job h2 a:hover { text-decoration: underline }
 .meta { color: var(--muted); font-size: 13.5px }
-.pay { text-align: right; font-weight: 650; font-size: 17px; white-space: nowrap; font-variant-numeric: tabular-nums }
+.pay { text-align: right; margin-right: 44px; font-weight: 650; font-size: 17px; white-space: nowrap; font-variant-numeric: tabular-nums }
+.hrs { display: block; font-weight: 600; font-size: 13.5px; color: var(--accent); margin-top: 2px }
 .pay small { display: block; font-weight: 400; color: var(--muted); font-size: 12px }
 .chips { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px }
 .chip { font-size: 12px; padding: 2px 8px; border-radius: 99px; background: var(--chip) }
@@ -59,6 +60,25 @@ label.tog { display: inline-flex; gap: 6px; align-items: center; font-size: 14px
 details { grid-column: 1 / -1; font-size: 13.5px }
 details summary { cursor: pointer; color: var(--accent); font-size: 13px }
 details p { white-space: pre-line; margin: 6px 0 0; color: var(--muted) }
+.job { position: relative }
+.shift { grid-column: 1 / -1; font-size: 22px; font-weight: 800; letter-spacing: .04em; line-height: 1.1; margin: -2px 40px 4px 0 }
+.shift.afternoon { color: var(--accent) }
+.shift.morning { color: #2563eb }
+.shift .m { color: #2563eb }
+.shift .a { color: var(--accent) }
+.shift .plus { color: var(--muted) }
+.shift.none { font-size: 13px; font-weight: 600; letter-spacing: .06em; color: var(--muted) }
+@media (prefers-color-scheme: dark) { .shift.morning, .shift .m { color: #93c5fd } }
+.del { position: absolute; top: 10px; right: 10px; border: 1px solid var(--line); background: var(--card); color: var(--muted); border-radius: 9px; width: 34px; height: 34px; font-size: 16px; cursor: pointer }
+.del:hover { color: var(--bad); border-color: var(--bad) }
+.reasons { grid-column: 1 / -1; display: none; flex-wrap: wrap; gap: 6px; padding-top: 8px; border-top: 1px dashed var(--line); margin-top: 6px }
+.job.asking .reasons { display: flex }
+.reasons span { font-size: 13px; color: var(--muted); width: 100%; }
+.reasons button, .restore { font: inherit; font-size: 13px; padding: 6px 10px; border-radius: 99px; border: 1px solid var(--line); background: var(--chip); color: var(--ink); cursor: pointer }
+.reasons button:hover { border-color: var(--bad); color: var(--bad) }
+.why { grid-column: 1 / -1; font-size: 13px; color: var(--bad) }
+.viewbtn { font: inherit; font-size: 13.5px; padding: 8px 11px; border-radius: 9px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer }
+.viewbtn.on { background: var(--bad); color: var(--bg); border-color: var(--bad) }
 .empty { text-align: center; color: var(--muted); padding: 40px 0 }
 footer { color: var(--muted); font-size: 12.5px; margin-top: 30px }
 @media (max-width: 560px) {
@@ -69,6 +89,7 @@ footer { color: var(--muted); font-size: 12.5px; margin-top: 30px }
   .filters select { flex: 1 }
   .pay { text-align: left }
   .pay small { display: inline; margin-left: 6px }
+  .hrs { display: inline; margin-left: 10px }
 }
 </style>
 </head>
@@ -87,20 +108,28 @@ footer { color: var(--muted); font-size: 12.5px; margin-top: 30px }
       <button data-v="davie">Near Davie</button>
     </div>
     <select id="sort" aria-label="Sort">
-      <option value="best">Best match</option>
+      <option value="miami">Closest to Miami</option>
       <option value="pay">Highest pay</option>
       <option value="new">Newest</option>
-      <option value="miami">Closest to Miami</option>
+      <option value="hours">Most hours/week</option>
       <option value="davie">Closest to Davie</option>
+      <option value="best">Best match</option>
     </select>
-    <label class="tog"><input type="checkbox" id="pm"> Afternoon only</label>
+    <select id="shiftf" aria-label="Shift">
+      <option value="any">Any shift</option>
+      <option value="afternoon">Afternoon available</option>
+      <option value="morning">Morning available</option>
+    </select>
     <label class="tog"><input type="checkbox" id="paid"> Has pay</label>
     <label class="tog"><input type="checkbox" id="direct"> Company sites only</label>
+    <label class="tog"><input type="checkbox" id="hrs"> Lists hours/week</label>
+    <button class="viewbtn" id="view" type="button">🗑 Discarded (0)</button>
   </div>
   <p class="count" id="count"></p>
   <div class="list" id="list"></div>
-  <footer>Pulled automatically from company careers pages (Team PBS, LaCosta Therapy, Behavior Analysis Inc, Behavioral Family Solutions, Acorn Health, Bassa ABA, Kyo, Cultivate BHE, Stepping Stones) and from LinkedIn, SimplyHired (Indeed listings), Talent.com, Jobsora, Jobrapido and Craigslist. "✓ Company site" jobs come straight from the employer, so they are real openings; aggregator posts can be reposts or stale. Schedule and pay are read from the job text and may be off, so check the posting before applying. "Afternoon" means the post mentions afternoon/after-school work or a shift ending after 4pm.</footer>
+  <footer>Pulled automatically from company careers pages (Team PBS, LaCosta Therapy, Behavior Analysis Inc, Behavioral Family Solutions, Acorn Health, Bassa ABA, Kyo, Cultivate BHE, Stepping Stones) and from LinkedIn, SimplyHired (Indeed listings), Talent.com, Jobsora, Jobrapido and Craigslist. "✓ Company site" jobs come straight from the employer, so they are real openings; aggregator posts can be reposts or stale. Schedule and pay are read from the job text and may be off, so check the posting before applying. MORNING / AFTERNOON is read from the post (words like after-school, mornings, or listed shift times). 🗑 discards a job and remembers why, so the finder can learn what isn't a fit.</footer>
 </main>
+<script src="config.js"></script>
 <script>
 const $ = (s) => document.querySelector(s)
 const esc = (s = '') => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
@@ -114,8 +143,55 @@ const ago = (iso) => {
   return d + (d === 1 ? ' day ago' : ' days ago')
 }
 let data = { jobs: [] }
-const state = { q: '', near: 'all', sort: 'best', pm: false, paid: false, direct: false }
-try { Object.assign(state, JSON.parse(localStorage.getItem('rbt-filters') || '{}')) } catch {}
+const state = { q: '', near: 'all', sort: 'miami', shift: 'any', paid: false, direct: false, hrs: false, view: 'active' }
+const CFG = window.RBT_CONFIG || {}
+const REASONS = ['Not interested', 'Too far', 'Pay too low', 'Wrong hours', 'Looks fake', 'Already applied']
+let discards = {}
+try { discards = JSON.parse(localStorage.getItem('rbt-discards') || '{}') } catch {}
+const saveLocal = () => { try { localStorage.setItem('rbt-discards', JSON.stringify(discards)) } catch {} }
+const sb = (path, opts = {}) => fetch(`${CFG.supabaseUrl}/rest/v1/${path}`, {
+  ...opts,
+  headers: { apikey: CFG.supabaseAnonKey, authorization: `Bearer ${CFG.supabaseAnonKey}`, 'content-type': 'application/json', ...(opts.headers || {}) },
+})
+const synced = () => !!(CFG.supabaseUrl && CFG.supabaseAnonKey)
+
+async function pullDiscards() {
+  if (!synced()) return
+  try {
+    const rows = await (await sb('discards?select=job_id,reason,discarded,updated_at,job')).json()
+    for (const r of rows) {
+      if (r.discarded) discards[r.job_id] = { reason: r.reason, at: r.updated_at, job: r.job }
+      else delete discards[r.job_id]
+    }
+    saveLocal()
+  } catch {}
+}
+
+function pushDiscard(id, row) {
+  if (!synced()) return
+  sb('discards?on_conflict=job_id', {
+    method: 'POST',
+    headers: { prefer: 'resolution=merge-duplicates,return=minimal' },
+    body: JSON.stringify({ job_id: id, updated_at: new Date().toISOString(), ...row }),
+  }).catch(() => {})
+}
+
+function discard(id, reason) {
+  const job = data.jobs.find((j) => j.id === id) || discards[id]?.job
+  discards[id] = { reason, at: new Date().toISOString(), job }
+  saveLocal()
+  pushDiscard(id, { reason, discarded: true, job })
+  render()
+}
+
+function restore(id) {
+  const job = discards[id]?.job
+  delete discards[id]
+  saveLocal()
+  pushDiscard(id, { reason: null, discarded: false, job })
+  render()
+}
+try { Object.assign(state, JSON.parse(localStorage.getItem('rbt-filters-v2') || '{}'), { view: 'active' }) } catch {}
 
 function near(j) {
   if (state.near === 'miami') return j.fromMiami == null ? j.area === 'miami-dade' : j.fromMiami <= 20
@@ -124,55 +200,71 @@ function near(j) {
 }
 
 function render() {
-  try { localStorage.setItem('rbt-filters', JSON.stringify(state)) } catch {}
+  try { localStorage.setItem('rbt-filters-v2', JSON.stringify(state)) } catch {}
   const q = state.q.toLowerCase()
-  let jobs = data.jobs.filter((j) =>
+  const gone = state.view === 'discarded'
+  const pool = gone
+    ? Object.entries(discards).map(([id, d]) => ({ ...(data.jobs.find((j) => j.id === id) || d.job || { id, title: id, jobTypes: [], setting: [] }), _why: d.reason }))
+    : data.jobs.filter((j) => !discards[j.id])
+  $('#view').textContent = gone ? '← Back to jobs' : `🗑 Discarded (${Object.keys(discards).length})`
+  $('#view').classList.toggle('on', gone)
+  let jobs = pool.filter((j) =>
     near(j) &&
-    (!state.pm || j.afternoon === 2) &&
+    (state.shift === 'any' || j.shift === state.shift || j.shift === 'both') &&
     (!state.paid || j.payMax) &&
     (!state.direct || j.direct) &&
+    (!state.hrs || j.hoursMin != null || j.hoursMax != null) &&
     (!q || [j.title, j.company, j.location, j.snippet, j.source, j.bilingual ? 'bilingual spanish' : ''].join(' ').toLowerCase().includes(q)))
   const by = {
     best: (a, b) => b.afternoon - a.afternoon || b.direct - a.direct || (b.payMax ?? 0) - (a.payMax ?? 0),
     pay: (a, b) => (b.payMax ?? 0) - (a.payMax ?? 0),
+    hours: (a, b) => (b.hoursMax ?? b.hoursMin ?? -1) - (a.hoursMax ?? a.hoursMin ?? -1),
     new: (a, b) => new Date(b.posted || b.firstSeen) - new Date(a.posted || a.firstSeen),
-    miami: (a, b) => (a.fromMiami ?? 99) - (b.fromMiami ?? 99),
+    miami: (a, b) => (a.fromMiami ?? 99) - (b.fromMiami ?? 99) || (b.payMax ?? 0) - (a.payMax ?? 0),
     davie: (a, b) => (a.fromDavie ?? 99) - (b.fromDavie ?? 99),
   }
   jobs = jobs.slice().sort(by[state.sort])
-  $('#count').textContent = `Showing ${jobs.length} of ${data.jobs.length} jobs`
+  $('#count').textContent = gone ? `${jobs.length} discarded jobs${synced() ? ' (shared)' : ' (saved in this browser only)'}` : `Showing ${jobs.length} of ${pool.length} jobs`
   $('#list').innerHTML = jobs.length ? jobs.map(card).join('') : '<p class="empty">No jobs match these filters.</p>'
 }
 
 function card(j) {
   const isNew = Date.now() - new Date(j.posted || j.firstSeen) < 48 * 36e5
-  const sched = j.afternoon === 2 ? '<span class="chip pm">☀️ Afternoon</span>'
-    : j.afternoon === 1 ? '<span class="chip maybe">Flexible / part-time</span>'
-    : j.afternoon < 0 ? '<span class="chip am">Daytime / school hours</span>' : ''
+  const sched = j.afternoon === 1 && !j.shift ? '<span class="chip maybe">Flexible / part-time</span>' : ''
+  const shift = { afternoon: ['afternoon', '☀️ AFTERNOON'], morning: ['morning', '🌅 MORNING'], both: ['both', '<span class="m">🌅 MORNING</span> <span class="plus">+</span> <span class="a">☀️ AFTERNOON</span>'] }[j.shift] || ['none', 'SCHEDULE NOT LISTED']
   const pay = j.payMax
     ? `${money(j.payMin)}${j.payMax !== j.payMin ? '–' + money(j.payMax) : ''}<small>/hour</small>`
     : `<small>${esc(j.payText) || 'pay not listed'}</small>`
+  const hrs = j.hoursMin != null && j.hoursMax != null
+    ? (j.hoursMin === j.hoursMax ? `${j.hoursMin}` : `${j.hoursMin}–${j.hoursMax}`)
+    : j.hoursMin != null ? `${j.hoursMin}+` : j.hoursMax != null ? `up to ${j.hoursMax}` : null
   const dist = [j.fromMiami != null && `${j.fromMiami} mi from Miami`, j.fromDavie != null && `${j.fromDavie} mi from Davie`].filter(Boolean).join(' · ')
   const chips = [
     isNew && '<span class="chip new">NEW</span>',
     j.direct && '<span class="chip direct">✓ Company site</span>',
     sched,
-    ...j.jobTypes.map((t) => `<span class="chip">${esc(t)}</span>`),
-    ...j.setting.map((t) => `<span class="chip">${esc(t)}</span>`),
+    ...(j.jobTypes || []).map((t) => `<span class="chip">${esc(t)}</span>`),
+    ...(j.setting || []).map((t) => `<span class="chip">${esc(t)}</span>`),
     j.bilingual && '<span class="chip">🇪🇸 bilingual</span>',
     `<span class="chip">${esc(j.source)}${j.alsoOn?.length ? ' +' + j.alsoOn.length : ''}</span>`,
     j.stale && '<span class="chip maybe">from last run</span>',
   ].filter(Boolean).join('')
-  return `<article class="job">
+  const id = esc(j.id)
+  return `<article class="job" data-id="${id}">
+    <div class="shift ${shift[0]}">${shift[1]}</div>
+    ${j._why
+      ? `<button class="del" data-restore="${id}" title="Restore">↩</button><div class="why">Discarded: ${esc(j._why)}</div>`
+      : `<button class="del" data-ask="${id}" title="Discard" aria-label="Discard">🗑</button>`}
     <div>
       <h2><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h2>
       <div class="meta">${esc(j.company || 'Company not listed')} · 📍 ${esc(j.location)}${dist ? ' · ' + dist : ''}</div>
       <div class="meta">${j.posted ? 'Posted ' + ago(j.posted) : 'First seen ' + ago(j.firstSeen)}</div>
     </div>
-    <div class="pay">${pay}</div>
+    <div class="pay">${j.payMax || j.payText ? pay : '<small>pay not listed</small>'}${hrs ? `<span class="hrs">⏱ ${hrs} hrs/week</span>` : ''}</div>
     <div class="chips">${chips}</div>
     ${j.scheduleHints?.length ? `<div class="hint">“${esc(j.scheduleHints.join(' … '))}”</div>` : ''}
     ${j.snippet ? `<details><summary>Details</summary><p>${esc(j.snippet)}…</p></details>` : ''}
+    ${j._why ? '' : `<div class="reasons"><span>Why discard it?</span>${REASONS.map((r) => `<button data-discard="${id}" data-reason="${r}">${r}</button>`).join('')}</div>`}
   </article>`
 }
 
@@ -181,12 +273,14 @@ function summary() {
   const pays = jobs.filter((j) => j.payMax).map((j) => (j.payMin + j.payMax) / 2).sort((a, b) => a - b)
   const median = pays.length ? pays[Math.floor(pays.length / 2)] : null
   const top = pays.length ? Math.max(...jobs.filter((j) => j.payMax).map((j) => j.payMax)) : null
-  const pm = jobs.filter((j) => j.afternoon === 2).length
+  const pm = jobs.filter((j) => j.shift === 'afternoon' || j.shift === 'both').length
   const fresh = jobs.filter((j) => Date.now() - new Date(j.posted || j.firstSeen) < 48 * 36e5).length
   const stats = [
     [jobs.length, 'jobs found'],
-    [pm, 'mention afternoons'],
+    [pm, 'afternoon available'],
+    [jobs.filter((j) => j.shift === 'morning' || j.shift === 'both').length, 'morning available'],
     [jobs.filter((j) => j.direct).length, 'from company sites'],
+    [jobs.filter((j) => j.hoursMin != null || j.hoursMax != null).length, 'list weekly hours'],
     [median ? money(Math.round(median * 100) / 100) : '–', 'median pay / hr'],
     [top ? money(top) : '–', 'top pay / hr'],
     [fresh, 'posted in last 2 days'],
@@ -201,15 +295,24 @@ function summary() {
 function bind() {
   $('#q').value = state.q
   $('#sort').value = state.sort
-  $('#pm').checked = state.pm
+  $('#shiftf').value = state.shift
   $('#paid').checked = state.paid
   $('#direct').checked = state.direct
+  $('#hrs').checked = state.hrs
   document.querySelectorAll('#near button').forEach((b) => b.classList.toggle('on', b.dataset.v === state.near))
   $('#q').addEventListener('input', (e) => { state.q = e.target.value; render() })
   $('#sort').addEventListener('change', (e) => { state.sort = e.target.value; render() })
-  $('#pm').addEventListener('change', (e) => { state.pm = e.target.checked; render() })
+  $('#shiftf').addEventListener('change', (e) => { state.shift = e.target.value; render() })
+  $('#view').addEventListener('click', () => { state.view = state.view === 'active' ? 'discarded' : 'active'; render() })
+  $('#list').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return
+    if (b.dataset.ask) b.closest('.job').classList.toggle('asking')
+    else if (b.dataset.discard) discard(b.dataset.discard, b.dataset.reason)
+    else if (b.dataset.restore) restore(b.dataset.restore)
+  })
   $('#paid').addEventListener('change', (e) => { state.paid = e.target.checked; render() })
   $('#direct').addEventListener('change', (e) => { state.direct = e.target.checked; render() })
+  $('#hrs').addEventListener('change', (e) => { state.hrs = e.target.checked; render() })
   $('#near').addEventListener('click', (e) => {
     const b = e.target.closest('button'); if (!b) return
     state.near = b.dataset.v
@@ -218,7 +321,12 @@ function bind() {
   })
 }
 
-fetch('jobs.json?t=' + Date.now()).then((r) => r.json()).then((d) => { data = d; summary(); bind(); render() })
+fetch('jobs.json?t=' + Date.now()).then((r) => r.json()).then(async (d) => {
+  data = d
+  summary(); bind(); render()
+  await pullDiscards()
+  render()
+})
   .catch(() => { $('#sub').textContent = 'Could not load jobs right now, try refreshing.' })
 </script>
 </body>

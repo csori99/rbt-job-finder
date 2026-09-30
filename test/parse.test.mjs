@@ -12,6 +12,8 @@ test('parsePay converts yearly and ignores junk', () => {
   assert.deepEqual(parsePay('$41,600 - $52,000 a year'), { min: 20, max: 25 })
   assert.equal(parsePay('$500 sign on bonus'), null)
   assert.equal(parsePay('no pay listed'), null)
+  assert.equal(parsePay('$40 - $56 a month'), null)
+  assert.deepEqual(parsePay('$3,460 - $4,325 per month'), { min: 20, max: 25 })
 })
 
 test('scoreSchedule spots afternoon cases', () => {
@@ -54,4 +56,30 @@ test('normDate handles short aggregator dates', () => {
   const d = new Date(normDate('24 Sep'))
   assert.equal(d.getMonth(), 8)
   assert.ok(d <= new Date(Date.now() + 864e5))
+})
+
+test('parseWeeklyHours reads weekly hour offers', async () => {
+  const { parseWeeklyHours } = await import('../src/parse.mjs')
+  assert.deepEqual(parseWeeklyHours('Part-time, 20-29 hours per week'), { min: 20, max: 29 })
+  assert.deepEqual(parseWeeklyHours('Guaranteed 25 hrs/week'), { min: 25, max: 25 })
+  assert.deepEqual(parseWeeklyHours('up to 30 hours a week available'), { min: null, max: 30 })
+  assert.deepEqual(parseWeeklyHours('minimum 15 hours weekly'), { min: 15, max: null })
+  assert.deepEqual(parseWeeklyHours('20+ hours per week'), { min: 20, max: null })
+  assert.deepEqual(parseWeeklyHours('Weekly hours: 10 - 15'), { min: 10, max: 15 })
+  assert.equal(parseWeeklyHours('40-hour RBT training'), null)
+  assert.equal(parseWeeklyHours('24 hours notice required'), null)
+  assert.equal(parseWeeklyHours('nothing'), null)
+  assert.equal(parseWeeklyHours('Quarterly Bonus - $500 (for averaging 25 hours a week for the entire quarter)'), null)
+  assert.deepEqual(parseWeeklyHours('Bonus for 30 hours/week average.\nSchedule: 20 hours per week'), { min: 20, max: 20 })
+  assert.deepEqual(parseWeeklyHours('5.5-6.5 hours per week'), { min: 5.5, max: 6.5 })
+  assert.deepEqual(parseWeeklyHours('Miami Beach, FL | 30 Hours/Week'), { min: 30, max: 30 })
+})
+
+test('detectShifts labels morning, afternoon or both', async () => {
+  const { detectShifts } = await import('../src/parse.mjs')
+  assert.equal(detectShifts('after school sessions 3-7pm'), 'afternoon')
+  assert.equal(detectShifts('School-based, 8am-2pm'), 'morning')
+  assert.equal(detectShifts('morning & afternoon cases are available!'), 'both')
+  assert.equal(detectShifts('Hours: 8:00am - 5:00pm'), 'both')
+  assert.equal(detectShifts('great team'), null)
 })

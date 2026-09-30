@@ -57,8 +57,8 @@ const num = (s) => parseFloat(s.replace(/,/g, ''))
 
 export function parsePay(text = '') {
   const t = text.replace(/\s+/g, ' ')
-  const range = /\$\s?(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(k)?\s*(?:-|–|—|to)\s*\$?\s?(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(k)?\s*(?:\/|per|an|a)?\s*(hour|hr|h\b|year|yr|annual|week|wk|session|visit)?/i
-  const single = /\$\s?(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(k)?\s*(?:\/|per|an|a)?\s*(hour|hr|h\b|year|yr|annual|week|wk|session|visit)?/i
+  const range = /\$\s?(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(k)?\s*(?:-|–|—|to)\s*\$?\s?(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(k)?\s*(?:\/|per|an|a)?\s*(hour|hr|h\b|year|yr|annual|month|mo\b|week|wk|session|visit)?/i
+  const single = /\$\s?(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(k)?\s*(?:\/|per|an|a)?\s*(hour|hr|h\b|year|yr|annual|month|mo\b|week|wk|session|visit)?/i
   let min, max, unit
   const r = t.match(range)
   if (r) {
@@ -74,6 +74,7 @@ export function parsePay(text = '') {
   unit = (unit || '').toLowerCase()
   let factor = 1
   if (/year|yr|annual/.test(unit) || (!unit && min > 1000)) factor = 1 / 2080
+  else if (/month|mo/.test(unit)) factor = 1 / 173
   else if (/week|wk/.test(unit)) factor = 1 / 40
   else if (!unit && min > 200) return null
   const hMin = Math.round(min * factor * 100) / 100
@@ -155,4 +156,53 @@ export function normDate(v) {
   if (isNaN(d)) return null
   if (d > Date.now() + 864e5) d.setFullYear(d.getFullYear() - 1)
   return d.toISOString()
+}
+
+export function parseWeeklyHours(text = '') {
+  const t = text
+    .split(/[.!?\n•]+(?=\s|$)|\n|•/)
+    .filter((x) => !/bonus|averag|billable|training|notice/i.test(x))
+    .join(' . ')
+    .replace(/\s+/g, ' ')
+  const unit = String.raw`(?:hours?|hrs?)\s*(?:per|a|each|\/|every)?\s*(?:week|wk)\b|(?:hours?|hrs?)\s*weekly\b|weekly\s*(?:hours?|hrs?)\b`
+  const range = new RegExp(String.raw`(?<![\d.])(\d{1,2}(?:\.\d)?)\s*(?:-|–|—|to)\s*(\d{1,2}(?:\.\d)?)\s*\+?\s*(?:${unit})`, 'i')
+  const single = new RegExp(String.raw`(?:(up to|at least|minimum(?: of)?|min\.?|max(?:imum)?(?: of)?)\s*)?(?<![\d.])(\d{1,2}(?:\.\d)?)\s*(\+)?\s*(?:${unit})`, 'i')
+  const reverse = /(?:weekly hours|hours per week|hours\/week)\s*:?\s*(\d{1,2})\s*(?:(?:-|–|to)\s*(\d{1,2}))?/i
+  let min, max
+  const r = t.match(range)
+  if (r) {
+    min = +r[1]
+    max = +r[2]
+  } else {
+    const s = t.match(single)
+    if (s) {
+      const n = +s[2]
+      const q = (s[1] || '').toLowerCase()
+      if (q.startsWith('up to') || q.startsWith('max')) [min, max] = [null, n]
+      else if (q || s[3]) [min, max] = [n, null]
+      else [min, max] = [n, n]
+    } else {
+      const v = t.match(reverse)
+      if (!v) return null
+      min = +v[1]
+      max = v[2] ? +v[2] : min
+    }
+  }
+  if ((min != null && (min < 1 || min > 60)) || (max != null && (max < 1 || max > 60))) return null
+  if (min != null && max != null && min > max) return null
+  return { min: min ?? null, max: max ?? null }
+}
+
+export function detectShifts(text = '') {
+  const t = text.toLowerCase()
+  let morning = /\bmornings?\b|\bam (shift|sessions?|hours)|daytime|during the school day|school hours|early intervention/.test(t)
+  let afternoon = /after[\s-]?school|afternoons?|evenings?|pm (shift|sessions?)|late day/.test(t)
+  for (const r of extractTimeRanges(text)) {
+    if (r.start < 12) morning = true
+    if (r.end >= 16 || r.start >= 12) afternoon = true
+  }
+  if (morning && afternoon) return 'both'
+  if (afternoon) return 'afternoon'
+  if (morning) return 'morning'
+  return null
 }
