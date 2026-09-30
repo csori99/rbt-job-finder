@@ -38,7 +38,16 @@ h1 { font-size: 26px; margin: 0 0 2px; letter-spacing: -.01em }
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; background: var(--card) }
 .seg button { font: inherit; font-size: 13.5px; border: 0; background: none; color: var(--ink); padding: 8px 11px; cursor: pointer }
 .seg button.on { background: var(--accent); color: var(--bg) }
-label.tog { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; cursor: pointer; user-select: none }
+.selects, .toggles { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.sel { position: relative; display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 9px; background: var(--card); padding-left: 10px }
+.sel span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; white-space: nowrap }
+.filters .sel select { border: 0; background: transparent; padding: 8px 28px 8px 8px; appearance: none; -webkit-appearance: none; cursor: pointer; width: 100% }
+.sel::after { content: '▾'; position: absolute; right: 10px; pointer-events: none; color: var(--muted); font-size: 12px }
+label.tog { display: inline-flex; cursor: pointer; user-select: none }
+label.tog input { position: absolute; opacity: 0; pointer-events: none }
+label.tog span { font-size: 13.5px; padding: 7px 12px; border-radius: 99px; border: 1px solid var(--line); background: var(--card); white-space: nowrap }
+label.tog input:checked + span { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600 }
+label.tog input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px }
 .count { color: var(--muted); font-size: 13.5px; margin: 0 0 10px }
 .list { display: grid; gap: 10px }
 .job { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: grid; grid-template-columns: minmax(0, 1fr) auto; overflow-wrap: anywhere; gap: 4px 14px }
@@ -77,16 +86,34 @@ details p { white-space: pre-line; margin: 6px 0 0; color: var(--muted) }
 .reasons button, .restore { font: inherit; font-size: 13px; padding: 6px 10px; border-radius: 99px; border: 1px solid var(--line); background: var(--chip); color: var(--ink); cursor: pointer }
 .reasons button:hover { border-color: var(--bad); color: var(--bad) }
 .why { grid-column: 1 / -1; font-size: 13px; color: var(--bad) }
-.viewbtn { font: inherit; font-size: 13.5px; padding: 8px 11px; border-radius: 9px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer }
+.viewbtn { font: inherit; font-size: 13.5px; padding: 7px 12px; border-radius: 99px; white-space: nowrap; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer }
 .viewbtn.on { background: var(--bad); color: var(--bg); border-color: var(--bad) }
 .empty { text-align: center; color: var(--muted); padding: 40px 0 }
 footer { color: var(--muted); font-size: 12.5px; margin-top: 30px }
 @media (max-width: 560px) {
   .job { grid-template-columns: minmax(0, 1fr) }
-  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)) }
-  .seg { width: 100% }
-  .seg button { flex: 1 }
-  .filters select { flex: 1 }
+  .filters { position: static; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px }
+  .filters input[type=search], .filters select { font-size: 16px }
+  .seg { display: flex; width: 100% }
+  .seg button { flex: 1; padding: 10px 6px; font-size: 14.5px }
+  .selects { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px }
+  .sel { flex-direction: column; align-items: stretch; padding: 6px 0 0 12px }
+  .sel span { font-size: 11px }
+  .filters .sel select { padding: 2px 28px 8px 0 }
+  .sel::after { top: 50%; }
+  .toggles { gap: 6px }
+  label.tog span, .viewbtn { font-size: 14px; padding: 8px 12px }
+  main { padding-top: 16px }
+  h1 { font-size: 23px }
+  .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px }
+  .stat { padding: 8px 10px; border-radius: 10px }
+  .stat:nth-child(n+7) { display: none }
+  .stat b { font-size: 18px }
+  .stat span { font-size: 11.5px; line-height: 1.25; display: block }
+  .sources { flex-wrap: nowrap; overflow-x: auto; margin: 0 -16px 12px; padding: 0 16px; scrollbar-width: none }
+  .sources::-webkit-scrollbar { display: none }
+  .src { white-space: nowrap }
+  .shift { font-size: 19px }
   .pay { text-align: left }
   .pay small { display: inline; margin-left: 6px }
   .hrs { display: inline; margin-left: 10px }
@@ -107,23 +134,31 @@ footer { color: var(--muted); font-size: 12.5px; margin-top: 30px }
       <button data-v="miami">Near Miami</button>
       <button data-v="davie">Near Davie</button>
     </div>
-    <select id="sort" aria-label="Sort">
-      <option value="miami">Closest to Miami</option>
-      <option value="pay">Highest pay</option>
-      <option value="new">Newest</option>
-      <option value="hours">Most hours/week</option>
-      <option value="davie">Closest to Davie</option>
-      <option value="best">Best match</option>
-    </select>
-    <select id="shiftf" aria-label="Shift">
-      <option value="any">Any shift</option>
-      <option value="afternoon">Afternoon available</option>
-      <option value="morning">Morning available</option>
-    </select>
-    <label class="tog"><input type="checkbox" id="paid"> Has pay</label>
-    <label class="tog"><input type="checkbox" id="direct"> Company sites only</label>
-    <label class="tog"><input type="checkbox" id="hrs"> Lists hours/week</label>
-    <button class="viewbtn" id="view" type="button">🗑 Discarded (0)</button>
+    <div class="selects">
+      <label class="sel"><span>Sort</span>
+        <select id="sort">
+          <option value="miami">Closest to Miami</option>
+          <option value="pay">Highest pay</option>
+          <option value="new">Newest</option>
+          <option value="hours">Most hours/week</option>
+          <option value="davie">Closest to Davie</option>
+          <option value="best">Best match</option>
+        </select>
+      </label>
+      <label class="sel"><span>Shift</span>
+        <select id="shiftf">
+          <option value="any">Any shift</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="morning">Morning</option>
+        </select>
+      </label>
+    </div>
+    <div class="toggles">
+      <label class="tog"><input type="checkbox" id="paid"><span>💵 Has pay</span></label>
+      <label class="tog"><input type="checkbox" id="direct"><span>✓ Company sites</span></label>
+      <label class="tog"><input type="checkbox" id="hrs"><span>⏱ Lists hours</span></label>
+      <button class="viewbtn" id="view" type="button">🗑 Discarded (0)</button>
+    </div>
   </div>
   <p class="count" id="count"></p>
   <div class="list" id="list"></div>
