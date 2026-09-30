@@ -57,6 +57,8 @@ test('normDate handles short aggregator dates', () => {
   const d = new Date(normDate('24 Sep'))
   assert.equal(d.getMonth(), 8)
   assert.ok(d <= new Date(Date.now() + 864e5))
+  assert.ok(Date.now() - d < 366 * 864e5)
+  assert.ok(Date.now() - new Date(normDate('12 Aug')) < 366 * 864e5)
 })
 
 test('parseWeeklyHours reads weekly hour offers', async () => {

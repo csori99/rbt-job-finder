@@ -175,6 +175,8 @@ const ago = (iso) => {
   if (h < 1) return 'just now'
   if (h < 24) return Math.round(h) + 'h ago'
   const d = Math.round(h / 24)
+  if (d >= 730) return Math.floor(d / 365) + ' years ago'
+  if (d >= 60) return Math.round(d / 30) + ' months ago'
   return d + (d === 1 ? ' day ago' : ' days ago')
 }
 let data = { jobs: [] }
@@ -283,6 +285,7 @@ function card(j) {
     j.bilingual && '<span class="chip">🇪🇸 bilingual</span>',
     `<span class="chip">${esc(j.source)}${j.alsoOn?.length ? ' +' + j.alsoOn.length : ''}</span>`,
     j.stale && '<span class="chip maybe">from last run</span>',
+    j.posted && Date.now() - new Date(j.posted) > 60 * 864e5 && '<span class="chip am">⚠️ Old post</span>',
   ].filter(Boolean).join('')
   const id = esc(j.id)
   return `<article class="job" data-id="${id}">

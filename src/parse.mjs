@@ -152,8 +152,9 @@ export function detectBilingual(text = '') {
 
 export function normDate(v) {
   if (!v || !/\d/.test(String(v))) return null
-  let d = new Date(v)
-  if (isNaN(d)) d = new Date(`${v} ${new Date().getFullYear()}`)
+  const str = String(v)
+  const hasYear = /\b(19|20)\d{2}\b/.test(str) || typeof v === 'number'
+  let d = new Date(hasYear ? v : `${str} ${new Date().getFullYear()}`)
   if (isNaN(d)) return null
   if (d > Date.now() + 864e5) d.setFullYear(d.getFullYear() - 1)
   return d.toISOString()
