@@ -1,0 +1,15 @@
+{
+  "name": "rbt-job-finder",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scrape": "node src/scrape.mjs",
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cheerio": "^1"
+  }
+}

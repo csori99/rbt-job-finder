@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RBT Job Finder</title>
+<meta name="description" content="RBT / behavior tech jobs around Miami and Davie, refreshed every 5 hours from multiple job boards.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧩</text></svg>">
+<style>
+:root {
+  --bg: #f6f5f1; --card: #fff; --ink: #1c1d1f; --muted: #6b6d72; --line: #e4e2dc;
+  --accent: #0f766e; --accent-soft: #d6f0ec; --warn: #b45309; --warn-soft: #fdf0dc;
+  --bad: #9f1239; --bad-soft: #fde4ea; --chip: #efede7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121416; --card: #1b1e21; --ink: #ecebe7; --muted: #9a9ca1; --line: #2c3035;
+    --accent: #5eead4; --accent-soft: #123a36; --warn: #fbbf24; --warn-soft: #3a2c10;
+    --bad: #fda4af; --bad-soft: #3b1720; --chip: #262a2e;
+  }
+}
+* { box-sizing: border-box }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif }
+main { max-width: 1080px; margin: 0 auto; padding: 20px 16px 60px }
+h1 { font-size: 26px; margin: 0 0 2px; letter-spacing: -.01em }
+.sub { color: var(--muted); margin: 0 0 18px; font-size: 14px }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 14px }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px }
+.stat b { display: block; font-size: 24px; font-variant-numeric: tabular-nums }
+.stat span { color: var(--muted); font-size: 13px }
+.sources { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; font-size: 12.5px }
+.src { padding: 3px 9px; border-radius: 99px; background: var(--chip); color: var(--muted) }
+.src.fail { background: var(--bad-soft); color: var(--bad) }
+.filters { position: sticky; top: 0; z-index: 2; background: var(--bg); padding: 10px 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; border-bottom: 1px solid var(--line); margin-bottom: 14px }
+.filters input[type=search], .filters select { font: inherit; padding: 8px 10px; border-radius: 9px; border: 1px solid var(--line); background: var(--card); color: var(--ink); min-width: 0 }
+.filters input[type=search] { flex: 1 1 200px }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; background: var(--card) }
+.seg button { font: inherit; font-size: 13.5px; border: 0; background: none; color: var(--ink); padding: 8px 11px; cursor: pointer }
+.seg button.on { background: var(--accent); color: var(--bg) }
+label.tog { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; cursor: pointer; user-select: none }
+.count { color: var(--muted); font-size: 13.5px; margin: 0 0 10px }
+.list { display: grid; gap: 10px }
+.job { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 4px 14px }
+.job h2 { font-size: 16.5px; margin: 0; line-height: 1.3 }
+.job h2 a { color: inherit; text-decoration: none }
+.job h2 a:hover { text-decoration: underline }
+.meta { color: var(--muted); font-size: 13.5px }
+.pay { text-align: right; font-weight: 650; font-size: 17px; white-space: nowrap; font-variant-numeric: tabular-nums }
+.pay small { display: block; font-weight: 400; color: var(--muted); font-size: 12px }
+.chips { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px }
+.chip { font-size: 12px; padding: 2px 8px; border-radius: 99px; background: var(--chip) }
+.chip.pm { background: var(--accent-soft); color: var(--accent); font-weight: 600 }
+.chip.maybe { background: var(--warn-soft); color: var(--warn) }
+.chip.am { background: var(--bad-soft); color: var(--bad) }
+.chip.new { background: var(--ink); color: var(--bg); font-weight: 600 }
+.hint { grid-column: 1 / -1; font-size: 13px; color: var(--muted); font-style: italic }
+details { grid-column: 1 / -1; font-size: 13.5px }
+details summary { cursor: pointer; color: var(--accent); font-size: 13px }
+details p { white-space: pre-line; margin: 6px 0 0; color: var(--muted) }
+.empty { text-align: center; color: var(--muted); padding: 40px 0 }
+footer { color: var(--muted); font-size: 12.5px; margin-top: 30px }
+@media (max-width: 560px) {
+  .job { grid-template-columns: 1fr }
+  .pay { text-align: left }
+  .pay small { display: inline; margin-left: 6px }
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>🧩 RBT Job Finder</h1>
+  <p class="sub" id="sub">Loading…</p>
+  <div class="stats" id="stats"></div>
+  <div class="sources" id="sources"></div>
+
+  <div class="filters">
+    <input type="search" id="q" placeholder="Search company, city, bilingual…">
+    <div class="seg" id="near">
+      <button data-v="all" class="on">All</button>
+      <button data-v="miami">Near Miami</button>
+      <button data-v="davie">Near Davie</button>
+    </div>
+    <select id="sort" aria-label="Sort">
+      <option value="best">Best match</option>
+      <option value="pay">Highest pay</option>
+      <option value="new">Newest</option>
+      <option value="miami">Closest to Miami</option>
+      <option value="davie">Closest to Davie</option>
+    </select>
+    <label class="tog"><input type="checkbox" id="pm"> Afternoon only</label>
+    <label class="tog"><input type="checkbox" id="paid"> Has pay</label>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="list" id="list"></div>
+  <footer>Pulled automatically from LinkedIn, SimplyHired (Indeed listings), Talent.com, Jobsora and Craigslist. Schedule and pay are read from the job text and may be off, so check the posting before applying. "Afternoon" means the post mentions afternoon/after-school work or a shift ending after 4pm.</footer>
+</main>
+<script>
+const $ = (s) => document.querySelector(s)
+const esc = (s = '') => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c])
+const money = (n) => '$' + (Number.isInteger(n) ? n : n.toFixed(2))
+const ago = (iso) => {
+  if (!iso) return ''
+  const h = (Date.now() - new Date(iso)) / 36e5
+  if (h < 1) return 'just now'
+  if (h < 24) return Math.round(h) + 'h ago'
+  const d = Math.round(h / 24)
+  return d + (d === 1 ? ' day ago' : ' days ago')
+}
+let data = { jobs: [] }
+const state = { q: '', near: 'all', sort: 'best', pm: false, paid: false }
+try { Object.assign(state, JSON.parse(localStorage.getItem('rbt-filters') || '{}')) } catch {}
+
+function near(j) {
+  if (state.near === 'miami') return j.fromMiami == null ? j.area === 'miami-dade' : j.fromMiami <= 20
+  if (state.near === 'davie') return j.fromDavie == null ? j.area === 'broward' : j.fromDavie <= 15
+  return true
+}
+
+function render() {
+  try { localStorage.setItem('rbt-filters', JSON.stringify(state)) } catch {}
+  const q = state.q.toLowerCase()
+  let jobs = data.jobs.filter((j) =>
+    near(j) &&
+    (!state.pm || j.afternoon === 2) &&
+    (!state.paid || j.payMax) &&
+    (!q || [j.title, j.company, j.location, j.snippet, j.source, j.bilingual ? 'bilingual spanish' : ''].join(' ').toLowerCase().includes(q)))
+  const by = {
+    best: (a, b) => b.afternoon - a.afternoon || (b.payMax ?? 0) - (a.payMax ?? 0),
+    pay: (a, b) => (b.payMax ?? 0) - (a.payMax ?? 0),
+    new: (a, b) => new Date(b.posted || b.firstSeen) - new Date(a.posted || a.firstSeen),
+    miami: (a, b) => (a.fromMiami ?? 99) - (b.fromMiami ?? 99),
+    davie: (a, b) => (a.fromDavie ?? 99) - (b.fromDavie ?? 99),
+  }
+  jobs = jobs.slice().sort(by[state.sort])
+  $('#count').textContent = `Showing ${jobs.length} of ${data.jobs.length} jobs`
+  $('#list').innerHTML = jobs.length ? jobs.map(card).join('') : '<p class="empty">No jobs match these filters.</p>'
+}
+
+function card(j) {
+  const isNew = Date.now() - new Date(j.firstSeen) < 24 * 36e5
+  const sched = j.afternoon === 2 ? '<span class="chip pm">☀️ Afternoon</span>'
+    : j.afternoon === 1 ? '<span class="chip maybe">Flexible / part-time</span>'
+    : j.afternoon < 0 ? '<span class="chip am">Daytime / school hours</span>' : ''
+  const pay = j.payMax
+    ? `${money(j.payMin)}${j.payMax !== j.payMin ? '–' + money(j.payMax) : ''}<small>/hour</small>`
+    : `<small>${esc(j.payText) || 'pay not listed'}</small>`
+  const dist = [j.fromMiami != null && `${j.fromMiami} mi from Miami`, j.fromDavie != null && `${j.fromDavie} mi from Davie`].filter(Boolean).join(' · ')
+  const chips = [
+    isNew && '<span class="chip new">NEW</span>',
+    sched,
+    ...j.jobTypes.map((t) => `<span class="chip">${esc(t)}</span>`),
+    ...j.setting.map((t) => `<span class="chip">${esc(t)}</span>`),
+    j.bilingual && '<span class="chip">🇪🇸 bilingual</span>',
+    `<span class="chip">${esc(j.source)}${j.alsoOn?.length ? ' +' + j.alsoOn.length : ''}</span>`,
+    j.stale && '<span class="chip maybe">from last run</span>',
+  ].filter(Boolean).join('')
+  return `<article class="job">
+    <div>
+      <h2><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h2>
+      <div class="meta">${esc(j.company || 'Company not listed')} · 📍 ${esc(j.location)}${dist ? ' · ' + dist : ''}</div>
+      <div class="meta">${j.posted ? 'Posted ' + ago(j.posted) : 'First seen ' + ago(j.firstSeen)}</div>
+    </div>
+    <div class="pay">${pay}</div>
+    <div class="chips">${chips}</div>
+    ${j.scheduleHints?.length ? `<div class="hint">“${esc(j.scheduleHints.join(' … '))}”</div>` : ''}
+    ${j.snippet ? `<details><summary>Details</summary><p>${esc(j.snippet)}…</p></details>` : ''}
+  </article>`
+}
+
+function summary() {
+  const jobs = data.jobs
+  const pays = jobs.filter((j) => j.payMax).map((j) => (j.payMin + j.payMax) / 2).sort((a, b) => a - b)
+  const median = pays.length ? pays[Math.floor(pays.length / 2)] : null
+  const top = pays.length ? Math.max(...jobs.filter((j) => j.payMax).map((j) => j.payMax)) : null
+  const pm = jobs.filter((j) => j.afternoon === 2).length
+  const fresh = jobs.filter((j) => Date.now() - new Date(j.firstSeen) < 24 * 36e5).length
+  const stats = [
+    [jobs.length, 'jobs found'],
+    [pm, 'mention afternoons'],
+    [median ? money(Math.round(median * 100) / 100) : '–', 'median pay / hr'],
+    [top ? money(top) : '–', 'top pay / hr'],
+    [fresh, 'new in last 24h'],
+  ]
+  $('#stats').innerHTML = stats.map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join('')
+  const next = new Date(new Date(data.updatedAt).getTime() + 5 * 36e5)
+  $('#sub').textContent = `Updated ${ago(data.updatedAt)} (${new Date(data.updatedAt).toLocaleString()}) · refreshes every 5 hours · next around ${next.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}`
+  $('#sources').innerHTML = Object.entries(data.status).map(([k, s]) =>
+    `<span class="src ${s.ok && s.count ? '' : 'fail'}" title="${esc(s.error || '')}">${esc(k)}: ${s.ok ? s.count : 'blocked'}${s.keptFromLastRun ? ` (kept ${s.keptFromLastRun})` : ''}</span>`).join('')
+}
+
+function bind() {
+  $('#q').value = state.q
+  $('#sort').value = state.sort
+  $('#pm').checked = state.pm
+  $('#paid').checked = state.paid
+  document.querySelectorAll('#near button').forEach((b) => b.classList.toggle('on', b.dataset.v === state.near))
+  $('#q').addEventListener('input', (e) => { state.q = e.target.value; render() })
+  $('#sort').addEventListener('change', (e) => { state.sort = e.target.value; render() })
+  $('#pm').addEventListener('change', (e) => { state.pm = e.target.checked; render() })
+  $('#paid').addEventListener('change', (e) => { state.paid = e.target.checked; render() })
+  $('#near').addEventListener('click', (e) => {
+    const b = e.target.closest('button'); if (!b) return
+    state.near = b.dataset.v
+    document.querySelectorAll('#near button').forEach((x) => x.classList.toggle('on', x === b))
+    render()
+  })
+}
+
+fetch('jobs.json?t=' + Date.now()).then((r) => r.json()).then((d) => { data = d; summary(); bind(); render() })
+  .catch(() => { $('#sub').textContent = 'Could not load jobs right now, try refreshing.' })
+</script>
+</body>
+</html>
