@@ -2,8 +2,9 @@ import { readFile, writeFile } from 'node:fs/promises'
 import { SOURCES } from './sources.mjs'
 import { EMPLOYERS, jobrapido } from './employers.mjs'
 import { syncDiscards } from './discards.mjs'
+import { jsearch } from './jsearch.mjs'
 
-const ALL = { ...EMPLOYERS, ...SOURCES, jobrapido }
+const ALL = { ...EMPLOYERS, jsearch, ...SOURCES, jobrapido }
 import { locate } from './geo.mjs'
 import { classifyArea, detectShifts, normDate, parseWeeklyHours, detectBilingual, detectJobType, detectSetting, parsePay, scoreSchedule } from './parse.mjs'
 
