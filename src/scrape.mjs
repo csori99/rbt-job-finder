@@ -1,7 +1,10 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { SOURCES } from './sources.mjs'
+import { EMPLOYERS, jobrapido } from './employers.mjs'
+
+const ALL = { ...EMPLOYERS, ...SOURCES, jobrapido }
 import { locate } from './geo.mjs'
-import { classifyArea, detectBilingual, detectJobType, detectSetting, parsePay, scoreSchedule } from './parse.mjs'
+import { classifyArea, normDate, detectBilingual, detectJobType, detectSetting, parsePay, scoreSchedule } from './parse.mjs'
 
 const OUT = new URL('../docs/jobs.json', import.meta.url)
 const only = process.argv.slice(2)
@@ -13,6 +16,8 @@ function enrich(j) {
   return {
     id: j.id,
     source: j.source,
+    sourceKey: j.sourceKey,
+    direct: !!j.direct,
     title: j.title,
     company: j.company || '',
     location: j.location || '',
@@ -26,13 +31,13 @@ function enrich(j) {
     bilingual: detectBilingual(blob),
     afternoon: sched.score,
     scheduleHints: sched.hints,
-    posted: j.posted || null,
+    posted: normDate(j.posted),
     snippet: (j.description || '').slice(0, 600),
     url: j.url,
   }
 }
 
-const dedupeKey = (j) => `${j.title}|${j.company}`.toLowerCase().replace(/[^a-z0-9|]/g, '')
+const dedupeKey = (j) => `${j.title}|${j.company}|${j.location.split(',')[0]}`.toLowerCase().replace(/[^a-z0-9|]/g, '')
 
 let prev = { jobs: [] }
 try {
@@ -43,13 +48,13 @@ const now = new Date().toISOString()
 
 const status = {}
 const all = []
-for (const [name, fn] of Object.entries(SOURCES)) {
+for (const [name, fn] of Object.entries(ALL)) {
   if (only.length && !only.includes(name)) continue
   const t = Date.now()
   try {
     const jobs = await fn()
     status[name] = { ok: true, count: jobs.length, ms: Date.now() - t }
-    all.push(...jobs)
+    all.push(...jobs.map((j) => ({ ...j, sourceKey: name })))
   } catch (e) {
     status[name] = { ok: false, count: 0, error: String(e.message || e).slice(0, 200) }
   }
@@ -61,7 +66,13 @@ for (const raw of all) {
   const j = enrich(raw)
   if (j.area === 'other') continue
   const k = dedupeKey(j)
-  const existing = byKey.get(k)
+  let existing = byKey.get(k)
+  if (existing && j.direct && !existing.direct) {
+    j.alsoOn = [existing.source, ...(existing.alsoOn || [])]
+    j.firstSeen = existing.firstSeen
+    byKey.set(k, j)
+    continue
+  }
   if (existing) {
     existing.alsoOn = [...new Set([...(existing.alsoOn || []), j.source])].filter((s) => s !== existing.source)
     if (existing.payMin == null && j.payMin != null) Object.assign(existing, { payMin: j.payMin, payMax: j.payMax, payText: j.payText })
@@ -75,14 +86,13 @@ for (const raw of all) {
 let jobs = [...byKey.values()]
 for (const [name, s] of Object.entries(status)) {
   if (s.ok && s.count > 0) continue
-  const label = { linkedin: 'LinkedIn', simplyhired: 'SimplyHired / Indeed', talent: 'Talent.com', jobsora: 'Jobsora', craigslist: 'Craigslist' }[name]
-  const kept = prev.jobs.filter((j) => j.source === label && Date.now() - new Date(j.firstSeen).getTime() < 7 * 864e5)
+  const kept = prev.jobs.filter((j) => j.sourceKey === name && Date.now() - new Date(j.firstSeen).getTime() < 7 * 864e5)
   if (kept.length) {
     jobs.push(...kept.map((j) => ({ ...j, stale: true })))
     s.keptFromLastRun = kept.length
   }
 }
 
-jobs.sort((a, b) => b.afternoon - a.afternoon || (b.payMax ?? 0) - (a.payMax ?? 0))
+jobs.sort((a, b) => b.afternoon - a.afternoon || b.direct - a.direct || (b.payMax ?? 0) - (a.payMax ?? 0))
 await writeFile(OUT, JSON.stringify({ updatedAt: now, status, jobs }, null, 1))
 console.log(`wrote ${jobs.length} jobs`)

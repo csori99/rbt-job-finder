@@ -147,3 +147,12 @@ export function detectJobType(text = '') {
 export function detectBilingual(text = '') {
   return /bilingual|spanish/i.test(text)
 }
+
+export function normDate(v) {
+  if (!v || !/\d/.test(String(v))) return null
+  let d = new Date(v)
+  if (isNaN(d)) d = new Date(`${v} ${new Date().getFullYear()}`)
+  if (isNaN(d)) return null
+  if (d > Date.now() + 864e5) d.setFullYear(d.getFullYear() - 1)
+  return d.toISOString()
+}

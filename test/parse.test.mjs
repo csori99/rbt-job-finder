@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { parsePay, scoreSchedule, classifyArea, isRbtJob, extractTimeRanges } from '../src/parse.mjs'
+import { normDate, parsePay, scoreSchedule, classifyArea, isRbtJob, extractTimeRanges } from '../src/parse.mjs'
 
 test('parsePay handles hourly ranges', () => {
   assert.deepEqual(parsePay('$20 - $23 an hour'), { min: 20, max: 23 })
@@ -45,4 +45,13 @@ test('isRbtJob filters titles', () => {
   assert.ok(isRbtJob('Behavior Technician'))
   assert.ok(!isRbtJob('BCBA - Board Certified Behavior Analyst'))
   assert.ok(!isRbtJob('Speech Language Pathologist'))
+})
+
+test('normDate handles short aggregator dates', () => {
+  assert.equal(normDate(null), null)
+  assert.equal(normDate('garbage'), null)
+  assert.equal(normDate('2026-09-01').slice(0, 10), '2026-09-01')
+  const d = new Date(normDate('24 Sep'))
+  assert.equal(d.getMonth(), 8)
+  assert.ok(d <= new Date(Date.now() + 864e5))
 })
