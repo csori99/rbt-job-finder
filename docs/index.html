@@ -20,6 +20,7 @@
   }
 }
 * { box-sizing: border-box }
+html, body { overflow-x: hidden }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif }
 main { max-width: 1080px; margin: 0 auto; padding: 20px 16px 60px }
 h1 { font-size: 26px; margin: 0 0 2px; letter-spacing: -.01em }
@@ -40,7 +41,7 @@ h1 { font-size: 26px; margin: 0 0 2px; letter-spacing: -.01em }
 label.tog { display: inline-flex; gap: 6px; align-items: center; font-size: 14px; cursor: pointer; user-select: none }
 .count { color: var(--muted); font-size: 13.5px; margin: 0 0 10px }
 .list { display: grid; gap: 10px }
-.job { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 4px 14px }
+.job { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: grid; grid-template-columns: minmax(0, 1fr) auto; overflow-wrap: anywhere; gap: 4px 14px }
 .job h2 { font-size: 16.5px; margin: 0; line-height: 1.3 }
 .job h2 a { color: inherit; text-decoration: none }
 .job h2 a:hover { text-decoration: underline }
@@ -60,7 +61,11 @@ details p { white-space: pre-line; margin: 6px 0 0; color: var(--muted) }
 .empty { text-align: center; color: var(--muted); padding: 40px 0 }
 footer { color: var(--muted); font-size: 12.5px; margin-top: 30px }
 @media (max-width: 560px) {
-  .job { grid-template-columns: 1fr }
+  .job { grid-template-columns: minmax(0, 1fr) }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+  .seg { width: 100% }
+  .seg button { flex: 1 }
+  .filters select { flex: 1 }
   .pay { text-align: left }
   .pay small { display: inline; margin-left: 6px }
 }
@@ -137,7 +142,7 @@ function render() {
 }
 
 function card(j) {
-  const isNew = Date.now() - new Date(j.firstSeen) < 24 * 36e5
+  const isNew = Date.now() - new Date(j.posted || j.firstSeen) < 48 * 36e5
   const sched = j.afternoon === 2 ? '<span class="chip pm">☀️ Afternoon</span>'
     : j.afternoon === 1 ? '<span class="chip maybe">Flexible / part-time</span>'
     : j.afternoon < 0 ? '<span class="chip am">Daytime / school hours</span>' : ''
@@ -173,13 +178,13 @@ function summary() {
   const median = pays.length ? pays[Math.floor(pays.length / 2)] : null
   const top = pays.length ? Math.max(...jobs.filter((j) => j.payMax).map((j) => j.payMax)) : null
   const pm = jobs.filter((j) => j.afternoon === 2).length
-  const fresh = jobs.filter((j) => Date.now() - new Date(j.firstSeen) < 24 * 36e5).length
+  const fresh = jobs.filter((j) => Date.now() - new Date(j.posted || j.firstSeen) < 48 * 36e5).length
   const stats = [
     [jobs.length, 'jobs found'],
     [pm, 'mention afternoons'],
     [median ? money(Math.round(median * 100) / 100) : '–', 'median pay / hr'],
     [top ? money(top) : '–', 'top pay / hr'],
-    [fresh, 'new in last 24h'],
+    [fresh, 'posted in last 2 days'],
   ]
   $('#stats').innerHTML = stats.map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join('')
   const next = new Date(new Date(data.updatedAt).getTime() + 5 * 36e5)
