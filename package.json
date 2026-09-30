@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "scrape": "node src/scrape.mjs",
-    "test": "node --test test/"
+    "test": "node --test test/*.test.mjs"
   },
   "engines": {
     "node": ">=20"
