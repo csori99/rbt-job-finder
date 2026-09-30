@@ -26,7 +26,7 @@ export function classifyArea(location = '') {
 }
 
 const TITLE_OK = /\b(rbt|registered behavior tech|behavior(al)? tech|behavior(al)? therapist|aba (therapist|tech|instructor|provider)|behavior interventionist|aba\b.*\btherap|behavior(al)? (health )?tech|autism (therapist|tech))/i
-const TITLE_BAD = /\b(bcba|bcaba|behavior analyst|clinical director|supervisor|manager|coordinator|speech|slp|occupational|physical therap|nurse|rn\b|lpn|recruiter|psychologist|psychiatr|pharmac|dental|veterinar|mental health tech|psych tech|sales)\b/i
+const TITLE_BAD = /\b(bcba|bcaba|behavior analyst|clinical director|supervisor|manager|coordinator|speech|slp|occupational|physical therap|nurse|rn\b|lpn|recruiter|psychologist|psychiatr|pharmac|dental|veterinar|mental health tech|psych tech|sales|scheduler|scheduling|intake|billing|admin\w*|receptionist|marketing|front desk|credentialing|authorization)\b/i
 
 export function isRbtJob(title = '') {
   return TITLE_OK.test(title) && !TITLE_BAD.test(title)
@@ -55,18 +55,19 @@ export function stripHtml(html = '') {
 
 const num = (s) => parseFloat(s.replace(/,/g, ''))
 
-export function parsePay(text = '') {
+export function parsePay(text = '', anchored = false) {
   const t = text.replace(/\s+/g, ' ')
   const range = /\$\s?(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(k)?\s*(?:-|–|—|to)\s*\$?\s?(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(k)?\s*(?:\/|per|an|a)?\s*(hour|hr|h\b|year|yr|annual|month|mo\b|week|wk|session|visit)?/i
   const single = /\$\s?(\d{1,3}(?:,\d{3})*(?:\.\d{1,2})?)\s*(k)?\s*(?:\/|per|an|a)?\s*(hour|hr|h\b|year|yr|annual|month|mo\b|week|wk|session|visit)?/i
+  const at = (re) => (anchored ? new RegExp('^' + re.source, re.flags) : re)
   let min, max, unit
-  const r = t.match(range)
+  const r = t.match(at(range))
   if (r) {
     min = num(r[1]) * (r[2] ? 1000 : 1)
     max = num(r[3]) * (r[4] || r[2] ? 1000 : 1)
     unit = r[5]
   } else {
-    const s = t.match(single)
+    const s = t.match(at(single))
     if (!s) return null
     min = max = num(s[1]) * (s[2] ? 1000 : 1)
     unit = s[3]
@@ -205,4 +206,22 @@ export function detectShifts(text = '') {
   if (afternoon) return 'afternoon'
   if (morning) return 'morning'
   return null
+}
+
+export function parsePayAll(text = '') {
+  const skip = /bonus|referral|sign[\s-]?on|stipend|mileage|per mile|reimburs|fee|cost|tuition|\bbcba\b|analyst|supervisor/i
+  const vals = []
+  for (const sentence of text.split(/(?<=[.!?])\s+|\n|•/)) {
+    if (skip.test(sentence) || !sentence.includes('$')) continue
+    let rest = sentence
+    for (let guard = 0; guard < 6; guard++) {
+      const i = rest.indexOf('$')
+      if (i < 0) break
+      const p = parsePay(rest.slice(i), true)
+      if (p) vals.push(p.min, p.max)
+      rest = rest.slice(i + 1).replace(/^[\d,.\s]*(k\b)?\s*(-|–|to)?\s*\$?[\d,.]*/i, '')
+    }
+  }
+  const ok = vals.filter((v) => v >= 12 && v <= 60)
+  return ok.length ? { min: Math.min(...ok), max: Math.max(...ok) } : null
 }

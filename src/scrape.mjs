@@ -7,14 +7,18 @@ import { adzuna } from './adzuna.mjs'
 
 const ALL = { ...EMPLOYERS, jsearch, adzuna, ...SOURCES, jobrapido }
 import { locate } from './geo.mjs'
-import { classifyArea, detectShifts, normDate, parseWeeklyHours, detectBilingual, detectJobType, detectSetting, parsePay, scoreSchedule } from './parse.mjs'
+import { classifyArea, detectShifts, normDate, parsePayAll, parseWeeklyHours, detectBilingual, detectJobType, detectSetting, parsePay, scoreSchedule } from './parse.mjs'
 
 const OUT = new URL('../docs/jobs.json', import.meta.url)
 const only = process.argv.slice(2)
 
 function enrich(j) {
   const blob = [j.title, j.payText, j.jobType, j.description].filter(Boolean).join('\n')
-  const pay = parsePay(j.payText || '') || parsePay(j.description || '')
+  const listed = parsePay(j.payText || '')
+  const inText = parsePayAll(j.description || '')
+  const pay = listed && inText
+    ? { min: Math.min(listed.min, inText.min), max: Math.max(listed.max, inText.max) }
+    : listed || inText
   const hours = parseWeeklyHours(`${j.title}\n${j.jobType || ''}\n${j.description || ''}`)
   const sched = scoreSchedule(`${j.title}\n${j.jobType || ''}\n${j.description || ''}`)
   return {
@@ -83,6 +87,7 @@ for (const raw of all) {
   if (existing) {
     existing.alsoOn = [...new Set([...(existing.alsoOn || []), j.source])].filter((s) => s !== existing.source)
     if (existing.payMin == null && j.payMin != null) Object.assign(existing, { payMin: j.payMin, payMax: j.payMax, payText: j.payText })
+    else if (j.payMax != null && j.payMax > existing.payMax) existing.payMax = j.payMax
     if (existing.hoursMin == null && existing.hoursMax == null && (j.hoursMin != null || j.hoursMax != null)) Object.assign(existing, { hoursMin: j.hoursMin, hoursMax: j.hoursMax })
     if (!existing.shift && j.shift) existing.shift = j.shift
     if (existing.afternoon < j.afternoon) Object.assign(existing, { afternoon: j.afternoon, scheduleHints: j.scheduleHints })

@@ -54,7 +54,7 @@ export async function jsearch() {
         company: j.employer_name || '',
         location: j.job_location || [j.job_city, j.job_state].filter(Boolean).join(', '),
         geo: j.job_latitude ? { lat: j.job_latitude, lng: j.job_longitude } : null,
-        payText: j.job_min_salary ? `$${j.job_min_salary}${j.job_max_salary && j.job_max_salary !== j.job_min_salary ? ` - $${j.job_max_salary}` : ''} per ${period}` : (j.job_salary_string || '').replace(/^(\d)/, '$$1'),
+        payText: j.job_min_salary ? `$${j.job_min_salary}${j.job_max_salary && j.job_max_salary !== j.job_min_salary ? ` - $${j.job_max_salary}` : ''} per ${period}` : (j.job_salary_string || '').replace(/^(?=\d)/, '$'),
         jobType: (j.job_employment_types || [j.job_employment_type]).filter(Boolean).join(', '),
         posted: j.job_posted_at_datetime_utc || null,
         description: j.job_description || '',

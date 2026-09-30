@@ -47,6 +47,7 @@ test('isRbtJob filters titles', () => {
   assert.ok(isRbtJob('Behavior Technician'))
   assert.ok(!isRbtJob('BCBA - Board Certified Behavior Analyst'))
   assert.ok(!isRbtJob('Speech Language Pathologist'))
+  assert.ok(!isRbtJob('ABA Therapy Scheduler (Remote Position)'))
 })
 
 test('normDate handles short aggregator dates', () => {
@@ -82,4 +83,12 @@ test('detectShifts labels morning, afternoon or both', async () => {
   assert.equal(detectShifts('morning & afternoon cases are available!'), 'both')
   assert.equal(detectShifts('Hours: 8:00am - 5:00pm'), 'both')
   assert.equal(detectShifts('great team'), null)
+})
+
+test('parsePayAll combines every hourly figure in a description', async () => {
+  const { parsePayAll } = await import('../src/parse.mjs')
+  assert.deepEqual(parsePayAll('• Competitive Pay: $20 (If RBT certified, then $22-27 based on experience in ABA)'), { min: 20, max: 27 })
+  assert.deepEqual(parsePayAll('Pay $22/hr. $500 sign on bonus! Mileage paid at $0.67 per mile.'), { min: 22, max: 22 })
+  assert.deepEqual(parsePayAll('RBT: $24 - $28 per hour.\nBCBA rate $80/hr'), { min: 24, max: 28 })
+  assert.equal(parsePayAll('no pay'), null)
 })
