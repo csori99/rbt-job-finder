@@ -4,12 +4,15 @@ import { EMPLOYERS, jobrapido } from './employers.mjs'
 import { syncDiscards } from './discards.mjs'
 import { jsearch } from './jsearch.mjs'
 import { adzuna } from './adzuna.mjs'
+import { matchResume } from './match.mjs'
 
 const ALL = { ...EMPLOYERS, jsearch, adzuna, ...SOURCES, jobrapido }
 import { locate } from './geo.mjs'
 import { classifyArea, detectShifts, normDate, parsePayAll, parseWeeklyHours, detectBilingual, detectJobType, detectSetting, parsePay, scoreSchedule } from './parse.mjs'
 
 const OUT = new URL('../docs/jobs.json', import.meta.url)
+const FULL = new URL('../data/descriptions.json', import.meta.url)
+const fullText = {}
 const only = process.argv.slice(2)
 
 function enrich(j) {
@@ -75,6 +78,8 @@ for (const [name, fn] of Object.entries(ALL)) {
 const byKey = new Map()
 for (const raw of all) {
   const j = enrich(raw)
+  if (raw.description) fullText[j.id] = raw.description
+  j.match = matchResume(j, raw.description || '')
   if (j.area === 'other') continue
   const k = dedupeKey(j)
   let existing = byKey.get(k)
@@ -90,6 +95,7 @@ for (const raw of all) {
     else if (j.payMax != null && j.payMax > existing.payMax) existing.payMax = j.payMax
     if (existing.hoursMin == null && existing.hoursMax == null && (j.hoursMin != null || j.hoursMax != null)) Object.assign(existing, { hoursMin: j.hoursMin, hoursMax: j.hoursMax })
     if (!existing.shift && j.shift) existing.shift = j.shift
+    if ((j.match.covered.length + j.match.missing.length) > (existing.match.covered.length + existing.match.missing.length)) existing.match = j.match
     if (existing.afternoon < j.afternoon) Object.assign(existing, { afternoon: j.afternoon, scheduleHints: j.scheduleHints })
     continue
   }
@@ -109,5 +115,6 @@ for (const [name, s] of Object.entries(status)) {
 
 jobs.sort((a, b) => (a.fromMiami ?? 99) - (b.fromMiami ?? 99) || (b.payMax ?? 0) - (a.payMax ?? 0))
 await writeFile(OUT, JSON.stringify({ updatedAt: now, status, jobs }, null, 1))
+await writeFile(FULL, JSON.stringify(Object.fromEntries(jobs.map((j) => [j.id, fullText[j.id] || j.snippet || '']))))
 console.log(`wrote ${jobs.length} jobs`)
 console.log('discards', await syncDiscards().catch((e) => ({ ok: false, reason: e.message })))
