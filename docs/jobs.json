@@ -1,76 +1,75 @@
 {
- "updatedAt": "2026-11-10T19:52:43.074Z",
+ "updatedAt": "2026-11-11T00:58:34.726Z",
  "status": {
   "teampbs": {
    "ok": true,
    "count": 50,
-   "ms": 12475
+   "ms": 19649
   },
   "adp": {
    "ok": true,
    "count": 4,
-   "ms": 2225
+   "ms": 2190
   },
   "bfs": {
    "ok": true,
    "count": 0,
-   "ms": 653
+   "ms": 506
   },
   "greenhouse": {
    "ok": true,
    "count": 0,
-   "ms": 614
+   "ms": 574
   },
   "cultivate": {
    "ok": true,
-   "count": 0,
-   "ms": 671,
-   "keptFromLastRun": 2
+   "count": 1,
+   "ms": 373
   },
   "steppingstones": {
    "ok": true,
    "count": 0,
-   "ms": 791
+   "ms": 850
   },
   "jsearch": {
    "ok": true,
-   "count": 434,
-   "ms": 3418
+   "count": 430,
+   "ms": 13664
   },
   "adzuna": {
    "ok": true,
-   "count": 57,
-   "ms": 7857
+   "count": 59,
+   "ms": 7642
   },
   "linkedin": {
    "ok": true,
-   "count": 18,
-   "ms": 55757
+   "count": 19,
+   "ms": 87779
   },
   "simplyhired": {
    "ok": true,
-   "count": 124,
-   "ms": 174541
+   "count": 119,
+   "ms": 186968
   },
   "talent": {
    "ok": true,
-   "count": 24,
-   "ms": 36445
+   "count": 27,
+   "ms": 39678
   },
   "jobsora": {
    "ok": true,
-   "count": 32,
-   "ms": 13969
+   "count": 38,
+   "ms": 14728
   },
   "craigslist": {
    "ok": true,
    "count": 1,
-   "ms": 4857
+   "ms": 4750
   },
   "jobrapido": {
    "ok": true,
    "count": 134,
-   "ms": 34431
+   "ms": 34642
   }
  },
  "jobs": [
@@ -1039,7 +1038,9 @@
     "variantLabel": "Clinic"
    },
    "firstSeen": "2026-11-07T05:02:41.395Z",
-   "alsoOn": []
+   "alsoOn": [
+    "SimplyHired / Indeed"
+   ]
   },
   {
    "id": "jsr-NUlCMWl6RkJOSFA4czZXb0FBQUFBQT09OkVzd0JDb3dCUVVwcFZEUjBTelV3Y21oVVUwTnNhMFZJZG5Gc05tOUJZVFJCTFV0SGRXcHphbkJZZEZZNVpqZGZOVFk0T0Y5a1VIUjVOelpUUWt0SFMwMXplbm96Y0RGRFNTMTZXazB4ZURGSk0xZzJkVUV6VVVSU1ZrZE5VV2RTVEc4MU5VMTBhREpvYnpabWVYZEpVVEp3YkhZM2VHcExhak53VldWeGNDMUZWM1Y0YUdwTmRFcExhR1ZvT0dKWmVWY1NGMjl2TTJoaGRVaFlSMkZZWTNKMVJWQjNOemRUZFZFd0dpSkJSSE55T1daUlVUSkdia1JxVkhSRlJUWnNVVmw1TFZsWExVRlFlRXR0VkZKbg",
@@ -2136,21 +2137,12 @@
    "shift": null,
    "scheduleHints": [],
    "posted": "2026-11-08T00:00:00.000Z",
-   "snippet": "Description\n Job Summary\n Responsible for providing patients with daily living activities. Maintains the environment to ensure the safety of staff, patients, families, and visitors.\n Job Specific Duties\n • Applies collaborative problem solving approach with daily and routine interaction with patients. \n• Assists patients with activities of daily living, personal care, & comfort measures. Assist with certain behavioral interventions and test/procedures under the direction and supervision of RN. \n• Assists RN with patient intake/admission paperwork. \n• Documents significant occurrences, observed",
+   "snippet": "",
    "url": "https://www.linkedin.com/jobs/view/4487631375",
    "match": {
-    "pct": 71,
-    "covered": [
-     "Behavior intervention plans",
-     "Session notes / documentation",
-     "Crisis / safety / de-escalation",
-     "Experience with children",
-     "Microsoft Office / technology"
-    ],
-    "missing": [
-     "Level 2 background screening",
-     "Adolescents / teens"
-    ],
+    "pct": null,
+    "covered": [],
+    "missing": [],
     "variant": "master",
     "variantLabel": "Master"
    },
@@ -2245,6 +2237,48 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-06T08:37:37.799Z"
+  },
+  {
+   "id": "ta-630576450958002514",
+   "source": "Talent.com",
+   "sourceKey": "talent",
+   "direct": false,
+   "title": "Registered Behavior Technician (RBT)",
+   "company": "Abacus Therapies",
+   "location": "Miami, Florida, United States",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "part-time",
+    "full-time"
+   ],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 1,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": null,
+   "snippet": "Are you passionate about working with children on the autism spectrum? Abacus Therapies in Miami, FL, is seeking dedicated part-time and full-time RBTs to join our growing team.Abacus Therapies pro... Show more",
+   "url": "https://www.talent.com/view?id=630576450958002514",
+   "match": {
+    "pct": 100,
+    "covered": [
+     "Autism / ASD experience"
+    ],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z",
+   "alsoOn": [
+    "Jobrapido"
+   ]
   },
   {
    "id": "js-54881562295",
@@ -2388,7 +2422,7 @@
    "scheduleHints": [],
    "posted": "2026-10-24T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7421168369996398592/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.0&uuid=usF001a1c709e7ef64ce&page_item_id=1755800194",
+   "url": "https://open.app.jobrapido.com/us/7421168369996398592/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.0&uuid=usF001a1c822ec4b6afb&page_item_id=-1055534934",
    "match": {
     "pct": null,
     "covered": [],
@@ -2422,7 +2456,7 @@
    "scheduleHints": [],
    "posted": "2026-11-04T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/5359080182353231872/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.1&uuid=usF001a1c709e7ef64ce&page_item_id=-1033382638",
+   "url": "https://open.app.jobrapido.com/us/5359080182353231872/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.1&uuid=usF001a1c822ec4b6afb&page_item_id=-163837901",
    "match": {
     "pct": null,
     "covered": [],
@@ -2456,7 +2490,7 @@
    "scheduleHints": [],
    "posted": "2026-10-22T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1791330254921400320/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.12&uuid=usF001a1c709e7ef64ce&page_item_id=-947157690",
+   "url": "https://open.app.jobrapido.com/us/1791330254921400320/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.12&uuid=usF001a1c822ec4b6afb&page_item_id=-1510282390",
    "match": {
     "pct": 0,
     "covered": [],
@@ -2492,7 +2526,7 @@
    "scheduleHints": [],
    "posted": "2026-11-04T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7960539983754821632/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.14&uuid=usF001a1c709e7ef64ce&page_item_id=1940247408",
+   "url": "https://open.app.jobrapido.com/us/7960539983754821632/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.14&uuid=usF001a1c822ec4b6afb&page_item_id=2041104359",
    "match": {
     "pct": null,
     "covered": [],
@@ -2526,7 +2560,7 @@
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/3644517040082911232/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.0&uuid=usF001a1c709ee6d59c5&page_item_id=535484977",
+   "url": "https://open.app.jobrapido.com/us/3644517040082911232/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.0&uuid=usF001a1c822f3146b11&page_item_id=550304482",
    "match": {
     "pct": 100,
     "covered": [
@@ -2562,7 +2596,7 @@
    "scheduleHints": [],
    "posted": "2026-11-05T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1573846923666784256/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.3&uuid=usF001a1c709ee6d59c5&page_item_id=2108403084",
+   "url": "https://open.app.jobrapido.com/us/1573846923666784256/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.3&uuid=usF001a1c822f3146b11&page_item_id=-1208608275",
    "match": {
     "pct": null,
     "covered": [],
@@ -2596,7 +2630,7 @@
    "scheduleHints": [],
    "posted": "2026-10-30T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/2868605290817781760/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.4&uuid=usF001a1c709ee6d59c5&page_item_id=-714785132",
+   "url": "https://open.app.jobrapido.com/us/2868605290817781760/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.4&uuid=usF001a1c822f3146b11&page_item_id=-311994865",
    "match": {
     "pct": null,
     "covered": [],
@@ -2630,7 +2664,7 @@
    "scheduleHints": [],
    "posted": "2026-10-21T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7457711738457161728/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.6&uuid=usF001a1c709ee6d59c5&page_item_id=-915740699",
+   "url": "https://open.app.jobrapido.com/us/7457711738457161728/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.6&uuid=usF001a1c822f3146b11&page_item_id=913116956",
    "match": {
     "pct": null,
     "covered": [],
@@ -2639,40 +2673,6 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-10T14:46:29.626Z"
-  },
-  {
-   "id": "jr-8475567997757423616",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Registered Behavior Technician ( RBT )",
-   "company": "Abacus Therapies",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-10-31T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8475567997757423616/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.7&uuid=usF001a1c709ee6d59c5&page_item_id=769722947",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T19:52:43.074Z"
   },
   {
    "id": "jr-627649273122521088",
@@ -2700,7 +2700,7 @@
    "scheduleHints": [],
    "posted": "2026-11-03T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/627649273122521088/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.10&uuid=usF001a1c709ee6d59c5&page_item_id=352032165",
+   "url": "https://open.app.jobrapido.com/us/627649273122521088/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.10&uuid=usF001a1c822f3146b11&page_item_id=1678343373",
    "match": {
     "pct": null,
     "covered": [],
@@ -2734,7 +2734,7 @@
    "scheduleHints": [],
    "posted": "2026-11-09T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7546235309395017728/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.11&uuid=usF001a1c709ee6d59c5&page_item_id=-1653496146",
+   "url": "https://open.app.jobrapido.com/us/7546235309395017728/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.11&uuid=usF001a1c822f3146b11&page_item_id=-1222524674",
    "match": {
     "pct": null,
     "covered": [],
@@ -2768,7 +2768,7 @@
    "scheduleHints": [],
    "posted": "2026-11-09T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/316269057605107712/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.12&uuid=usF001a1c709ee6d59c5&page_item_id=-1194991763",
+   "url": "https://open.app.jobrapido.com/us/316269057605107712/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.12&uuid=usF001a1c822f3146b11&page_item_id=1513183765",
    "match": {
     "pct": null,
     "covered": [],
@@ -2802,7 +2802,7 @@
    "scheduleHints": [],
    "posted": "2026-11-09T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/5930005993122430976/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.14&uuid=usF001a1c709ee6d59c5&page_item_id=1290359519",
+   "url": "https://open.app.jobrapido.com/us/5930005993122430976/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.14&uuid=usF001a1c822f3146b11&page_item_id=-1667946000",
    "match": {
     "pct": null,
     "covered": [],
@@ -2836,7 +2836,7 @@
    "scheduleHints": [],
    "posted": "2026-11-04T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/5746754135332487168/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.15&uuid=usF001a1c709ee6d59c5&page_item_id=-1790796325",
+   "url": "https://open.app.jobrapido.com/us/5746754135332487168/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.15&uuid=usF001a1c822f3146b11&page_item_id=-2099085145",
    "match": {
     "pct": null,
     "covered": [],
@@ -2870,7 +2870,7 @@
    "scheduleHints": [],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/271335762589384704/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.16&uuid=usF001a1c709ee6d59c5&page_item_id=-1869128637",
+   "url": "https://open.app.jobrapido.com/us/271335762589384704/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.16&uuid=usF001a1c822f3146b11&page_item_id=1411907824",
    "match": {
     "pct": null,
     "covered": [],
@@ -2904,7 +2904,7 @@
    "scheduleHints": [],
    "posted": "2026-11-02T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/381810292901806080/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.17&uuid=usF001a1c709ee6d59c5&page_item_id=283916756",
+   "url": "https://open.app.jobrapido.com/us/381810292901806080/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.2.17&uuid=usF001a1c822f3146b11&page_item_id=52192576",
    "match": {
     "pct": null,
     "covered": [],
@@ -2913,108 +2913,6 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-06T23:56:47.147Z"
-  },
-  {
-   "id": "jr-424304493169999872",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Registered Behavior Technician ( RBT )",
-   "company": "Supportive ABA Therapy",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-10-29T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/424304493169999872/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.1&uuid=usF001a1c709f4926508&page_item_id=1119686943",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-05T12:13:01.965Z"
-  },
-  {
-   "id": "jr-4970000950434463744",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Behavior Technician / RBT (Bonus Opportunity)",
-   "company": "ABS Kids",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-10T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/4970000950434463744/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.2&uuid=usF001a1c709f4926508&page_item_id=-1689786921",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T14:46:29.626Z"
-  },
-  {
-   "id": "jr-6097561016755814400",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Registered Behavior Technician ( RBT )",
-   "company": "Infinity Behavior",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-03T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6097561016755814400/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.3&uuid=usF001a1c709f4926508&page_item_id=398193608",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-05T07:06:32.096Z"
   },
   {
    "id": "jr-2228916710042238976",
@@ -3040,7 +2938,7 @@
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/2228916710042238976/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.4&uuid=usF001a1c709f4926508&page_item_id=-1638416817",
+   "url": "https://open.app.jobrapido.com/us/2228916710042238976/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.1&uuid=usF001a1c822fa086b1d&page_item_id=-1155791245",
    "match": {
     "pct": null,
     "covered": [],
@@ -3049,6 +2947,40 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-09T13:17:30.907Z"
+  },
+  {
+   "id": "jr-4970000950434463744",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Behavior Technician / RBT (Bonus Opportunity)",
+   "company": "ABS Kids",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-10T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/4970000950434463744/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.2&uuid=usF001a1c822fa086b1d&page_item_id=-1500201661",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-10T14:46:29.626Z"
   },
   {
    "id": "jr-7224985499549564928",
@@ -3074,7 +3006,7 @@
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7224985499549564928/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.5&uuid=usF001a1c709f4926508&page_item_id=716119830",
+   "url": "https://open.app.jobrapido.com/us/7224985499549564928/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.3&uuid=usF001a1c822fa086b1d&page_item_id=1031427020",
    "match": {
     "pct": null,
     "covered": [],
@@ -3108,7 +3040,7 @@
    "scheduleHints": [],
    "posted": "2026-11-02T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7978709963159633920/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.6&uuid=usF001a1c709f4926508&page_item_id=144711616",
+   "url": "https://open.app.jobrapido.com/us/7978709963159633920/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.4&uuid=usF001a1c822fa086b1d&page_item_id=1685180364",
    "match": {
     "pct": null,
     "covered": [],
@@ -3117,6 +3049,74 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-08T21:58:00.051Z"
+  },
+  {
+   "id": "jr-424304493169999872",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Registered Behavior Technician ( RBT )",
+   "company": "Supportive ABA Therapy",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-10-29T04:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/424304493169999872/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.5&uuid=usF001a1c822fa086b1d&page_item_id=249891376",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-05T12:13:01.965Z"
+  },
+  {
+   "id": "jr-6097561016755814400",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Registered Behavior Technician ( RBT )",
+   "company": "Infinity Behavior",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-03T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/6097561016755814400/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.6&uuid=usF001a1c822fa086b1d&page_item_id=-140733646",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-05T07:06:32.096Z"
   },
   {
    "id": "jr-8146455855139651584",
@@ -3142,7 +3142,7 @@
    "scheduleHints": [],
    "posted": "2026-11-03T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8146455855139651584/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.7&uuid=usF001a1c709f4926508&page_item_id=-375147684",
+   "url": "https://open.app.jobrapido.com/us/8146455855139651584/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.7&uuid=usF001a1c822fa086b1d&page_item_id=-1552617887",
    "match": {
     "pct": null,
     "covered": [],
@@ -3176,7 +3176,7 @@
    "scheduleHints": [],
    "posted": "2026-11-05T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/3356540651117215744/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.8&uuid=usF001a1c709f4926508&page_item_id=-91257812",
+   "url": "https://open.app.jobrapido.com/us/3356540651117215744/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.8&uuid=usF001a1c822fa086b1d&page_item_id=-1888829535",
    "match": {
     "pct": null,
     "covered": [],
@@ -3185,74 +3185,6 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-06T23:56:47.147Z"
-  },
-  {
-   "id": "jr-694594962725011456",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Registered Behavior Technician ( RBT )",
-   "company": "Angelic Steps",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-10-30T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/694594962725011456/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.9&uuid=usF001a1c709f4926508&page_item_id=-1330929201",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-05T07:06:32.096Z"
-  },
-  {
-   "id": "jr-4985931671330095104",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "RBT (Registered Behavior Technician)",
-   "company": "Behavioralinitiatives",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-01T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/4985931671330095104/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.10&uuid=usF001a1c709f4926508&page_item_id=1235435020",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-05T12:13:01.965Z"
   },
   {
    "id": "jr-7772068022713319424",
@@ -3278,7 +3210,41 @@
    "scheduleHints": [],
    "posted": "2026-10-29T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7772068022713319424/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.11&uuid=usF001a1c709f4926508&page_item_id=1321708887",
+   "url": "https://open.app.jobrapido.com/us/7772068022713319424/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.9&uuid=usF001a1c822fa086b1d&page_item_id=-662742675",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-05T12:13:01.965Z"
+  },
+  {
+   "id": "jr-4985931671330095104",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "RBT (Registered Behavior Technician)",
+   "company": "Behavioralinitiatives",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-01T04:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/4985931671330095104/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.10&uuid=usF001a1c822fa086b1d&page_item_id=187134578",
    "match": {
     "pct": null,
     "covered": [],
@@ -3312,7 +3278,7 @@
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7155082948302077952/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.12&uuid=usF001a1c709f4926508&page_item_id=-1931125357",
+   "url": "https://open.app.jobrapido.com/us/7155082948302077952/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.11&uuid=usF001a1c822fa086b1d&page_item_id=-325028298",
    "match": {
     "pct": null,
     "covered": [],
@@ -3346,7 +3312,7 @@
    "scheduleHints": [],
    "posted": "2026-10-29T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7955761231342600192/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.13&uuid=usF001a1c709f4926508&page_item_id=-1434981244",
+   "url": "https://open.app.jobrapido.com/us/7955761231342600192/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.12&uuid=usF001a1c822fa086b1d&page_item_id=-1376059236",
    "match": {
     "pct": null,
     "covered": [],
@@ -3380,41 +3346,7 @@
    "scheduleHints": [],
    "posted": "2026-10-30T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8928182234209320960/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.14&uuid=usF001a1c709f4926508&page_item_id=-100885744",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-05T12:13:01.965Z"
-  },
-  {
-   "id": "jr-4039151004745203712",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Registered Behavior Technician ( RBT )",
-   "company": "My-Aba-Family-LL",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-01T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/4039151004745203712/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.15&uuid=usF001a1c709f4926508&page_item_id=-499761210",
+   "url": "https://open.app.jobrapido.com/us/8928182234209320960/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.13&uuid=usF001a1c822fa086b1d&page_item_id=-1425955023",
    "match": {
     "pct": null,
     "covered": [],
@@ -3448,7 +3380,7 @@
    "scheduleHints": [],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8877547524726980608/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.16&uuid=usF001a1c709f4926508&page_item_id=622722732",
+   "url": "https://open.app.jobrapido.com/us/8877547524726980608/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.14&uuid=usF001a1c822fa086b1d&page_item_id=-873579071",
    "match": {
     "pct": null,
     "covered": [],
@@ -3457,6 +3389,40 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-05T12:13:01.965Z"
+  },
+  {
+   "id": "jr-2162333034643193856",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Registered Behavior Technicians ( RBT )",
+   "company": "Neurohealth Professionals Of Florid",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-03T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/2162333034643193856/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.15&uuid=usF001a1c822fa086b1d&page_item_id=132931341",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
   },
   {
    "id": "jr-5211252802503835648",
@@ -3482,7 +3448,41 @@
    "scheduleHints": [],
    "posted": "2026-10-30T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/5211252802503835648/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.17&uuid=usF001a1c709f4926508&page_item_id=304204386",
+   "url": "https://open.app.jobrapido.com/us/5211252802503835648/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.16&uuid=usF001a1c822fa086b1d&page_item_id=1906931069",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-05T07:06:32.096Z"
+  },
+  {
+   "id": "jr-694594962725011456",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Registered Behavior Technician ( RBT )",
+   "company": "Angelic Steps",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-10-30T04:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/694594962725011456/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.3.17&uuid=usF001a1c822fa086b1d&page_item_id=696935663",
    "match": {
     "pct": null,
     "covered": [],
@@ -3516,41 +3516,7 @@
    "scheduleHints": [],
    "posted": "2026-07-25T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/734069127747993600/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.1.12&uuid=usF001a1c709fa8659fc&page_item_id=1059394143",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-04T20:53:17.870Z"
-  },
-  {
-   "id": "jr-6005600953363857408",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Behavioral Health Technician /Driver - WARM",
-   "company": "SMA Healthcare",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-10-03T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6005600953363857408/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.1.13&uuid=usF001a1c709fa8659fc&page_item_id=-733162244",
+   "url": "https://open.app.jobrapido.com/us/734069127747993600/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.1.12&uuid=usF001a1c823002a6b30&page_item_id=1979351494",
    "match": {
     "pct": null,
     "covered": [],
@@ -3584,7 +3550,41 @@
    "scheduleHints": [],
    "posted": "2026-10-03T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7084641873653923840/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.1.14&uuid=usF001a1c709fa8659fc&page_item_id=-157529795",
+   "url": "https://open.app.jobrapido.com/us/7084641873653923840/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.1.13&uuid=usF001a1c823002a6b30&page_item_id=360671716",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-04T20:53:17.870Z"
+  },
+  {
+   "id": "jr-6005600953363857408",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Behavioral Health Technician /Driver - WARM",
+   "company": "SMA Healthcare",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-10-03T04:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/6005600953363857408/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.1.14&uuid=usF001a1c823002a6b30&page_item_id=172941204",
    "match": {
     "pct": null,
     "covered": [],
@@ -3618,7 +3618,7 @@
    "scheduleHints": [],
    "posted": "2026-10-03T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/617191333773180928/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.1.15&uuid=usF001a1c709fa8659fc&page_item_id=-1194100760",
+   "url": "https://open.app.jobrapido.com/us/617191333773180928/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.1.15&uuid=usF001a1c823002a6b30&page_item_id=-61741446",
    "match": {
     "pct": null,
     "covered": [],
@@ -3652,7 +3652,7 @@
    "scheduleHints": [],
    "posted": "2026-07-25T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1052883519337922560/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.1.16&uuid=usF001a1c709fa8659fc&page_item_id=-565249742",
+   "url": "https://open.app.jobrapido.com/us/1052883519337922560/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.1.16&uuid=usF001a1c823002a6b30&page_item_id=147610189",
    "match": {
     "pct": null,
     "covered": [],
@@ -3688,7 +3688,7 @@
    "scheduleHints": [],
    "posted": "2026-10-12T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/4823772810247667712/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.0&uuid=usF001a1c70a02065a1c&page_item_id=-1121895857",
+   "url": "https://open.app.jobrapido.com/us/4823772810247667712/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.0&uuid=usF001a1c82306726b40&page_item_id=-1681025928",
    "match": {
     "pct": null,
     "covered": [],
@@ -3724,7 +3724,7 @@
    "scheduleHints": [],
    "posted": "2026-10-12T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8118137245971513344/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.2&uuid=usF001a1c70a02065a1c&page_item_id=835855903",
+   "url": "https://open.app.jobrapido.com/us/8118137245971513344/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.2&uuid=usF001a1c82306726b40&page_item_id=256042902",
    "match": {
     "pct": null,
     "covered": [],
@@ -3758,7 +3758,7 @@
    "scheduleHints": [],
    "posted": "2026-10-09T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8169423209934880768/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.6&uuid=usF001a1c70a02065a1c&page_item_id=-543187585",
+   "url": "https://open.app.jobrapido.com/us/8169423209934880768/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.6&uuid=usF001a1c82306726b40&page_item_id=592286087",
    "match": {
     "pct": null,
     "covered": [],
@@ -3793,7 +3793,7 @@
    "scheduleHints": [],
    "posted": "2026-10-24T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/5960646083653664768/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.8&uuid=usF001a1c70a02065a1c&page_item_id=-1024923526",
+   "url": "https://open.app.jobrapido.com/us/5960646083653664768/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.8&uuid=usF001a1c82306726b40&page_item_id=2019741654",
    "match": {
     "pct": null,
     "covered": [],
@@ -3827,7 +3827,7 @@
    "scheduleHints": [],
    "posted": "2026-10-30T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7716590789144346624/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.12&uuid=usF001a1c70a02065a1c&page_item_id=-339755079",
+   "url": "https://open.app.jobrapido.com/us/7716590789144346624/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.12&uuid=usF001a1c82306726b40&page_item_id=-869077257",
    "match": {
     "pct": null,
     "covered": [],
@@ -3838,41 +3838,7 @@
    "firstSeen": "2026-11-05T01:59:41.906Z"
   },
   {
-   "id": "jr-7565860939115790336",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Behavior Technician",
-   "company": "Puzzle-Box-Academy-2",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-10-30T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7565860939115790336/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.13&uuid=usF001a1c70a02065a1c&page_item_id=1009309258",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-08T21:58:00.051Z"
-  },
-  {
-   "id": "jr-7774045769253781504",
+   "id": "jr-7847959338919395328",
    "source": "Jobrapido",
    "sourceKey": "jobrapido",
    "direct": false,
@@ -3893,9 +3859,9 @@
    "afternoon": 0,
    "shift": null,
    "scheduleHints": [],
-   "posted": "2026-11-02T05:00:00.000Z",
+   "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7774045769253781504/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.15&uuid=usF001a1c70a02065a1c&page_item_id=-1531501631",
+   "url": "https://open.app.jobrapido.com/us/7847959338919395328/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.13&uuid=usF001a1c82306726b40&page_item_id=-669201235",
    "match": {
     "pct": null,
     "covered": [],
@@ -3903,7 +3869,7 @@
     "variant": "master",
     "variantLabel": "Master"
    },
-   "firstSeen": "2026-11-10T04:36:51.237Z",
+   "firstSeen": "2026-11-11T00:58:34.726Z",
    "alsoOn": []
   },
   {
@@ -3930,7 +3896,7 @@
    "scheduleHints": [],
    "posted": "2026-11-02T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7641644778060251136/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.16&uuid=usF001a1c70a02065a1c&page_item_id=2049483779",
+   "url": "https://open.app.jobrapido.com/us/7641644778060251136/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.15&uuid=usF001a1c82306726b40&page_item_id=468815403",
    "match": {
     "pct": null,
     "covered": [],
@@ -3964,7 +3930,109 @@
    "scheduleHints": [],
    "posted": "2026-10-26T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/2929452539176812544/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.17&uuid=usF001a1c70a02065a1c&page_item_id=-164584024",
+   "url": "https://open.app.jobrapido.com/us/2929452539176812544/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.16&uuid=usF001a1c82306726b40&page_item_id=-1192858444",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-05T01:59:41.906Z"
+  },
+  {
+   "id": "jr-7565860939115790336",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Behavior Technician",
+   "company": "Puzzle-Box-Academy-2",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-10-30T04:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/7565860939115790336/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.2.17&uuid=usF001a1c82306726b40&page_item_id=847358405",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-08T21:58:00.051Z"
+  },
+  {
+   "id": "jr-6139996771109044224",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Behavior Technician (BT) / Registered Behavior Technician (RBT)",
+   "company": "BlueSprig",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-07T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/6139996771109044224/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.1&uuid=usF001a1c8230d066b6c&page_item_id=-1832881349",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-09T23:31:10.320Z"
+  },
+  {
+   "id": "jr-873621844006010880",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Behavior Technician (BT) or Registered Behavior Technician (RBT)",
+   "company": "Acceptance LLC",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-02T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/873621844006010880/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.2&uuid=usF001a1c8230d066b6c&page_item_id=-1034298970",
    "match": {
     "pct": null,
     "covered": [],
@@ -3998,7 +4066,7 @@
    "scheduleHints": [],
    "posted": "2026-11-05T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/3776030725392826368/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.1&uuid=usF001a1c70a080f5a30&page_item_id=-1450524003",
+   "url": "https://open.app.jobrapido.com/us/3776030725392826368/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.3&uuid=usF001a1c8230d066b6c&page_item_id=487059203",
    "match": {
     "pct": null,
     "covered": [],
@@ -4007,278 +4075,6 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-06T23:56:47.147Z"
-  },
-  {
-   "id": "jr-873621844006010880",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Behavior Technician (BT) or Registered Behavior Technician (RBT)",
-   "company": "Acceptance LLC",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-02T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/873621844006010880/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.2&uuid=usF001a1c70a080f5a30&page_item_id=-1453764037",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-05T01:59:41.906Z"
-  },
-  {
-   "id": "jr-6139996771109044224",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Behavior Technician (BT) / Registered Behavior Technician (RBT)",
-   "company": "BlueSprig",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-07T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6139996771109044224/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.3&uuid=usF001a1c70a080f5a30&page_item_id=-301747978",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-09T23:31:10.320Z"
-  },
-  {
-   "id": "jr-2853912654374764544",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Registered behavior technician",
-   "company": "New Patterns ABA FL",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-02T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/2853912654374764544/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.4&uuid=usF001a1c70a080f5a30&page_item_id=1416554562",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T19:52:43.074Z"
-  },
-  {
-   "id": "jr-2517972269670596608",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Registered Behavior Technician",
-   "company": "Behavioral Progression, Inc.",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-03T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/2517972269670596608/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.7&uuid=usF001a1c70a080f5a30&page_item_id=533907145",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T19:52:43.074Z"
-  },
-  {
-   "id": "jr-8186567688588361728",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Registered Behavior Technician",
-   "company": "H2 Health",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-02T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8186567688588361728/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.9&uuid=usF001a1c70a080f5a30&page_item_id=-2027205455",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T19:52:43.074Z"
-  },
-  {
-   "id": "jr-6777168054372532224",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "RBT (Registered Behavior Technician )",
-   "company": "Puzzle-Box-Academy-2",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-10-30T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6777168054372532224/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.11&uuid=usF001a1c70a080f5a30&page_item_id=1726300877",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T14:46:29.626Z"
-  },
-  {
-   "id": "jr-2941580289870135296",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Registered Behavior Technician",
-   "company": "Cultivate BHE",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-01T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/2941580289870135296/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.12&uuid=usF001a1c70a080f5a30&page_item_id=-509887121",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T19:52:43.074Z"
-  },
-  {
-   "id": "jr-7652097835105517568",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Registered Behavior Technician",
-   "company": "Cultivate-Behavioral-Health-",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-10-31T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7652097835105517568/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.13&uuid=usF001a1c70a080f5a30&page_item_id=-44228071",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T14:46:29.626Z"
   },
   {
    "id": "jr-8626876465780097024",
@@ -4304,7 +4100,7 @@
    "scheduleHints": [],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8626876465780097024/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.14&uuid=usF001a1c70a080f5a30&page_item_id=388010458",
+   "url": "https://open.app.jobrapido.com/us/8626876465780097024/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.4&uuid=usF001a1c8230d066b6c&page_item_id=1331382928",
    "match": {
     "pct": null,
     "covered": [],
@@ -4338,7 +4134,7 @@
    "scheduleHints": [],
    "posted": "2026-10-30T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7304776680420147200/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.15&uuid=usF001a1c70a080f5a30&page_item_id=1890361407",
+   "url": "https://open.app.jobrapido.com/us/7304776680420147200/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.5&uuid=usF001a1c8230d066b6c&page_item_id=-575665948",
    "match": {
     "pct": null,
     "covered": [],
@@ -4349,12 +4145,182 @@
    "firstSeen": "2026-11-10T19:52:43.074Z"
   },
   {
-   "id": "jr-5369249187441410048",
+   "id": "jr-2517972269670596608",
    "source": "Jobrapido",
    "sourceKey": "jobrapido",
    "direct": false,
    "title": "Registered Behavior Technician",
-   "company": "Applied ABC",
+   "company": "Behavioral Progression, Inc.",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-03T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/2517972269670596608/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.6&uuid=usF001a1c8230d066b6c&page_item_id=1729020011",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-10T19:52:43.074Z"
+  },
+  {
+   "id": "jr-8186567688588361728",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Registered Behavior Technician",
+   "company": "H2 Health",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-02T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/8186567688588361728/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.7&uuid=usF001a1c8230d066b6c&page_item_id=1855939280",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-10T19:52:43.074Z"
+  },
+  {
+   "id": "jr-5698214648336089088",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Registered Behavior Technician (RBT)",
+   "company": "Vital Skills Center",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-06T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/5698214648336089088/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.12&uuid=usF001a1c8230d066b6c&page_item_id=-655301659",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
+  },
+  {
+   "id": "jr-5965888177137778688",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Registered Behavior Technician",
+   "company": "CONSUMER DIRECTED SERVICES INC.",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-01T04:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/5965888177137778688/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.13&uuid=usF001a1c8230d066b6c&page_item_id=461712552",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
+  },
+  {
+   "id": "jr-2772852259128606720",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Registered Behavior Technician",
+   "company": "Look Up Therapy LLC",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-01T04:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/2772852259128606720/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.14&uuid=usF001a1c8230d066b6c&page_item_id=955636680",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
+  },
+  {
+   "id": "jr-954730617763790848",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Registered Behavior Technician (RBT)",
+   "company": "Professional Therapy Solutions",
    "location": "Miami, FL",
    "area": "miami-dade",
    "fromMiami": 0,
@@ -4372,7 +4338,7 @@
    "scheduleHints": [],
    "posted": "2026-10-30T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/5369249187441410048/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.16&uuid=usF001a1c70a080f5a30&page_item_id=1173950740",
+   "url": "https://open.app.jobrapido.com/us/954730617763790848/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.16&uuid=usF001a1c8230d066b6c&page_item_id=-695477525",
    "match": {
     "pct": null,
     "covered": [],
@@ -4380,7 +4346,41 @@
     "variant": "master",
     "variantLabel": "Master"
    },
-   "firstSeen": "2026-11-10T19:52:43.074Z"
+   "firstSeen": "2026-11-11T00:58:34.726Z"
+  },
+  {
+   "id": "jr-445247715777970176",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "RBT (Registered Behavior Technician )",
+   "company": "Puzzle Box Academy",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-10-30T04:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/445247715777970176/?w=behavior%20technician&l=miami,%20fl&oc=sponsored&k=web.1.3.17&uuid=usF001a1c8230d066b6c&page_item_id=546916870",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
   },
   {
    "id": "jr-6266050041157255168",
@@ -4406,7 +4406,7 @@
    "scheduleHints": [],
    "posted": "2026-10-28T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6266050041157255168/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.0&uuid=usF001a1c70a0ecd5a53&page_item_id=-1928098079",
+   "url": "https://open.app.jobrapido.com/us/6266050041157255168/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.0&uuid=usF001a1c82312aa58e9&page_item_id=487164055",
    "match": {
     "pct": null,
     "covered": [],
@@ -4440,75 +4440,7 @@
    "scheduleHints": [],
    "posted": "2026-11-02T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6122136201148235776/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.6&uuid=usF001a1c70a0ecd5a53&page_item_id=-521221269",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-04T20:53:17.870Z"
-  },
-  {
-   "id": "jr-1215839615471058944",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Flexible RBT ABA Therapist — School & Home",
-   "company": "Abasolutionsinc",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-10-31T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1215839615471058944/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.9&uuid=usF001a1c70a0ecd5a53&page_item_id=1260918304",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-04T20:53:17.870Z"
-  },
-  {
-   "id": "jr-8024256132828626944",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Flexible ABA Therapist (RBT) One-on-One Therapy",
-   "company": "BEANS BEHAVIOR ANALYSIS SERVICES",
-   "location": "Miami, FL",
-   "area": "miami-dade",
-   "fromMiami": 0,
-   "fromDavie": 21,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-02T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8024256132828626944/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.10&uuid=usF001a1c70a0ecd5a53&page_item_id=198884811",
+   "url": "https://open.app.jobrapido.com/us/6122136201148235776/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.6&uuid=usF001a1c82312aa58e9&page_item_id=61490490",
    "match": {
     "pct": null,
     "covered": [],
@@ -4542,7 +4474,7 @@
    "scheduleHints": [],
    "posted": "2026-10-29T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/9129059435191205888/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.11&uuid=usF001a1c70a0ecd5a53&page_item_id=1616254634",
+   "url": "https://open.app.jobrapido.com/us/9129059435191205888/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.8&uuid=usF001a1c82312aa58e9&page_item_id=-1068967159",
    "match": {
     "pct": null,
     "covered": [],
@@ -4553,12 +4485,12 @@
    "firstSeen": "2026-11-03T15:14:07.053Z"
   },
   {
-   "id": "jr-7308977089716158464",
+   "id": "jr-1215839615471058944",
    "source": "Jobrapido",
    "sourceKey": "jobrapido",
    "direct": false,
-   "title": "1:1 ABA Therapist (RBT) | Flexible Hours, Growth",
-   "company": "Arise Autism Center, LLC",
+   "title": "Flexible RBT ABA Therapist — School & Home",
+   "company": "Abasolutionsinc",
    "location": "Miami, FL",
    "area": "miami-dade",
    "fromMiami": 0,
@@ -4571,12 +4503,12 @@
    "jobTypes": [],
    "setting": [],
    "bilingual": false,
-   "afternoon": 1,
+   "afternoon": 0,
    "shift": null,
    "scheduleHints": [],
-   "posted": "2026-11-06T05:00:00.000Z",
+   "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7308977089716158464/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.12&uuid=usF001a1c70a0ecd5a53&page_item_id=-901974784",
+   "url": "https://open.app.jobrapido.com/us/1215839615471058944/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.9&uuid=usF001a1c82312aa58e9&page_item_id=-669989474",
    "match": {
     "pct": null,
     "covered": [],
@@ -4584,7 +4516,41 @@
     "variant": "master",
     "variantLabel": "Master"
    },
-   "firstSeen": "2026-11-06T23:56:47.147Z"
+   "firstSeen": "2026-11-04T20:53:17.870Z"
+  },
+  {
+   "id": "jr-8024256132828626944",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Flexible ABA Therapist (RBT) One-on-One Therapy",
+   "company": "BEANS BEHAVIOR ANALYSIS SERVICES",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-02T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/8024256132828626944/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.10&uuid=usF001a1c82312aa58e9&page_item_id=1943701463",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-04T20:53:17.870Z"
   },
   {
    "id": "jr-6323184101310332928",
@@ -4610,7 +4576,7 @@
    "scheduleHints": [],
    "posted": "2026-11-01T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6323184101310332928/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.13&uuid=usF001a1c70a0ecd5a53&page_item_id=-1906742850",
+   "url": "https://open.app.jobrapido.com/us/6323184101310332928/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.12&uuid=usF001a1c82312aa58e9&page_item_id=219877833",
    "match": {
     "pct": null,
     "covered": [],
@@ -4619,6 +4585,40 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-04T20:53:17.870Z"
+  },
+  {
+   "id": "jr-7308977089716158464",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "1:1 ABA Therapist (RBT) | Flexible Hours, Growth",
+   "company": "Arise Autism Center, LLC",
+   "location": "Miami, FL",
+   "area": "miami-dade",
+   "fromMiami": 0,
+   "fromDavie": 21,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 1,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-06T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/7308977089716158464/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.13&uuid=usF001a1c82312aa58e9&page_item_id=1654265729",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-06T23:56:47.147Z"
   },
   {
    "id": "jr-4407343638904832000",
@@ -4644,7 +4644,7 @@
    "scheduleHints": [],
    "posted": "2026-11-02T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/4407343638904832000/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.14&uuid=usF001a1c70a0ecd5a53&page_item_id=-229757173",
+   "url": "https://open.app.jobrapido.com/us/4407343638904832000/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.14&uuid=usF001a1c82312aa58e9&page_item_id=-974583215",
    "match": {
     "pct": null,
     "covered": [],
@@ -4680,7 +4680,7 @@
    "scheduleHints": [],
    "posted": "2026-10-18T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/2857881822631559168/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.15&uuid=usF001a1c70a0ecd5a53&page_item_id=420669517",
+   "url": "https://open.app.jobrapido.com/us/2857881822631559168/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.15&uuid=usF001a1c82312aa58e9&page_item_id=333269243",
    "match": {
     "pct": null,
     "covered": [],
@@ -4714,7 +4714,7 @@
    "scheduleHints": [],
    "posted": "2026-11-01T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/4916804550658097152/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.16&uuid=usF001a1c70a0ecd5a53&page_item_id=523643381",
+   "url": "https://open.app.jobrapido.com/us/4916804550658097152/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.16&uuid=usF001a1c82312aa58e9&page_item_id=1350266968",
    "match": {
     "pct": null,
     "covered": [],
@@ -4748,7 +4748,7 @@
    "scheduleHints": [],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8527926191716302848/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.17&uuid=usF001a1c70a0ecd5a53&page_item_id=-704672977",
+   "url": "https://open.app.jobrapido.com/us/8527926191716302848/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.1.17&uuid=usF001a1c82312aa58e9&page_item_id=1946633685",
    "match": {
     "pct": null,
     "covered": [],
@@ -4786,7 +4786,7 @@
    ],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/3565880518220185600/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.0&uuid=usF001a1c70a14d86586&page_item_id=1346314636",
+   "url": "https://open.app.jobrapido.com/us/3565880518220185600/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.0&uuid=usF001a1c82318e758f5&page_item_id=-1678652740",
    "match": {
     "pct": null,
     "covered": [],
@@ -4820,7 +4820,7 @@
    "scheduleHints": [],
    "posted": "2026-10-24T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/3078994366891556864/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.1&uuid=usF001a1c70a14d86586&page_item_id=-412051474",
+   "url": "https://open.app.jobrapido.com/us/3078994366891556864/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.2&uuid=usF001a1c82318e758f5&page_item_id=-257363850",
    "match": {
     "pct": null,
     "covered": [],
@@ -4854,7 +4854,7 @@
    "scheduleHints": [],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/4264190248625373184/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.4&uuid=usF001a1c70a14d86586&page_item_id=1215188664",
+   "url": "https://open.app.jobrapido.com/us/4264190248625373184/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.3&uuid=usF001a1c82318e758f5&page_item_id=1126519421",
    "match": {
     "pct": null,
     "covered": [],
@@ -4888,7 +4888,7 @@
    "scheduleHints": [],
    "posted": "2026-10-29T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1820561664899022848/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.5&uuid=usF001a1c70a14d86586&page_item_id=1638633101",
+   "url": "https://open.app.jobrapido.com/us/1820561664899022848/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.5&uuid=usF001a1c82318e758f5&page_item_id=-1890401550",
    "match": {
     "pct": null,
     "covered": [],
@@ -4922,7 +4922,7 @@
    "scheduleHints": [],
    "posted": "2026-11-04T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/9181030326179201024/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.7&uuid=usF001a1c70a14d86586&page_item_id=591077214",
+   "url": "https://open.app.jobrapido.com/us/9181030326179201024/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.6&uuid=usF001a1c82318e758f5&page_item_id=97962325",
    "match": {
     "pct": null,
     "covered": [],
@@ -4958,7 +4958,7 @@
    "scheduleHints": [],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6893008201428500480/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.9&uuid=usF001a1c70a14d86586&page_item_id=1423450521",
+   "url": "https://open.app.jobrapido.com/us/6893008201428500480/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.9&uuid=usF001a1c82318e758f5&page_item_id=1857899077",
    "match": {
     "pct": 0,
     "covered": [],
@@ -4994,7 +4994,7 @@
    "scheduleHints": [],
    "posted": "2026-11-02T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7277309505568768000/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.10&uuid=usF001a1c70a14d86586&page_item_id=-1398731903",
+   "url": "https://open.app.jobrapido.com/us/7277309505568768000/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.14&uuid=usF001a1c82318e758f5&page_item_id=-1916250798",
    "match": {
     "pct": null,
     "covered": [],
@@ -5030,7 +5030,7 @@
    "scheduleHints": [],
    "posted": "2026-10-29T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6713581922548711424/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.15&uuid=usF001a1c70a14d86586&page_item_id=-345079797",
+   "url": "https://open.app.jobrapido.com/us/6713581922548711424/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.15&uuid=usF001a1c82318e758f5&page_item_id=181815291",
    "match": {
     "pct": null,
     "covered": [],
@@ -5066,7 +5066,7 @@
    "scheduleHints": [],
    "posted": "2026-10-30T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7152766998856859648/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.16&uuid=usF001a1c70a14d86586&page_item_id=-1218153333",
+   "url": "https://open.app.jobrapido.com/us/7152766998856859648/?w=aba%20therapist&l=miami,%20fl&oc=sponsored&k=web.1.2.16&uuid=usF001a1c82318e758f5&page_item_id=-1771043315",
    "match": {
     "pct": null,
     "covered": [],
@@ -5100,7 +5100,7 @@
    "scheduleHints": [],
    "posted": "2026-11-04T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1308034490093797376/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.1.14&uuid=usF001a1c70a2c115ad3&page_item_id=-10395036",
+   "url": "https://open.app.jobrapido.com/us/1308034490093797376/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.1.14&uuid=usF001a1c823271b6ba6&page_item_id=-1854514753",
    "match": {
     "pct": null,
     "covered": [],
@@ -5153,7 +5153,10 @@
     "variant": "clinic",
     "variantLabel": "Clinic"
    },
-   "firstSeen": "2026-11-06T13:43:53.922Z"
+   "firstSeen": "2026-11-06T13:43:53.922Z",
+   "alsoOn": [
+    "Talent.com"
+   ]
   },
   {
    "id": "sh-9d-gjLT_fptBUlRfph47YeJhRQnLXRXu06EnV8C48GRpOe8SFB4m6g",
@@ -5415,12 +5418,12 @@
     "clinic"
    ],
    "bilingual": false,
-   "afternoon": 1,
+   "afternoon": 0,
    "shift": null,
    "scheduleHints": [],
    "posted": "2026-10-29T23:21:23.000Z",
    "snippet": "Job Description Job Description Build Your Career in ABA with Behavior ACC Services! At Behavior ACC Services, we're looking for individuals who are passionate about making a meaningful impact and are excited to build a long-term career in Applied Behavior Analysis. Whether you're a newly certified RBT eager to learn, currently pursuing your BCBA certification, or planning to take that next step in the future, we provide an environment where growth, mentorship, and clinical excellence are value…",
-   "url": "https://www.adzuna.com/land/ad/5946477453?se=-tG2V0Dd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=83068D6C95AAC2B77DC378F4B3E5413A31CD75CC",
+   "url": "https://www.adzuna.com/land/ad/5946477453?se=ZOY5HGvd8RGW67hsumO50A&utm_medium=api&utm_source=91329da2&v=83068D6C95AAC2B77DC378F4B3E5413A31CD75CC",
    "match": {
     "pct": 88,
     "covered": [
@@ -5440,7 +5443,6 @@
    },
    "firstSeen": "2026-11-10T19:52:43.074Z",
    "alsoOn": [
-    "SimplyHired / Indeed",
     "Talent.com",
     "Jobrapido"
    ]
@@ -5471,7 +5473,7 @@
    "scheduleHints": [],
    "posted": "2026-11-08T23:30:29.000Z",
    "snippet": "Job Description Job Description A Full-Time ABA teacher’s primary job responsibility is to implement curriculum programs & behavior intervention for children, adolescence and young adults with autism spectrum disorder and other disabilities. The Full-Time teacher also assists in data collection, graphing, planning and leading small group instruction, lesson planning, and adaptation of the education program to enable students to benefit from educational experiences. The Full-Time ABA Teacher imp…",
-   "url": "https://www.adzuna.com/land/ad/5958707962?se=4Oj9WUDd8RG2ju3U9MuxdQ&utm_medium=api&utm_source=91329da2&v=D9F1D15013108DDADA3CFC2BE0F81C7372C3CF26",
+   "url": "https://www.adzuna.com/land/ad/5958707962?se=uAhOHmvd8RGW67hsumO50A&utm_medium=api&utm_source=91329da2&v=D9F1D15013108DDADA3CFC2BE0F81C7372C3CF26",
    "match": {
     "pct": 50,
     "covered": [
@@ -6166,10 +6168,7 @@
     "variant": "master",
     "variantLabel": "Master"
    },
-   "firstSeen": "2026-11-10T14:46:29.626Z",
-   "alsoOn": [
-    "Jobrapido"
-   ]
+   "firstSeen": "2026-11-10T14:46:29.626Z"
   },
   {
    "id": "sh-Vre42-VQX2ni0rXEHON_CANko9kOVR8XhMgEKRWIYZHlDVTSWFs1PQ",
@@ -6399,9 +6398,7 @@
     "variantLabel": "School-based"
    },
    "firstSeen": "2026-11-08T06:38:22.233Z",
-   "alsoOn": [
-    "SimplyHired / Indeed"
-   ]
+   "alsoOn": []
   },
   {
    "id": "sh-oxokeVvB-DDRB7QQ6wOcZZ5rwJkpOu8YgFkjKk8T2g4Gtzb98UYlvQ",
@@ -7112,44 +7109,6 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-03T10:08:04.172Z"
-  },
-  {
-   "id": "sh-8WSkK6gHcUkN2ivLSktrClR4UxcR76nyB7_vRPWiMPJC6Sth4FiphQ",
-   "source": "SimplyHired / Indeed",
-   "sourceKey": "simplyhired",
-   "direct": false,
-   "title": "Behavioral Health Technician",
-   "company": "Here's Help Inc.",
-   "location": "Opa-locka, FL",
-   "area": "miami-dade",
-   "fromMiami": 11,
-   "fromDavie": 11,
-   "payText": "$18 - $20 an hour",
-   "payMin": 18,
-   "payMax": 20,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [
-    "full-time"
-   ],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-08-12T21:20:14.101Z",
-   "snippet": "Now Hiring: Full-Time and Part -Time Behavioral Health Technician (BHT) \nWe are seeking for an experienced Behavioral Health Technicians for various shifts at an all-male substance abuse treatment facility .\nDue to the nature of the program and client privacy considerations, male staff are required for this position .\nResponsibilities include: \n• Ensuring client safety and supervision\n• Supporting clients in daily programming\n• Maintaining accurate documentation\n• Upholding facility policies and structure\n Qualifications: \n• Experience in behavioral health or substance abuse treatment preferre",
-   "url": "https://www.simplyhired.com/job/8WSkK6gHcUkN2ivLSktrClR4UxcR76nyB7_vRPWiMPJC6Sth4FiphQ",
-   "match": {
-    "pct": 100,
-    "covered": [
-     "Session notes / documentation"
-    ],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T19:52:43.074Z"
   },
   {
    "id": "sh-0SQPehMv0mNPG37JJrTsERJbJuJ3yTDx_jcvEZ3N4WOJHmtHw4Kp0g",
@@ -8022,7 +7981,7 @@
    "scheduleHints": [],
    "posted": "2026-10-30T11:29:18.000Z",
    "snippet": "Job Description Job Description This job will be located in Miami, FL A Full-Time ABA teacher’s primary job responsibility is to implement curriculum programs & behavior intervention for children, adolescence and young adults with autism spectrum disorder and other disabilities. The Full-Time teacher also assists in data collection, graphing, planning and leading small group instruction, lesson planning, and adaptation of the education program to enable students to benefit from educational expe…",
-   "url": "https://www.adzuna.com/land/ad/5947047722?se=4Oj9WUDd8RG2ju3U9MuxdQ&utm_medium=api&utm_source=91329da2&v=0730005DFA3BFC366AF2D395269B82C70F5B76A2",
+   "url": "https://www.adzuna.com/land/ad/5947047722?se=uAhOHmvd8RGW67hsumO50A&utm_medium=api&utm_source=91329da2&v=0730005DFA3BFC366AF2D395269B82C70F5B76A2",
    "match": {
     "pct": 50,
     "covered": [
@@ -8603,6 +8562,49 @@
    "firstSeen": "2026-11-10T14:46:29.626Z"
   },
   {
+   "id": "li-4487828857",
+   "source": "LinkedIn",
+   "sourceKey": "linkedin",
+   "direct": false,
+   "title": "BEHAVIORAL TECHNICIAN",
+   "company": "Broward County Public Schools",
+   "location": "Hollywood, FL",
+   "area": "broward",
+   "fromMiami": 17,
+   "fromDavie": 6,
+   "payText": "",
+   "payMin": 21.13,
+   "payMax": 31.92,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "full-time"
+   ],
+   "setting": [],
+   "bilingual": true,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-10T00:00:00.000Z",
+   "snippet": "Requisition ID: 25402\n Work Location: HOLLYWOOD CENTRAL ELEMENTARY\n City: HOLLYWOOD\n POSITION GOAL\n Assist in developing appropriate responses from designated students requiring behavior intervention by implementing specific plans on an individual, small group, or classroom basis, as appropriate, to ensure the safety and dignity of students and staff.\n Essential Performance Responsibilities\n The Behavioral Technician shall carry out the performance responsibilities listed below.\n • Collect data within the school environment. \n• Assist in data-gathering for Functional Behavior Assessments. \n• A",
+   "url": "https://www.linkedin.com/jobs/view/4487828857",
+   "match": {
+    "pct": 80,
+    "covered": [
+     "Data collection",
+     "Bilingual Spanish",
+     "Crisis / safety / de-escalation",
+     "Microsoft Office / technology"
+    ],
+    "missing": [
+     "Group / classroom"
+    ],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
+  },
+  {
    "id": "adp-9202631561179_4",
    "source": "LaCosta Therapy (company site)",
    "sourceKey": "adp",
@@ -8715,7 +8717,10 @@
     "variant": "master",
     "variantLabel": "Master"
    },
-   "firstSeen": "2026-11-09T08:11:08.398Z"
+   "firstSeen": "2026-11-09T08:11:08.398Z",
+   "alsoOn": [
+    "Talent.com"
+   ]
   },
   {
    "id": "pbs-1118691",
@@ -8816,6 +8821,55 @@
     "variantLabel": "School-based"
    },
    "firstSeen": "2026-11-10T04:36:51.237Z"
+  },
+  {
+   "id": "sh-c3fhGoNa9MQh2cpbeGJVL9kato3c_gnZTcd7dv61nVRA20r9Asnkxw",
+   "source": "SimplyHired / Indeed",
+   "sourceKey": "simplyhired",
+   "direct": false,
+   "title": "Behavioral Health Tech",
+   "company": "Westcare",
+   "location": "Pembroke Pines, FL",
+   "area": "broward",
+   "fromMiami": 17,
+   "fromDavie": 5,
+   "payText": "$18 - $20 an hour",
+   "payMin": 18,
+   "payMax": 20,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "full-time"
+   ],
+   "setting": [
+    "clinic"
+   ],
+   "bilingual": true,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-06-11T18:00:04.500Z",
+   "snippet": "https://info.flclearinghouse.com\nPosition Summary: \nResponsible for the supervision of all behavioral health technician job functions in the environment and for providing sufficient work crews, off facility trips, and coordination of all activities and functions in the Point Office. Responsible for all interactions with consumers.\nEssential Job Functions: \n • \nAssist medical staff with supervising observed, self-medication procedure and obtaining consumers prescriptions.\n• \nAssist medical staff with coordinating consumer trips to hospital, doctor's appointments, etc.\n• \nCommunicate with Medica",
+   "url": "https://www.simplyhired.com/job/c3fhGoNa9MQh2cpbeGJVL9kato3c_gnZTcd7dv61nVRA20r9Asnkxw",
+   "match": {
+    "pct": 78,
+    "covered": [
+     "Driver's license / transportation",
+     "Data collection",
+     "HIPAA",
+     "Bilingual Spanish",
+     "Crisis / safety / de-escalation",
+     "Bachelor's degree",
+     "Microsoft Office / technology"
+    ],
+    "missing": [
+     "CPR / First Aid",
+     "Adolescents / teens"
+    ],
+    "variant": "clinic",
+    "variantLabel": "Clinic"
+   },
+   "firstSeen": "2026-11-08T06:38:22.233Z"
   },
   {
    "id": "pbs-1118672",
@@ -8971,7 +9025,7 @@
    "scheduleHints": [],
    "posted": "2026-11-09T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7903548550875709440/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.2&uuid=usF001a1c709e7ef64ce&page_item_id=-1173583472",
+   "url": "https://open.app.jobrapido.com/us/7903548550875709440/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.2&uuid=usF001a1c822ec4b6afb&page_item_id=-1395651857",
    "match": {
     "pct": null,
     "covered": [],
@@ -9005,7 +9059,7 @@
    "scheduleHints": [],
    "posted": "2026-11-09T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6802483313169661952/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.4&uuid=usF001a1c709e7ef64ce&page_item_id=1194615224",
+   "url": "https://open.app.jobrapido.com/us/6802483313169661952/?w=rbt&l=miami,%20fl&oc=sponsored&k=web.1.1.4&uuid=usF001a1c822ec4b6afb&page_item_id=-1456956534",
    "match": {
     "pct": null,
     "covered": [],
@@ -9308,6 +9362,52 @@
    "firstSeen": "2026-11-07T20:20:26.834Z"
   },
   {
+   "id": "jsr-VEp3ZVZIWWNKU0VHZ0hNb0FBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxZbmRXTm5oMUxWVkVaM001YzBaVk1FcHhjWGg1TjBRNWJreDNWUzFyZEc0MVRYUjRVazgxYmtOT2RGYzVhMlUzUXpGelVsUldiVzFXUmxjNGNqTlpjM1I0VDA1ME1EVmlWbWhGUkZkM0xUWjZhMFpWU2xSZk1IUnNlSGMwWm5jellrbFBiak5tTFdKeVFrZzNhRzFXVjJOQmNYb3RjVm94WDNSMk9VUnlNRWxxYzA5UU1sb1NGek55TTNwaGRVZExSbUZtVVRWT2IxQjBYM2xrYzFGRkdpSkJTRTR3UlRkSFgwSnJWME4wTlY5c2RGTXhVWEJPUkROcFZXTnJYME5oVlVSQjoyM2MyOWYyOQ",
+   "source": "Google Jobs · Indeed",
+   "sourceKey": "jsearch",
+   "direct": false,
+   "title": "Registered Behavior Technician-South Florida",
+   "company": "Behavior Momentum, LLC",
+   "location": "Pembroke Pines, FL",
+   "area": "broward",
+   "fromMiami": 18,
+   "fromDavie": 5,
+   "payText": "$20 - $24 per hour",
+   "payMin": 20,
+   "payMax": 24,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "full-time"
+   ],
+   "setting": [
+    "school"
+   ],
+   "bilingual": false,
+   "afternoon": 1,
+   "shift": "both",
+   "scheduleHints": [
+    "8 AM–6 PM"
+   ],
+   "posted": "2026-11-10T17:00:00.000Z",
+   "snippet": "We’re Hiring: Registered Behavior Technicians (RBT)\n\nLocations: Davie, Plantation, Sunrise, Miramar, Pembroke Pines, Hollywood\n\nWhat You’ll Be Doing:\n\n• Work 1:1 with children in schools and homes\n\n• Help children reach their goals using proven behavior analytic strategies\n\n• Collect data and make a real difference\n\nWhy You’ll Love It:\n\n• Great Pay\n\n• No Nights, No Weekends: Monday–Friday, 8 AM–6 PM\n\n• Career Growth: Paid training and BCBA mentorship opportunities\n\n• Supportive Team: We’ve got your back\n\n• Real Impact: Help kids thrive\n\nWhat We’re Looking For:\n\n• Passion for helping kids grow\n",
+   "url": "https://www.indeed.com/viewjob?jk=3dd51087deb2d7fc",
+   "match": {
+    "pct": 100,
+    "covered": [
+     "RBT certification",
+     "Data collection",
+     "BCBA supervision",
+     "Bachelor's degree",
+     "Psychology background"
+    ],
+    "missing": [],
+    "variant": "school",
+    "variantLabel": "School-based"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
+  },
+  {
    "id": "sh-57XIKglLfUclcMCCnwoQF5Ko1L0V7JwXyZ9Cc89UZnnzZDoBx9WVMg",
    "source": "SimplyHired / Indeed",
    "sourceKey": "simplyhired",
@@ -9352,44 +9452,6 @@
    "alsoOn": [
     "Talent.com"
    ]
-  },
-  {
-   "id": "sh-c3fhGoNa9MQh2cpbeGJVL9kato3c_gnZTcd7dv61nVRA20r9Asnkxw",
-   "source": "SimplyHired / Indeed",
-   "sourceKey": "simplyhired",
-   "direct": false,
-   "title": "Behavioral Health Tech",
-   "company": "Westcare",
-   "location": "Pembroke Pines, FL",
-   "area": "broward",
-   "fromMiami": 18,
-   "fromDavie": 5,
-   "payText": "$18 - $20 an hour",
-   "payMin": 18,
-   "payMax": 20,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [
-    "full-time"
-   ],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-06-11T18:00:04.500Z",
-   "snippet": "Valid driver’s license and ability to obtain and maintain WestCare’s vehicle insurance is required. Behavioral Health Technician certification, or actively…",
-   "url": "https://www.simplyhired.com/job/c3fhGoNa9MQh2cpbeGJVL9kato3c_gnZTcd7dv61nVRA20r9Asnkxw",
-   "match": {
-    "pct": 100,
-    "covered": [
-     "Driver's license / transportation"
-    ],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-08T06:38:22.233Z"
   },
   {
    "id": "pbs-1007172",
@@ -9519,7 +9581,7 @@
    "scheduleHints": [],
    "posted": "2026-11-10T11:19:01.000Z",
    "snippet": "Job Description Job Description Are you passionate about working with children on the autism spectrum? Abacus Therapies in Hollywood, FL, is seeking dedicated part-time and full-time RBTs to join our growing team. Abacus Therapies provides in-home and in-school ABA therapy for neurodivergent children, helping them build essential life skills with the support of our experienced BCBAs and RBTs. Our mission is to empower not just the children, but also their families through compassionate and evid…",
-   "url": "https://www.adzuna.com/land/ad/5960495112?se=-tG2V0Dd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=DB5B39583CD84A38467076EC045993E202EEFA77",
+   "url": "https://www.adzuna.com/land/ad/5960495112?se=ZOY5HGvd8RGW67hsumO50A&utm_medium=api&utm_source=91329da2&v=DB5B39583CD84A38467076EC045993E202EEFA77",
    "match": {
     "pct": 100,
     "covered": [
@@ -9567,23 +9629,15 @@
    "match": {
     "pct": 100,
     "covered": [
-     "RBT certification",
-     "Driver's license / transportation",
-     "Data collection",
      "Behavior intervention plans",
-     "Autism / ASD experience",
-     "BCBA supervision",
-     "Developmental disabilities",
-     "Microsoft Office / technology"
+     "BCBA supervision"
     ],
     "missing": [],
     "variant": "inhome",
     "variantLabel": "In-home"
    },
    "firstSeen": "2026-11-10T14:46:29.626Z",
-   "alsoOn": [
-    "Talent.com"
-   ]
+   "alsoOn": []
   },
   {
    "id": "sh-6V-P2KH0ipEWliBIest71p8IwMFllXCIk75wndFVZG_bb4RAqPyCtA",
@@ -9629,6 +9683,52 @@
     "variantLabel": "In-home"
    },
    "firstSeen": "2026-11-10T14:46:29.626Z",
+   "alsoOn": [
+    "Talent.com"
+   ]
+  },
+  {
+   "id": "az-5954135466",
+   "source": "Adzuna",
+   "sourceKey": "adzuna",
+   "direct": false,
+   "title": "Registered behavior technician",
+   "company": "New Patterns ABA FL",
+   "location": "Dania Beach, Broward County",
+   "area": "broward",
+   "fromMiami": 20,
+   "fromDavie": 6,
+   "payText": "$28.00 hour",
+   "payMin": 22,
+   "payMax": 28,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [
+    "in-home"
+   ],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-05T07:06:18.000Z",
+   "snippet": "New Patterns ABA FL - New Patterns ABA is looking for caring, devoted, and dependable ( Registered) Behavior Technicians (RBTs) to join our expanding team! This is a great opportunity to make a difference in the lives of children and families. Position Overview: As part of our team, you will work under the guidance and supervision of a Board Certified Behavior Analyst (BCBA) to implement individualized treatment plans and help clients build essential life skills in home, school, and community s…",
+   "url": "https://www.adzuna.com/details/5954135466?utm_medium=api&utm_source=91329da2",
+   "match": {
+    "pct": 100,
+    "covered": [
+     "RBT certification",
+     "Data collection",
+     "Behavior intervention plans",
+     "Autism / ASD experience",
+     "BCBA supervision",
+     "Developmental disabilities"
+    ],
+    "missing": [],
+    "variant": "inhome",
+    "variantLabel": "In-home"
+   },
+   "firstSeen": "2026-11-10T19:52:43.074Z",
    "alsoOn": [
     "Talent.com"
    ]
@@ -9830,45 +9930,6 @@
    "firstSeen": "2026-11-07T20:20:26.834Z"
   },
   {
-   "id": "az-5954135466",
-   "source": "Adzuna",
-   "sourceKey": "adzuna",
-   "direct": false,
-   "title": "Registered behavior technician",
-   "company": "New Patterns ABA FL",
-   "location": "Dania Beach, Broward County",
-   "area": "broward",
-   "fromMiami": 20,
-   "fromDavie": 6,
-   "payText": "$45760 - $58240 a year",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [
-    "in-home"
-   ],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-05T07:06:18.000Z",
-   "snippet": "New Patterns ABA FL - New Patterns ABA is looking for caring, devoted, and dependable ( Registered) Behavior Technicians (RBTs) to join our expanding team! This is a great opportunity to make a difference in the lives of children and families. Position Overview: As part of our team, you will work under the guidance and supervision of a Board Certified Behavior Analyst (BCBA) to implement individualized treatment plans and help clients build essential life skills in home, school, and community s…",
-   "url": "https://www.adzuna.com/details/5954135466?utm_medium=api&utm_source=91329da2",
-   "match": {
-    "pct": 100,
-    "covered": [
-     "Behavior intervention plans",
-     "BCBA supervision"
-    ],
-    "missing": [],
-    "variant": "inhome",
-    "variantLabel": "In-home"
-   },
-   "firstSeen": "2026-11-10T19:52:43.074Z"
-  },
-  {
    "id": "sh-BgptN2QviyB3nrndGr5wVqMgcW-0DozL9PnOApaqe3FxIXFGj4kfgA",
    "source": "SimplyHired / Indeed",
    "sourceKey": "simplyhired",
@@ -9964,7 +10025,8 @@
    },
    "firstSeen": "2026-11-08T06:38:22.233Z",
    "alsoOn": [
-    "Adzuna"
+    "Adzuna",
+    "SimplyHired / Indeed"
    ]
   },
   {
@@ -10229,7 +10291,7 @@
    "scheduleHints": [],
    "posted": "2026-11-08T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/3186150536751611904/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.1.13&uuid=usF001a1c70a2c115ad3&page_item_id=1216214456",
+   "url": "https://open.app.jobrapido.com/us/3186150536751611904/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.1.13&uuid=usF001a1c823271b6ba6&page_item_id=-1274367814",
    "match": {
     "pct": null,
     "covered": [],
@@ -10240,11 +10302,11 @@
    "firstSeen": "2026-11-08T21:58:00.051Z"
   },
   {
-   "id": "jr-1812556945370906624",
+   "id": "jr-1552624699983265792",
    "source": "Jobrapido",
    "sourceKey": "jobrapido",
    "direct": false,
-   "title": "Behavior Therapist - School Based",
+   "title": "Behavior Interventionist - SPED",
    "company": "Zen Educate",
    "location": "Davie, FL",
    "area": "broward",
@@ -10256,22 +10318,20 @@
    "hoursMin": null,
    "hoursMax": null,
    "jobTypes": [],
-   "setting": [
-    "school"
-   ],
+   "setting": [],
    "bilingual": false,
    "afternoon": 0,
    "shift": null,
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1812556945370906624/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.1.16&uuid=usF001a1c70a2c115ad3&page_item_id=1188174817",
+   "url": "https://open.app.jobrapido.com/us/1552624699983265792/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.1.16&uuid=usF001a1c823271b6ba6&page_item_id=217620871",
    "match": {
     "pct": null,
     "covered": [],
     "missing": [],
-    "variant": "school",
-    "variantLabel": "School-based"
+    "variant": "master",
+    "variantLabel": "Master"
    },
    "firstSeen": "2026-11-07T05:02:41.395Z"
   },
@@ -10299,13 +10359,49 @@
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/595636167446102016/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.1.17&uuid=usF001a1c70a2c115ad3&page_item_id=1952897962",
+   "url": "https://open.app.jobrapido.com/us/595636167446102016/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.1.17&uuid=usF001a1c823271b6ba6&page_item_id=1659683303",
    "match": {
     "pct": null,
     "covered": [],
     "missing": [],
     "variant": "master",
     "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-07T05:02:41.395Z"
+  },
+  {
+   "id": "jr-1812556945370906624",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Behavior Therapist - School Based",
+   "company": "Zen Educate",
+   "location": "Davie, FL",
+   "area": "broward",
+   "fromMiami": 21,
+   "fromDavie": 0,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [
+    "school"
+   ],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-06T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/1812556945370906624/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.1&uuid=usF001a1c8232d5c5945&page_item_id=967881427",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "school",
+    "variantLabel": "School-based"
    },
    "firstSeen": "2026-11-07T05:02:41.395Z"
   },
@@ -10333,7 +10429,7 @@
    "scheduleHints": [],
    "posted": "2026-11-04T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/2876176115569786880/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.4&uuid=usF001a1c70a344b6616&page_item_id=1514604165",
+   "url": "https://open.app.jobrapido.com/us/2876176115569786880/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.4&uuid=usF001a1c8232d5c5945&page_item_id=-607190228",
    "match": {
     "pct": null,
     "covered": [],
@@ -10367,7 +10463,7 @@
    "scheduleHints": [],
    "posted": "2026-11-08T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/3298847729819582464/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.5&uuid=usF001a1c70a344b6616&page_item_id=650416549",
+   "url": "https://open.app.jobrapido.com/us/3298847729819582464/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.5&uuid=usF001a1c8232d5c5945&page_item_id=1775428295",
    "match": {
     "pct": null,
     "covered": [],
@@ -10401,7 +10497,7 @@
    "scheduleHints": [],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8686393030191611904/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.6&uuid=usF001a1c70a344b6616&page_item_id=-483192235",
+   "url": "https://open.app.jobrapido.com/us/8686393030191611904/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.6&uuid=usF001a1c8232d5c5945&page_item_id=-1886993964",
    "match": {
     "pct": null,
     "covered": [],
@@ -10435,7 +10531,7 @@
    "scheduleHints": [],
    "posted": "2026-11-03T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/3116658550017884160/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.7&uuid=usF001a1c70a344b6616&page_item_id=-459779606",
+   "url": "https://open.app.jobrapido.com/us/3116658550017884160/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.7&uuid=usF001a1c8232d5c5945&page_item_id=1363847428",
    "match": {
     "pct": null,
     "covered": [],
@@ -10444,6 +10540,42 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-04T20:53:17.870Z"
+  },
+  {
+   "id": "jr-7199194152217608192",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "ABA RBT : Direct Behavioral Support & Data Collection",
+   "company": "Enspirit Healthcare, LLC",
+   "location": "Davie, FL",
+   "area": "broward",
+   "fromMiami": 21,
+   "fromDavie": 0,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-04T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/7199194152217608192/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.8&uuid=usF001a1c8232d5c5945&page_item_id=834559357",
+   "match": {
+    "pct": 100,
+    "covered": [
+     "Data collection"
+    ],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-05T22:24:58.847Z"
   },
   {
    "id": "jr-1974511709607428096",
@@ -10471,7 +10603,7 @@
    ],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1974511709607428096/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.8&uuid=usF001a1c70a344b6616&page_item_id=748075342",
+   "url": "https://open.app.jobrapido.com/us/1974511709607428096/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.9&uuid=usF001a1c8232d5c5945&page_item_id=-223115802",
    "match": {
     "pct": null,
     "covered": [],
@@ -10480,76 +10612,6 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-08T01:27:28.217Z"
-  },
-  {
-   "id": "jr-7199194152217608192",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "ABA RBT : Direct Behavioral Support & Data Collection",
-   "company": "Enspirit Healthcare, LLC",
-   "location": "Davie, FL",
-   "area": "broward",
-   "fromMiami": 21,
-   "fromDavie": 0,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-04T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7199194152217608192/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.9&uuid=usF001a1c70a344b6616&page_item_id=1665163786",
-   "match": {
-    "pct": 100,
-    "covered": [
-     "Data collection"
-    ],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-05T22:24:58.847Z"
-  },
-  {
-   "id": "jr-8735287212767182848",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Flexible RBT - Impactful ABA Therapy & Growth",
-   "company": "B Above Services",
-   "location": "Davie, FL",
-   "area": "broward",
-   "fromMiami": 21,
-   "fromDavie": 0,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-10-31T04:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8735287212767182848/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.10&uuid=usF001a1c70a344b6616&page_item_id=1833173567",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-05T07:06:32.096Z"
   },
   {
    "id": "jr-7047650388706590720",
@@ -10577,7 +10639,7 @@
    ],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/7047650388706590720/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.11&uuid=usF001a1c70a344b6616&page_item_id=164403936",
+   "url": "https://open.app.jobrapido.com/us/7047650388706590720/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.10&uuid=usF001a1c8232d5c5945&page_item_id=943134034",
    "match": {
     "pct": null,
     "covered": [],
@@ -10586,6 +10648,40 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-04T20:53:17.870Z"
+  },
+  {
+   "id": "jr-8735287212767182848",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Flexible RBT - Impactful ABA Therapy & Growth",
+   "company": "B Above Services",
+   "location": "Davie, FL",
+   "area": "broward",
+   "fromMiami": 21,
+   "fromDavie": 0,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-10-31T04:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/8735287212767182848/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.11&uuid=usF001a1c8232d5c5945&page_item_id=1931414258",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-05T07:06:32.096Z"
   },
   {
    "id": "jr-4380912204006817792",
@@ -10611,7 +10707,7 @@
    "scheduleHints": [],
    "posted": "2026-11-02T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/4380912204006817792/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.12&uuid=usF001a1c70a344b6616&page_item_id=-826780614",
+   "url": "https://open.app.jobrapido.com/us/4380912204006817792/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.12&uuid=usF001a1c8232d5c5945&page_item_id=1361784962",
    "match": {
     "pct": null,
     "covered": [],
@@ -10645,7 +10741,7 @@
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/3245054673186455552/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.13&uuid=usF001a1c70a344b6616&page_item_id=-873124737",
+   "url": "https://open.app.jobrapido.com/us/3245054673186455552/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.2.15&uuid=usF001a1c8232d5c5945&page_item_id=2142917846",
    "match": {
     "pct": null,
     "covered": [],
@@ -10681,7 +10777,7 @@
    "scheduleHints": [],
    "posted": "2026-11-03T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/3645087686617726976/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.3&uuid=usF001a1c70a3bc06645&page_item_id=579824277",
+   "url": "https://open.app.jobrapido.com/us/3645087686617726976/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.3&uuid=usF001a1c8233414595d&page_item_id=1977096337",
    "match": {
     "pct": null,
     "covered": [],
@@ -10715,7 +10811,7 @@
    "scheduleHints": [],
    "posted": "2026-11-04T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/5751692042052829184/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.5&uuid=usF001a1c70a3bc06645&page_item_id=-556120899",
+   "url": "https://open.app.jobrapido.com/us/5751692042052829184/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.5&uuid=usF001a1c8233414595d&page_item_id=185273809",
    "match": {
     "pct": 100,
     "covered": [
@@ -10751,7 +10847,7 @@
    "scheduleHints": [],
    "posted": "2026-10-28T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/2242708571584200704/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.6&uuid=usF001a1c70a3bc06645&page_item_id=-448764512",
+   "url": "https://open.app.jobrapido.com/us/2242708571584200704/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.6&uuid=usF001a1c8233414595d&page_item_id=-367527403",
    "match": {
     "pct": null,
     "covered": [],
@@ -10785,7 +10881,7 @@
    "scheduleHints": [],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1236318019538386944/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.8&uuid=usF001a1c70a3bc06645&page_item_id=1592108530",
+   "url": "https://open.app.jobrapido.com/us/1236318019538386944/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.8&uuid=usF001a1c8233414595d&page_item_id=1815931702",
    "match": {
     "pct": null,
     "covered": [],
@@ -10821,7 +10917,7 @@
    "scheduleHints": [],
    "posted": "2026-11-05T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8917193165245513728/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.9&uuid=usF001a1c70a3bc06645&page_item_id=-1332074824",
+   "url": "https://open.app.jobrapido.com/us/8917193165245513728/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.10&uuid=usF001a1c8233414595d&page_item_id=240087113",
    "match": {
     "pct": null,
     "covered": [],
@@ -10855,7 +10951,7 @@
    "scheduleHints": [],
    "posted": "2026-11-02T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/3012279712169852928/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.10&uuid=usF001a1c70a3bc06645&page_item_id=1835661746",
+   "url": "https://open.app.jobrapido.com/us/3012279712169852928/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.11&uuid=usF001a1c8233414595d&page_item_id=620581133",
    "match": {
     "pct": null,
     "covered": [],
@@ -10891,7 +10987,7 @@
    "scheduleHints": [],
    "posted": "2026-11-04T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/548130118300598272/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.11&uuid=usF001a1c70a3bc06645&page_item_id=-868774233",
+   "url": "https://open.app.jobrapido.com/us/548130118300598272/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.12&uuid=usF001a1c8233414595d&page_item_id=-2085698205",
    "match": {
     "pct": null,
     "covered": [],
@@ -10925,7 +11021,7 @@
    "scheduleHints": [],
    "posted": "2026-11-04T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6040643148076548096/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.15&uuid=usF001a1c70a3bc06645&page_item_id=824513572",
+   "url": "https://open.app.jobrapido.com/us/6040643148076548096/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.3.17&uuid=usF001a1c8233414595d&page_item_id=163719226",
    "match": {
     "pct": null,
     "covered": [],
@@ -10959,7 +11055,7 @@
    "scheduleHints": [],
    "posted": "2026-11-07T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1546414761388802048/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.1.12&uuid=usF001a1c70a42b16661&page_item_id=1739301965",
+   "url": "https://open.app.jobrapido.com/us/1546414761388802048/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.1.10&uuid=usF001a1c8233a2f5975&page_item_id=1672928693",
    "match": {
     "pct": null,
     "covered": [],
@@ -10993,7 +11089,7 @@
    "scheduleHints": [],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1088318256881598464/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.1.13&uuid=usF001a1c70a42b16661&page_item_id=1244586289",
+   "url": "https://open.app.jobrapido.com/us/1088318256881598464/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.1.13&uuid=usF001a1c8233a2f5975&page_item_id=-802167371",
    "match": {
     "pct": null,
     "covered": [],
@@ -11027,7 +11123,41 @@
    "scheduleHints": [],
    "posted": "2026-10-31T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6088791586890579968/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.1.14&uuid=usF001a1c70a42b16661&page_item_id=-1924797557",
+   "url": "https://open.app.jobrapido.com/us/6088791586890579968/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.1.14&uuid=usF001a1c8233a2f5975&page_item_id=-299473920",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-05T12:13:01.965Z"
+  },
+  {
+   "id": "jr-2136568178669518848",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Behavior Technician",
+   "company": "LEARN Behavioral",
+   "location": "Davie, FL",
+   "area": "broward",
+   "fromMiami": 21,
+   "fromDavie": 0,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-04T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/2136568178669518848/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.1.15&uuid=usF001a1c8233a2f5975&page_item_id=-452015726",
    "match": {
     "pct": null,
     "covered": [],
@@ -11061,7 +11191,7 @@
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/4226951542139256832/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.1.15&uuid=usF001a1c70a42b16661&page_item_id=-1566507462",
+   "url": "https://open.app.jobrapido.com/us/4226951542139256832/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.1.16&uuid=usF001a1c8233a2f5975&page_item_id=-1263261695",
    "match": {
     "pct": null,
     "covered": [],
@@ -11070,40 +11200,6 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-08T06:38:22.233Z"
-  },
-  {
-   "id": "jr-2136568178669518848",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Behavior Technician",
-   "company": "LEARN Behavioral",
-   "location": "Davie, FL",
-   "area": "broward",
-   "fromMiami": 21,
-   "fromDavie": 0,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-04T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/2136568178669518848/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.1.16&uuid=usF001a1c70a42b16661&page_item_id=-725117673",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-05T12:13:01.965Z"
   },
   {
    "id": "jr-5120037455302492160",
@@ -11129,46 +11225,10 @@
    "scheduleHints": [],
    "posted": "2026-11-05T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/5120037455302492160/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.0&uuid=usF001a1c70a48665b5b&page_item_id=-1372178832",
+   "url": "https://open.app.jobrapido.com/us/5120037455302492160/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.0&uuid=usF001a1c82349f36c11&page_item_id=-1560734189",
    "match": {
     "pct": null,
     "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T04:36:51.237Z"
-  },
-  {
-   "id": "jr-8825859036428632064",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Bilingual Behavior Technician (Spanish)",
-   "company": "Centria Healthcare",
-   "location": "Davie, FL",
-   "area": "broward",
-   "fromMiami": 21,
-   "fromDavie": 0,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": true,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-06T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8825859036428632064/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.6&uuid=usF001a1c70a48665b5b&page_item_id=-1719306818",
-   "match": {
-    "pct": 100,
-    "covered": [
-     "Bilingual Spanish"
-    ],
     "missing": [],
     "variant": "master",
     "variantLabel": "Master"
@@ -11199,7 +11259,7 @@
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/5404079894743220224/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.9&uuid=usF001a1c70a48665b5b&page_item_id=-961044410",
+   "url": "https://open.app.jobrapido.com/us/5404079894743220224/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.5&uuid=usF001a1c82349f36c11&page_item_id=-278537462",
    "match": {
     "pct": 100,
     "covered": [
@@ -11212,11 +11272,11 @@
    "firstSeen": "2026-11-09T18:24:27.049Z"
   },
   {
-   "id": "jr-1030697628473491456",
+   "id": "jr-8825859036428632064",
    "source": "Jobrapido",
    "sourceKey": "jobrapido",
    "direct": false,
-   "title": "Registered Behavior Technician",
+   "title": "Bilingual Behavior Technician (Spanish)",
    "company": "Centria Healthcare",
    "location": "Davie, FL",
    "area": "broward",
@@ -11229,21 +11289,23 @@
    "hoursMax": null,
    "jobTypes": [],
    "setting": [],
-   "bilingual": false,
+   "bilingual": true,
    "afternoon": 0,
    "shift": null,
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1030697628473491456/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.11&uuid=usF001a1c70a48665b5b&page_item_id=-1334736661",
+   "url": "https://open.app.jobrapido.com/us/8825859036428632064/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.7&uuid=usF001a1c82349f36c11&page_item_id=-34534080",
    "match": {
-    "pct": null,
-    "covered": [],
+    "pct": 100,
+    "covered": [
+     "Bilingual Spanish"
+    ],
     "missing": [],
     "variant": "master",
     "variantLabel": "Master"
    },
-   "firstSeen": "2026-11-08T01:27:28.217Z"
+   "firstSeen": "2026-11-10T04:36:51.237Z"
   },
   {
    "id": "jr-8577598106969833472",
@@ -11269,7 +11331,7 @@
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8577598106969833472/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.12&uuid=usF001a1c70a48665b5b&page_item_id=977488088",
+   "url": "https://open.app.jobrapido.com/us/8577598106969833472/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.10&uuid=usF001a1c82349f36c11&page_item_id=-909417629",
    "match": {
     "pct": 100,
     "covered": [
@@ -11280,6 +11342,40 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-08T06:38:22.233Z"
+  },
+  {
+   "id": "jr-1030697628473491456",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Registered Behavior Technician",
+   "company": "Centria Healthcare",
+   "location": "Davie, FL",
+   "area": "broward",
+   "fromMiami": 21,
+   "fromDavie": 0,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-06T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/1030697628473491456/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.12&uuid=usF001a1c82349f36c11&page_item_id=711379005",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-08T01:27:28.217Z"
   },
   {
    "id": "jr-5506369660498477056",
@@ -11305,7 +11401,7 @@
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/5506369660498477056/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.15&uuid=usF001a1c70a48665b5b&page_item_id=1766808918",
+   "url": "https://open.app.jobrapido.com/us/5506369660498477056/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.15&uuid=usF001a1c82349f36c11&page_item_id=1376853284",
    "match": {
     "pct": 100,
     "covered": [
@@ -11316,77 +11412,6 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-08T01:27:28.217Z"
-  },
-  {
-   "id": "jr-1552624699983265792",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Behavior Interventionist - SPED",
-   "company": "Zen Educate",
-   "location": "Davie, FL",
-   "area": "broward",
-   "fromMiami": 21,
-   "fromDavie": 0,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-06T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1552624699983265792/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.2.16&uuid=usF001a1c70a48665b5b&page_item_id=-1254372580",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-07T05:02:41.395Z"
-  },
-  {
-   "id": "jr-1194126734723645440",
-   "source": "Jobrapido",
-   "sourceKey": "jobrapido",
-   "direct": false,
-   "title": "Autism Behavior Technician — One-on-One Impact",
-   "company": "Centria Healthcare",
-   "location": "Davie, FL",
-   "area": "broward",
-   "fromMiami": 21,
-   "fromDavie": 0,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-05T05:00:00.000Z",
-   "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/1194126734723645440/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.3.2&uuid=usF001a1c70a4e536694&page_item_id=-677019070",
-   "match": {
-    "pct": 100,
-    "covered": [
-     "Autism / ASD experience"
-    ],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T14:46:29.626Z",
-   "alsoOn": []
   },
   {
    "id": "jr-960715912388804608",
@@ -11412,7 +11437,7 @@
    "scheduleHints": [],
    "posted": "2026-11-06T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/960715912388804608/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.3.3&uuid=usF001a1c70a4e536694&page_item_id=-887678774",
+   "url": "https://open.app.jobrapido.com/us/960715912388804608/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.3.2&uuid=usF001a1c823502b6c2c&page_item_id=-409884389",
    "match": {
     "pct": 100,
     "covered": [
@@ -11449,7 +11474,7 @@
    "scheduleHints": [],
    "posted": "2026-11-01T04:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/6672343914315251712/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.3.4&uuid=usF001a1c70a4e536694&page_item_id=-1220626094",
+   "url": "https://open.app.jobrapido.com/us/6672343914315251712/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.3.3&uuid=usF001a1c823502b6c2c&page_item_id=-583726168",
    "match": {
     "pct": 100,
     "covered": [
@@ -11460,6 +11485,79 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-10T14:46:29.626Z"
+  },
+  {
+   "id": "jr-1194126734723645440",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Autism Behavior Technician — One-on-One Impact",
+   "company": "Centria Healthcare",
+   "location": "Davie, FL",
+   "area": "broward",
+   "fromMiami": 21,
+   "fromDavie": 0,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-05T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/1194126734723645440/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.3.6&uuid=usF001a1c823502b6c2c&page_item_id=683035576",
+   "match": {
+    "pct": 100,
+    "covered": [
+     "Autism / ASD experience"
+    ],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-10T14:46:29.626Z",
+   "alsoOn": []
+  },
+  {
+   "id": "jr-8655652437425651712",
+   "source": "Jobrapido",
+   "sourceKey": "jobrapido",
+   "direct": false,
+   "title": "Autism Behavior Technician - Training Provided & Impact",
+   "company": "Centria Healthcare",
+   "location": "Davie, FL",
+   "area": "broward",
+   "fromMiami": 21,
+   "fromDavie": 0,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-06T05:00:00.000Z",
+   "snippet": "",
+   "url": "https://open.app.jobrapido.com/us/8655652437425651712/?w=behavior%20technician&l=davie,%20fl&oc=sponsored&k=web.1.3.9&uuid=usF001a1c823502b6c2c&page_item_id=33173042",
+   "match": {
+    "pct": 100,
+    "covered": [
+     "Autism / ASD experience"
+    ],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
   },
   {
    "id": "sh-wprf3CTd31YFkoZSlZHqKC6Ym3fgABaabJyfmzeTQ5gLSsBVjMVSIQ",
@@ -11505,6 +11603,56 @@
     "variantLabel": "Clinic"
    },
    "firstSeen": "2026-11-10T14:46:29.626Z"
+  },
+  {
+   "id": "jsr-ekxoTHRvam41bHhJWXlYaUFBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxZaTF1UlU5WGVXcFBhVEJmUWpGSk5EVnRjMjU1ZUZGeFZrbFhjRTFxYUdaU1VFbHFSVkV6Y1habU0yb3lhRWRtTFhRMVJFSjRXV1o0ZDNCVGJVSk5VbEZ0U21GVVRuSjRabGxLZFhCdmIyNTJhVzFxVEVwMmFsSlNNMWhsVFY5c1draEpNR1JEWm14cGRHRXhSRTV6YkRRemVIcFZOR0pJY2s5bU0xOUlOVUZmWjFOeWNGUVNGek55TTNwaGRVZExSbUZtVVRWT2IxQjBYM2xrYzFGRkdpSkJTRTR3UlRkR2NtSmhSazh4ZG5JMlZWcHpkWE5CYjJSTlRrZ3ljVkp0YldGbjowOGUwZjYwMw",
+   "source": "Google Jobs · Indeed",
+   "sourceKey": "jsearch",
+   "direct": false,
+   "title": "Registered Behavior Technician (RBT) / ABA Therapist",
+   "company": "Acquiring Skills Inc",
+   "location": "Davie, FL",
+   "area": "broward",
+   "fromMiami": 22,
+   "fromDavie": 2,
+   "payText": "$25 - $30 per hour",
+   "payMin": 25,
+   "payMax": 30,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "part-time",
+    "full-time"
+   ],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 1,
+   "shift": "morning",
+   "scheduleHints": [],
+   "posted": "2026-11-10T00:00:00.000Z",
+   "snippet": "Acquiring Skills Inc.\n\nMaking a difference in the lives of children with special needs across South Florida!\n\nDo you love working with children or teenagers with special needs?\n\nDo you want to be part of a team that works hard together to make a difference?\n\nDo you want to grow within a stable and caring company culture?\n\nIf you answered yes to these questions, then Acquiring Skills is the place for you!\n\nWe are looking for hardworking, passionate therapists to work with clients in their homes and within the community in Dade, Broward and Palm Beach counties.\n\nJob Responsibilities:\n\n• Must lov",
+   "url": "https://www.indeed.com/viewjob?jk=63bd781fb71596f4",
+   "match": {
+    "pct": 75,
+    "covered": [
+     "RBT certification",
+     "40-hour RBT training",
+     "Driver's license / transportation",
+     "Data collection",
+     "Medicaid",
+     "Experience with children"
+    ],
+    "missing": [
+     "Level 2 background screening",
+     "Adolescents / teens"
+    ],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z",
+   "alsoOn": [
+    "SimplyHired / Indeed"
+   ]
   },
   {
    "id": "sh-bP-vnDqpfEX-sPnersgq6AJK7hq__0oLkITCdPzw6kWC8TNr3vsTTg",
@@ -11896,6 +12044,56 @@
    ]
   },
   {
+   "id": "jsr-VW5WVDIyMk42eDFyak1JSkFBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxXVTQyZDNCcU9ERmxhRFo0ZVZGaWRFTmphMGwzU1U1R1FtRlNNV0pYUVZWc2FTMVJVVzAzUTBaYWJGWk5kV3hGUlZCemNESk5hVlZzWm5WVVJVOVZNMlZYU201NGIyZGhPSFpYUmsxWE1EUjJNa1JNTlhCdWJuQTBVblZtUW5oRlFqTXdOM0ZtYjFSU0xXVklUamt6YVZjNGVuazFWRUV4UWtwamRTMHplamQyYTBoWFZISVNGek55TTNwaGRVZExSbUZtVVRWT2IxQjBYM2xrYzFGRkdpSkJTRTR3UlRkR1pWWktSbXR0UzBwS1pHRjFkME5vTTFVeVN6VnNOa2RSYmw5QjoxOGE0MmVjNw",
+   "source": "Google Jobs · Jobilize",
+   "sourceKey": "jsearch",
+   "direct": false,
+   "title": "Behavior Technician",
+   "company": "Nova Southeastern University",
+   "location": "Davie, FL",
+   "area": "broward",
+   "fromMiami": 22,
+   "fromDavie": 2,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "full-time"
+   ],
+   "setting": [
+    "clinic"
+   ],
+   "bilingual": true,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-04T00:00:00.000Z",
+   "snippet": "We are excited that you are considering joining Nova Southeastern University!Nova Southeastern University (NSU) was founded in 1964, and is a not-for-profit, independent university with a reputation for academic excellence and innovation.\nNova Southeastern University offers competitive salaries, a comprehensive benefits package including tuition waiver, retirement plan, excellent medical and dental plans and much more.\nNSU cares about the health and welfare of its students, faculty, staff, and campus visitors and is a tobacco-free university.We appreciate your support in making NSU the preemin",
+   "url": "https://www.jobilize.com/job/us-fl-davie-behavior-technician-nova-southeastern-university-hiring",
+   "match": {
+    "pct": 80,
+    "covered": [
+     "Data collection",
+     "Behavior intervention plans",
+     "Bilingual Spanish",
+     "Autism / ASD experience",
+     "BCBA supervision",
+     "Psychology background",
+     "Experience with children",
+     "Microsoft Office / technology"
+    ],
+    "missing": [
+     "Level 2 background screening",
+     "Group / classroom"
+    ],
+    "variant": "clinic",
+    "variantLabel": "Clinic"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
+  },
+  {
    "id": "sh-u4E8ZcZuaenzTpfVWbJOWP6qXQdISzrsybhxxLXNuFJaF5j7Oi2J-A",
    "source": "SimplyHired / Indeed",
    "sourceKey": "simplyhired",
@@ -11994,44 +12192,53 @@
    "firstSeen": "2026-11-10T14:46:29.626Z"
   },
   {
-   "id": "az-5954135394",
-   "source": "Adzuna",
-   "sourceKey": "adzuna",
+   "id": "sh-jqOXwGkZ0aUGmtx_cOFJLodyqBUuYYBZQ6XoOLntvit46-Kc_tVlvw",
+   "source": "SimplyHired / Indeed",
+   "sourceKey": "simplyhired",
    "direct": false,
-   "title": "Registered behavior technician",
-   "company": "New Patterns ABA FL",
-   "location": "Davie, Broward County",
+   "title": "Registered Behavior Technician",
+   "company": "Changing Behavior LLC",
+   "location": "Weston, FL",
    "area": "broward",
    "fromMiami": 23,
-   "fromDavie": 4,
-   "payText": "$22 - $28 an hour",
-   "payMin": 22,
-   "payMax": 28,
+   "fromDavie": 8,
+   "payText": "$25 - $30 an hour",
+   "payMin": 25,
+   "payMax": 30,
    "hoursMin": null,
    "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
+   "jobTypes": [
+    "part-time",
+    "contract"
+   ],
+   "setting": [
+    "in-home",
+    "clinic"
+   ],
    "bilingual": false,
    "afternoon": 1,
-   "shift": null,
+   "shift": "morning",
    "scheduleHints": [],
-   "posted": "2026-11-05T07:06:18.000Z",
-   "snippet": "New Patterns ABA FL - Registered Behavior Technician (RBT) New Patterns ABA New Patterns ABA’s mission is to create meaningful and lasting change in the lives of children and families impacted by autism. We do this by hiring passionate, caring professionals who are committed to helping children grow, learn, and thrive. We are currently seeking dedicated Registered Behavior Technicians (RBTs) to work with young children diagnosed with autism. At New Patterns ABA, you’re not just joining another …",
-   "url": "https://www.adzuna.com/details/5954135394?utm_medium=api&utm_source=91329da2",
+   "posted": "2026-11-10T21:07:22.022Z",
+   "snippet": "Overview \n Support children and individuals with developmental disabilities through compassionate, structured behavioral therapy. As a Registered Behavior Technician (RBT), you'll deliver direct behavioral therapy using Applied Behavior Analysis (ABA) protocols, follow care plans, and help clients build communication, daily living, and other practical skills. Services may take place in home, school, or other care settings.\n Your impact: Consistent, individualized support helps clients practice meaningful skills and gives families and care teams clear information to guide next steps.\n Duties \n ",
+   "url": "https://www.simplyhired.com/job/jqOXwGkZ0aUGmtx_cOFJLodyqBUuYYBZQ6XoOLntvit46-Kc_tVlvw",
    "match": {
     "pct": 100,
     "covered": [
-     "Autism / ASD experience"
+     "Data collection",
+     "Behavior intervention plans",
+     "HIPAA",
+     "Autism / ASD experience",
+     "Session notes / documentation",
+     "Psychology background",
+     "Experience with children",
+     "Developmental disabilities"
     ],
     "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
+    "variant": "inhome",
+    "variantLabel": "In-home"
    },
-   "firstSeen": "2026-11-05T17:19:18.411Z",
-   "alsoOn": [
-    "SimplyHired / Indeed",
-    "Jobrapido"
-   ]
+   "firstSeen": "2026-11-11T00:58:34.726Z"
   },
   {
    "id": "sh-p9DNYOO_4IrYYA1tV7mW7kG7qAerS7dRXhpvOg43US0ag-SXFynO2A",
@@ -12098,6 +12305,54 @@
    ]
   },
   {
+   "id": "sh-dej5NJJGUs6zc5IysuZIQdEXE8c3upSVCJZz2G-dLTdholYrt0PqjA",
+   "source": "SimplyHired / Indeed",
+   "sourceKey": "simplyhired",
+   "direct": false,
+   "title": "Registered Behavior Technician (RBT)",
+   "company": "South Florida Center for Behavioral Health",
+   "location": "Weston, FL",
+   "area": "broward",
+   "fromMiami": 23,
+   "fromDavie": 8,
+   "payText": "$21 - $26 an hour",
+   "payMin": 21,
+   "payMax": 26,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "part-time",
+    "full-time"
+   ],
+   "setting": [
+    "in-home",
+    "clinic"
+   ],
+   "bilingual": false,
+   "afternoon": 1,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-05-26T14:17:40.147Z",
+   "snippet": "South Florida Behavior is looking energetic and motivated Registered Behavior Technicians (RBTS) to join our team.\n SFB consists of a team of BCBA's, BCaBA's and RBTs who provide center based, in-home and community based services to children and adolescents with Autism and other Developmental Disabilities in the Weston and Miami area. We are a reputable agency that has been around since 2007.\n Responsibilities include providing direct care, implementing interventions, parent training and assisting with evaluation and assessments. All RBTs work under the direct supervision of Board Certified An",
+   "url": "https://www.simplyhired.com/job/dej5NJJGUs6zc5IysuZIQdEXE8c3upSVCJZz2G-dLTdholYrt0PqjA",
+   "match": {
+    "pct": 67,
+    "covered": [
+     "RBT certification",
+     "Autism / ASD experience",
+     "BCBA supervision",
+     "Developmental disabilities"
+    ],
+    "missing": [
+     "Caregiver / parent training",
+     "Adolescents / teens"
+    ],
+    "variant": "inhome",
+    "variantLabel": "In-home"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
+  },
+  {
    "id": "sh-CgAI3G2qgPKEhJx-R-a6EhlCQ7I92Xh6ik-7j_H4O4toJ3B9QwvKcQ",
    "source": "SimplyHired / Indeed",
    "sourceKey": "simplyhired",
@@ -12142,53 +12397,43 @@
    "firstSeen": "2026-11-08T06:38:22.233Z"
   },
   {
-   "id": "li-4478842196",
-   "source": "LinkedIn",
-   "sourceKey": "linkedin",
+   "id": "az-5954135394",
+   "source": "Adzuna",
+   "sourceKey": "adzuna",
    "direct": false,
-   "title": "Behavioral Therapist",
-   "company": "Banyan Health",
-   "location": "Miami-Fort Lauderdale Area",
+   "title": "Registered behavior technician",
+   "company": "New Patterns ABA FL",
+   "location": "Davie, Broward County",
    "area": "broward",
-   "fromMiami": 25,
-   "fromDavie": 7,
-   "payText": "$70,000.00/yr - $80,000.00/yr",
-   "payMin": 33.65,
-   "payMax": 33.65,
+   "fromMiami": 23,
+   "fromDavie": 4,
+   "payText": "$45760 - $58240 a year",
+   "payMin": null,
+   "payMax": null,
    "hoursMin": null,
    "hoursMax": null,
-   "jobTypes": [
-    "full-time"
-   ],
-   "setting": [
-    "clinic",
-    "telehealth"
-   ],
-   "bilingual": true,
-   "afternoon": 2,
-   "shift": "both",
-   "scheduleHints": [
-    "y the person served’ s needs and may include early morning, evening or weekend appointments"
-   ],
-   "posted": "2026-10-15T00:00:00.000Z",
-   "snippet": "Summary of Responsibilities \n A Behavioral Health Practitioner (BHP) works under the direction and supervision of a Clinical Manager, providing community-based behavioral health services to individuals with psychiatric illness, substance use issues and/or co-occurring disorders. The BHP must be open and willing to work with culturally and gender diverse groups and individuals to facilitate goals of self-efficacy. This position requires a high degree of self-initiative and motivation. The schedule is flexible, as determined by the person served’ s needs and may include early morning, evening or",
-   "url": "https://www.linkedin.com/jobs/view/4478842196",
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-05T07:06:18.000Z",
+   "snippet": "New Patterns ABA FL - Registered Behavior Technician (RBT) New Patterns ABA New Patterns ABA’s mission is to create meaningful and lasting change in the lives of children and families impacted by autism. We do this by hiring passionate, caring professionals who are committed to helping children grow, learn, and thrive. We are currently seeking dedicated Registered Behavior Technicians (RBTs) to work with young children diagnosed with autism. At New Patterns ABA, you’re not just joining another …",
+   "url": "https://www.adzuna.com/details/5954135394?utm_medium=api&utm_source=91329da2",
    "match": {
-    "pct": 83,
+    "pct": 100,
     "covered": [
-     "Behavior intervention plans",
-     "Bilingual Spanish",
-     "Session notes / documentation",
-     "Crisis / safety / de-escalation",
-     "Microsoft Office / technology"
+     "Autism / ASD experience"
     ],
-    "missing": [
-     "Adults"
-    ],
-    "variant": "clinic",
-    "variantLabel": "Clinic"
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
    },
-   "firstSeen": "2026-11-10T14:46:29.626Z"
+   "firstSeen": "2026-11-05T17:19:18.411Z",
+   "alsoOn": [
+    "Jobrapido"
+   ]
   },
   {
    "id": "jsr-eGdWYUFVX2JVenFpUEJRUEFBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxXVzR0T0U5WFozaHdNbWw2TURWcU1FTjJRM28wYzNwTVFuQjFTR1ZSWkdoMVdWTmZVek5XVTFJM1VtaDJjMnRGUmtkUWJVeGhaa1p4VWxOTlJGbDJjbTEwYzNoNk1UZDZSVmRYWjBwR1RGRTNSR3hOV21GUGVXZE9WVmRPTkdacmJXSTBkV2xvWnpaVFZtTmxkbU5tUXpOVmVsTnlXR3hoU1ZVMFZHZDRZak50YUhKaVFXNFNGMHhFYW5oaGNUY3hTVXRYVnpRdFJWQmZjRmM0YVZFNEdpSkJTRTR3UlRkSVpGWTJTMHgxUnpadmNVdEVUMWxNU0dSNFpUUTFWV1pWTVhWUjozZDI3ZWVjYQ",
@@ -12233,6 +12478,49 @@
    },
    "firstSeen": "2026-11-09T03:03:59.155Z",
    "alsoOn": []
+  },
+  {
+   "id": "li-4485028201",
+   "source": "LinkedIn",
+   "sourceKey": "linkedin",
+   "direct": false,
+   "title": "BEHAVIORAL TECHNICIAN (PART TIME)",
+   "company": "Broward County Public Schools",
+   "location": "Fort Lauderdale, FL",
+   "area": "broward",
+   "fromMiami": 25,
+   "fromDavie": 7,
+   "payText": "",
+   "payMin": 21.13,
+   "payMax": 31.92,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "part-time"
+   ],
+   "setting": [],
+   "bilingual": true,
+   "afternoon": 1,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-03T00:00:00.000Z",
+   "snippet": "Requisition ID: 25332\n Work Location: PIPER HIGH\n City: SUNRISE\n POSITION GOAL\n Assist in developing appropriate responses from designated students requiring behavior intervention by implementing specific plans on an individual, small group, or classroom basis, as appropriate, to ensure the safety and dignity of students and staff.\n Essential Performance Responsibilities\n The Behavioral Technician shall carry out the performance responsibilities listed below.\n • Collect data within the school environment. \n• Assist in data-gathering for Functional Behavior Assessments. \n• Assist in the develop",
+   "url": "https://www.linkedin.com/jobs/view/4485028201",
+   "match": {
+    "pct": 80,
+    "covered": [
+     "Data collection",
+     "Bilingual Spanish",
+     "Crisis / safety / de-escalation",
+     "Microsoft Office / technology"
+    ],
+    "missing": [
+     "Group / classroom"
+    ],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
   },
   {
    "id": "jsr-ZzJrWWNqcXUyN0hma1JBY0FBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxZblV5ZDNOellWaDZUazh5TUhFNU1FUmthbFpOVVROT1NHZFpTRVIxUzJ4Wk0zQjJWRmhwWDNRNFVHSlJRblZ2ZEhJeE5FZGhUbUV0VmtJMVRHZ3RRWEZITW01TU1rVXlXVVJOYW00MmNYSkNTMk4yT1U1bFVHVk9OVVJIYW5sbWNtY3lWV3RMV1VOeGRXTlNVWGd3VmxGMVMyUnphVzFVWWpOeVJYVkxXR010Ukd4elNIUVNGMnhvVUd0aGRIRlBTV0pYTVcxTVVWQXdaSEZqT0ZGckdpSkJTRTR3UlRkSGEwRnhUMDFQV1RkNFVYZHRkVmN5VG5SUVZXeGxRV3R1YjFWUg",
@@ -12372,53 +12660,6 @@
    "alsoOn": [
     "SimplyHired / Indeed"
    ]
-  },
-  {
-   "id": "sh-Z7p3a0rxXnOXOy5IFMET1IxYFoU95Gg1pmBb-4Aby6cse4w5PaHDxA",
-   "source": "SimplyHired / Indeed",
-   "sourceKey": "simplyhired",
-   "direct": false,
-   "title": "Registered Behavior Technician (RBT) / ABA Therapist",
-   "company": "Acquiring Skills Inc",
-   "location": "Davie, FL",
-   "area": "broward",
-   "fromMiami": 25,
-   "fromDavie": 4,
-   "payText": "$25 - $30 an hour",
-   "payMin": 25,
-   "payMax": 30,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [
-    "part-time",
-    "full-time"
-   ],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 1,
-   "shift": "morning",
-   "scheduleHints": [],
-   "posted": "2026-11-09T16:14:11.342Z",
-   "snippet": "Acquiring Skills Inc. \n Making a difference in the lives of children with special needs across South Florida! \n Do you love working with children or teenagers with special needs?\n Do you want to be part of a team that works hard together to make a difference?\n Do you want to grow within a stable and caring company culture?\n If you answered yes to these questions, then Acquiring Skills is the place for you!\n We are looking for hardworking, passionate therapists to work with clients in their homes and within the community in Dade, Broward and Palm Beach counties.\n Job Responsibilities: \n • Must ",
-   "url": "https://www.simplyhired.com/job/Z7p3a0rxXnOXOy5IFMET1IxYFoU95Gg1pmBb-4Aby6cse4w5PaHDxA",
-   "match": {
-    "pct": 75,
-    "covered": [
-     "RBT certification",
-     "40-hour RBT training",
-     "Driver's license / transportation",
-     "Data collection",
-     "Medicaid",
-     "Experience with children"
-    ],
-    "missing": [
-     "Level 2 background screening",
-     "Adolescents / teens"
-    ],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-09T18:24:27.049Z"
   },
   {
    "id": "jsr-SW1STlNhM3RQNU50RF85N0FBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxZVWhvUm5OalYxSnRNV1oxY0daUFNUUnVZekZ6YVVWS1ZGbFlUbEpaYUhwQ01tSXpkRUZTYWpBNVowTnVWVkJ3U1dGVVdrMWFTalJXTUVWRFJUTktNRTB5VGkxSmMwSkZhM05vU1dod2FqUjJVbmhzY2tsQlJYRkdla2hIV1hFdGFFMVZhVEJaT1ZOYU9WbE1WblJpVVVOWlpVVkZUbmw2UjFkSVJuUmFaRVpNVkhSNU5qY1NGMnByYm05aGRGYzBURXRtUkhKMVJWQXpkUzAwY1ZGckdpSkJTRTR3UlRkRmJtUlVVM1p4TWxScE1VSldRMGh0YTBFMFQxRmFZVk00Wm5Kbg",
@@ -12810,7 +13051,7 @@
    "firstSeen": "2026-11-10T14:46:29.626Z"
   },
   {
-   "id": "jsr-X3dycm9jRGNBQXM3amVXbEFBQUFBQT09OkVzd0JDb3dCUVVwcFZEUjBTa2RhVms1NlYyRkdSbmRuY1c5NlZrUkdkbGgxTjFKdGNqQlRVREV6V2xabGEyUmhWa2h4ZFRWTFlsUlJiV2hqT1c5VlNGQlFPUzFJVDNGSU5XUnRZVkpaYWtodWJWUm1Za1ZGZEZZeWVGb3RWRzV6VDJNelIyMHhZemhDYXpRMWJIWlZPRGhDTTBvMVozaEZSalphVVZsTFNGUnJRVU5SWlRsQ2J6WkpPVkZWWTNKM05WSVNGM0ZWV0doaGRsOVhSR1EyYWpWT2IxQjZOMHQzZVZGSkdpSkJSSE55T1daVFRDMVJiVzlTVURaVVdtbHpaRWcxUzI1cllsTnNhSGc0WVd0Qg",
+   "id": "jsr-X3dycm9jRGNBQXM3amVXbEFBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxXWEpCTjBsRVNEbHpVMnhPVkVWaVFXOWxkalpFV1dkdmVWOWlYekU1Y0ZKVWMzaENiWGx5VVhFeU5HTm5jSFJ5WVU1WmVVWlVhbGczU2w5dmMzWXhkREl4Y1MxNmFVbGtaRmhrVTI1dlNGVTNTRE5WUzJ0MGNXOXhTVTQxWmxKWk5YSnpabmhrVFhwSGNWUmtRMDVtUjNOa2RtdHJTbmhqTUMxQmFqUldSMGhhWkdJemNVSVNGMlZRVkdsaGMxUmlURWxpWW5CMFVWQXdOekl5T0VGUkdpSkJTRTR3UlRkR2R6bFdhVEZvVm5wMFltNUxkREI1TURsUWEyVXhTVEJqU25oUg",
    "source": "Google Jobs · Indeed",
    "sourceKey": "jsearch",
    "direct": false,
@@ -12833,7 +13074,7 @@
    "afternoon": 0,
    "shift": null,
    "scheduleHints": [],
-   "posted": "2026-10-15T00:00:00.000Z",
+   "posted": "2026-10-14T00:00:00.000Z",
    "snippet": "About the Role:\n\nSeeking an experienced RBT to work with a 5-year-old child with autism - No vocal. Target behaviors include climbing/jumping, elopement, and stereotypy. This job offers a $ 25 hourly rate.\n\nCandidates must hold an active RBT certification, have experience addressing these behaviors and teaching functional communication skills, maintain a professional appearance, and pass a pre-employment drug screening.\n\nPlease send your résumé and availability.",
    "url": "https://www.indeed.com/viewjob?jk=c0f5590462143f3e",
    "match": {
@@ -12846,7 +13087,7 @@
     "variant": "master",
     "variantLabel": "Master"
    },
-   "firstSeen": "2026-11-09T18:24:27.049Z",
+   "firstSeen": "2026-11-11T00:58:34.726Z",
    "alsoOn": [
     "SimplyHired / Indeed",
     "Talent.com"
@@ -12906,7 +13147,7 @@
    "alsoOn": []
   },
   {
-   "id": "jsr-eE9KVVBQWHZTM295UDh2OEFBQUFBQT09OkVzd0JDb3dCUVVwcFZEUjBTakZJYWpKcFFqaFRWQzFYZUcxMlowOWplVEphT1V3d2NtVk1hMDlwYjBKdFRVVm5OakJVYkc5cWIwVmxRVFl6Y2xGUFZVRmliRXRSTUZsWFEwWklOVmQxTFUxUVFWZFhUMFJ4WkV4NFRUSlNUSGh6VmxvMlVWZG1SRXg0UW5SV1YwRmpRMVpGTFV0RVEwcHdPR1paWmtOM2MxTXlOakp3ZWtscGJFUmhVRmMzTTNCaExYUVNGM0ZWV0doaGRsOVhSR1EyYWpWT2IxQjZOMHQzZVZGSkdpSkJSSE55T1daVGRETkJhV1JxUTNaek9HZGFkRFJEWlZsak1uUktha3N6U0dwQg",
+   "id": "jsr-eE9KVVBQWHZTM295UDh2OEFBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxXVWxNWTNKbGRuaHVOamRSU0dSSFJYbzRTbWN5WjBKT2NtcDZiak5NYmpCaWFXRk5aMU5HTkdOQ2NYZFVVMjlCUlRBMVF6aEVUVmczZEU5VVpUTmZOV3BVUlVwUVVqTmZibVpLZVhCT2ExOVZTbXRtWDB0cE9HMVlOV0ZTWm14cFptTnVhek5WYWs4NVkwTTNVWEIxWm5sdVlXWnlaRjlQY1hSWFlXRlRZbVIzT0RKWlZ6TVNGMlZRVkdsaGMxUmlURWxpWW5CMFVWQXdOekl5T0VGUkdpSkJTRTR3UlRkR01tMHlUVTlJWlhKWE5uTlRTa0p5Y2xOTVpYSkVVV2N5TlMxbg",
    "source": "Google Jobs · Gitano Bar",
    "sourceKey": "jsearch",
    "direct": false,
@@ -12965,8 +13206,7 @@
     "variant": "inhome",
     "variantLabel": "In-home"
    },
-   "firstSeen": "2026-11-09T18:24:27.049Z",
-   "alsoOn": []
+   "firstSeen": "2026-11-11T00:58:34.726Z"
   },
   {
    "id": "jsr-T0tkOVVVUmhTNEowLW5Hd0FBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxXV2hPWnpBdGREZHVlbEp5UWs1VU1FWkxXR1Y2U0VsZk1FVTBWbWhUYXpKTVpqQnVkV3h3TVMxMVowcEljVXcwWHpKMFdXaERWRkphYmxGVVZGRXRURkp2VUdkSlJXVnVaWGxDVG1jd2VHMTZjV0V0VVRWMWRVRlJXVTEyVFZaVlpEZFhkRmRJUlVWNmQzQnlaSE5uUjFBMk5VcG1XRzVJUlV4T0xUVXliSHBCZFVrelVXb1NGelF4U0cxaGNVaHFTa3hpWlRWT2IxQXlaak5STmtGekdpSkJTRTR3UlRkRmEzZEpWbTlaYVd3eGVtdHdOeTFVU0Mxc2MwNUZMVnBmZDBaQg",
@@ -13411,7 +13651,7 @@
    "firstSeen": "2026-11-07T20:20:26.834Z"
   },
   {
-   "id": "jsr-MWdfNFViMFFyTHpBUi1oR0FBQUFBQT09OkVzd0JDb3dCUVVwcFZEUjBTV2RwTjBwQmRUTjRlREl6U0ZobFR6RlJlR3h1WTJoWE1VTnhOVmwxU0dWQllUQm5Ra3g2ZFhWTlZHMXdYMWRVUW10RlJYbzVaamsyVjI5cGFqZFBMVkE1YlZrME5YazFaRE5LYXpjMk1rbFdURUZvVlRSMVpIcFFibFY2VkhsQk4wZzJNSHB3V205VFJUWjFkRUkxWWtJeFpHRmFXRmRTU1dGM1pVNVNOa3R3T0RSdWRuVVNGM0ZWV0doaGRsOVhSR1EyYWpWT2IxQjZOMHQzZVZGSkdpSkJSSE55T1daVGVtRk5NRXBLZEU1cVRYcENlSGw1ZFhOb1lUaDJNVVZNVGtsMw",
+   "id": "jsr-MWdfNFViMFFyTHpBUi1oR0FBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxZbTR0TVVOSVNESXdOVkppUlhCZlJrcGxTVlJPV2tSSVpEbFZVekpqVHpGT2VrWnlkaTFaYzIxVFJrZFdkVjkzT0MxV1RWOWFhWGxITmtSRloxVnpSekJKY2psMWFtMU1Zbmt3ZWtkTlRtcGZZbFZ3U1hWWVl6RkRTVFZOUkV0WU1sVnZhMDEwV2xsemMzSTROM00yWlVSVlZYbDRYM05LWm5sTWFXeHRSMUIyYTFoemVUWVNGMlZRVkdsaGMxUmlURWxpWW5CMFVWQXdOekl5T0VGUkdpSkJTRTR3UlRkSFJuQmFkMmQzZEhWalpXaGlNMHBmYlVOTGVVNTNWMnA2Tm5oMw",
    "source": "Google Jobs · Teal",
    "sourceKey": "jsearch",
    "direct": false,
@@ -13439,7 +13679,7 @@
    "scheduleHints": [
     "registered behavior technician -part time after school"
    ],
-   "posted": "2026-10-22T00:00:00.000Z",
+   "posted": "2026-10-21T00:00:00.000Z",
    "snippet": "About the position\n\nAdvanced Behavioral Dimensions, LLC is an ABA agency supporting individuals with autism, developmental disabilities, and behavior challenges. The organization provides accessible, personalized behavioral support and is seeking dedicated professionals to join its supportive team.\n\nThe Registered Behavior Technician assists Board-Certified Behavior Analysts (BCBAs) in implementing individualized behavior support plans for toddlers, children, and teens. The role provides direct one-to-one ABA therapy and supports clients in learning fundamental skills for everyday activities. ",
    "url": "https://www.tealhq.com/job/registered-behavior-technician_7ea1aeef88d1d048535e148e47cc283517a83",
    "match": {
@@ -13462,8 +13702,7 @@
     "variant": "inhome",
     "variantLabel": "In-home"
    },
-   "firstSeen": "2026-11-06T18:50:52.721Z",
-   "alsoOn": []
+   "firstSeen": "2026-11-11T00:58:34.726Z"
   },
   {
    "id": "li-4483948271",
@@ -13920,7 +14159,7 @@
    ],
    "posted": "2026-11-10T11:16:27.000Z",
    "snippet": "Job Description Job Description Benefits: SIMPLE IRA matching SIMPLE IRA Dental insurance Free uniforms Health insurance Paid time off Training & development Vision insurance About Us House of Hope is a dedicated non-profit organization passionate about transformation and healing. We are seeking an empathetic, proactive Behavioral Health Technician (BHT) day shift 7am-3pm to join our amazing team. If you thrive in diverse settings, possess strong interpersonal skills, and want to make a real di…",
-   "url": "https://www.adzuna.com/land/ad/5960484430?se=JKRuWEDd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=9496EDF6FED7E879DF4B78E9D0DCCAF1FD9C3B50",
+   "url": "https://www.adzuna.com/land/ad/5960484430?se=NgjNHGvd8RGRTbZzUjwcZg&utm_medium=api&utm_source=91329da2&v=9496EDF6FED7E879DF4B78E9D0DCCAF1FD9C3B50",
    "match": {
     "pct": 100,
     "covered": [
@@ -13938,7 +14177,7 @@
    ]
   },
   {
-   "id": "jsr-VzMxVG9tenVGaGQ2Qm1wQUFBQUFBQT09OkVzd0JDb3dCUVVwcFZEUjBTMU5CWkdwdVJGUXdaMWxpTFRneFdGaHZTRkkyU25SeGJuSmZTRWxsYkhKVWEwbDFSVUV5YkROS2QzUnBSR0Z6VlRoMVRubEZhRWRRTlRScWNsY3dOVFZxT1VwNmFVRmlXV1o1TWs1cVprbDJZWEZJZEUxMlpETjZSMjFtWW5oS2RVc3lNVnBDYVZKeFVVMDJNM1UzWkVwb1dIaHBjekZKVHpsMFRrNUlNVEIxYlhKcVpXSVNGM0ZWV0doaGRsOVhSR1EyYWpWT2IxQjZOMHQzZVZGSkdpSkJSSE55T1daVVpVbElaVnA1TkhWWlptRm1WbXhDVFZCR2FWUmZRMDFVU0ZoUg",
+   "id": "jsr-VzMxVG9tenVGaGQ2Qm1wQUFBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxZVFZLVFdVMlRqbHJPVEZ2VEhacFFreEJRVkJmUkZVM2VHNW1ibTVUZG1kdWRHUklVM2hIVEhCNlpHNWxXVzh3V1UxTlFrWTRlakZ4T0ROUGFGbHpUa0ZtWkc1WmRreGZjV2MxTjJ0VWVVRm1USGxyVGtOblZEUm5kMFo2UmpsRWVFOVVZbGRyU2tSalJWUlZOa0ZxVlVaTlowVkpNUzFwYmxWSVdGZG9UbWREVEZORFYzVVNGMlZRVkdsaGMxUmlURWxpWW5CMFVWQXdOekl5T0VGUkdpSkJTRTR3UlRkR1IwZGxRa2N6ZG1WT0xYaGZRbkJHVEVSRk5GbzNiVlpsZVVSUg",
    "source": "Google Jobs · JobLeads",
    "sourceKey": "jsearch",
    "direct": false,
@@ -13974,13 +14213,13 @@
     "variant": "master",
     "variantLabel": "Master"
    },
-   "firstSeen": "2026-11-09T18:24:27.049Z",
+   "firstSeen": "2026-11-11T00:58:34.726Z",
    "alsoOn": [
     "Google Jobs · Univision Empleos"
    ]
   },
   {
-   "id": "jsr-dWIxaGY0cjVvbFlvdmJ0NEFBQUFBQT09OkVzd0JDb3dCUVVwcFZEUjBTa3BJT0dOS1REUTNUMHN3V1VWdGJqUk1MV0UxVWxFMmNqWkZZVEpDVjBKT1EwNTNRMWwzTlVKTVRFdzFha3R2YlVKd2FYZHhkRnBVTTA1MGEyMW5UM2N3TVZoWVpqUjVUbGMwVG5OWWVYTXpWbXBVTlZGVVgyMUlhR2xQU25GUGJqUTNla2REYjA5RlowYzRUVFIwV21kTU9YVk9WbGN0WjFNM01USk1jVzkxTFU1TE56QVNGM0ZWV0doaGRsOVhSR1EyYWpWT2IxQjZOMHQzZVZGSkdpSkJSSE55T1daVGIyc3lNbEJXTTBka05IQnpNMmMxVWtwVFpUQTRabVpzTkZGUg",
+   "id": "jsr-dWIxaGY0cjVvbFlvdmJ0NEFBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxXa3h4YzBGd2FpMUhVakJzWW01Q1VuZDRhV2RJVFd3NVVsQmtSRXBwUnpNNU9VOXZUVTVWVjBkdFZrSlJWM04yUlVSbVNtTTVWR2xRVEVGa1NuTlJPRlJUVVhKVFYxOTFlRmhtWTNSbU9DMXNZMXB2ZWpGVFYxSXdMVnB3TVMwMlRWUXhjVmR1ZVVKaUxWbEVlVTF0UTJOcFh6bGhPVk41T0VWMVJVRnJRVEZXV2xjM1RHUVNGMlZRVkdsaGMxUmlURWxpWW5CMFVWQXdOekl5T0VGUkdpSkJTRTR3UlRkSWNWVm5WRnBqUkY5UlUxaHhZMU5OYW5reGRsaExWMlpHVW1wMw",
    "source": "Google Jobs · JobLeads",
    "sourceKey": "jsearch",
    "direct": false,
@@ -14018,11 +14257,11 @@
     "variant": "master",
     "variantLabel": "Master"
    },
-   "firstSeen": "2026-11-06T18:50:52.721Z",
+   "firstSeen": "2026-11-11T00:58:34.726Z",
    "alsoOn": []
   },
   {
-   "id": "jsr-NXFFZERrR2FneXlFQmwzX0FBQUFBQT09OkVzd0JDb3dCUVVwcFZEUjBTWFpJYlZseGJUWTJWREpmWXpObGVtZEJWRjkwY1ZWNmVEUm5WMlJWWWtzdGVWaEpSWEk0YlUxWVFtbGtaRVpWVFVScVEwSlBkMkYyZW1FM2RWSjRUSEppVkdSMFVISTRWMlpJU2tNNWRtUkJMVUZZU1hneVltbzJWamR1VVZGT1FXZENSbVZSVWtRelltSjFNR3hSY2kxT2J6bE5jVkZGVFdneE1ISXlRa0ZYVFdaRGVtd1NGM0ZWV0doaGRsOVhSR1EyYWpWT2IxQjZOMHQzZVZGSkdpSkJSSE55T1daU1VUY3lWMkYxWkROQlpGZ3hiRTFQU3pZMlIxQnJUa3AxYzFGUg",
+   "id": "jsr-NXFFZERrR2FneXlFQmwzX0FBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxXazl6WjNORmNtOWlWMWhMTUZKTmRtVTRhVzlEY205M05ETnhNRVJCVEc0dFJtbEJiSFU0UzNFMFVrVmphV0ozZEU5M1JHaElYMVYwY1hKaWFrTTViSFpWZDFSWmRWVjBRazlvWkVsb1QyRXhVbUZSTlhRdFNsWlZPV0UwWVROVlRuZG5hbFk0TVZsRlRWcGplVFJWWldWR1RURlVaVzFQYnpkQ1NVUlNOVVpITm5CTk5ub1NGMlZRVkdsaGMxUmlURWxpWW5CMFVWQXdOekl5T0VGUkdpSkJTRTR3UlRkRmFUVmpXVFJtTkVkWWQyMUtWbmt4VjJZeFF6RXhYM2xuY0dGQg",
    "source": "Google Jobs · JobMESH",
    "sourceKey": "jsearch",
    "direct": false,
@@ -14073,11 +14312,11 @@
     "variant": "clinic",
     "variantLabel": "Clinic"
    },
-   "firstSeen": "2026-11-10T14:46:29.626Z",
+   "firstSeen": "2026-11-11T00:58:34.726Z",
    "alsoOn": []
   },
   {
-   "id": "jsr-RDZoU2ZMdlc2TTdQdzJ6TkFBQUFBQT09OkVzd0JDb3dCUVVwcFZEUjBUR3R5T1U5MmVTMXpNemRJUkdGSlUyTnVaMnhCYTBaWGFtUkdNa2hsVFhRMmNXZEdVVU0yVVZFME5HOVljRVV6YkU4Mk5IWmpVVlJ5VEU5MmExTXhjbXhoWVhkbVMzUkVaa0ZWZVZaeVNVcHlaRFpoU0dwd2MycGxaRTl3VWsxVVRucE1NVWd5TmpoZlIyUTFjVTVDTlhveWIyVnpUbVZvTTNKWGMwWnZYM00xZFVaSmFrVVNGM0ZWV0doaGRsOVhSR1EyYWpWT2IxQjZOMHQzZVZGSkdpSkJSSE55T1daUlVGTmpaMWd3T0RGVmRuSkxhVGx5TVV0TVJXeExVMHRmVW0xQg",
+   "id": "jsr-RDZoU2ZMdlc2TTdQdzJ6TkFBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxXWEZuTkRSSGJHWjVlblF4U2xjM2VGVlBVbk5zTUVoblVsSnlhVXM1ZUhsUlZuQnphRmRMWTNvdFZsQkRkVTF5VG1OcFpEZHhjaTFzWDBsZmRtaGtTRmhQZEZsMk4xWk5ZMjFuVXkxaGNHMVVjVWhtUVZsSWNVSmplVjlPZFVaWE5sQllXRlkwVDNaTVdXcG5iek5qY1ZaSE4zZHBMV2xHVlRFd1ZXSlhTMmxmU1RKeE9Ua1NGMlZRVkdsaGMxUmlURWxpWW5CMFVWQXdOekl5T0VGUkdpSkJTRTR3UlRkRldYQlllREV3YVVkMFFUWmliVEpaVVV4VmEycDVTVXcyTW5SQg",
    "source": "Google Jobs · JobLeads",
    "sourceKey": "jsearch",
    "direct": false,
@@ -14119,11 +14358,11 @@
     "variant": "clinic",
     "variantLabel": "Clinic"
    },
-   "firstSeen": "2026-11-06T18:50:52.721Z",
+   "firstSeen": "2026-11-11T00:58:34.726Z",
    "alsoOn": []
   },
   {
-   "id": "jsr-X1lkWW5XTUVqUHc0V3pZM0FBQUFBQT09OkVzd0JDb3dCUVVwcFZEUjBURWRSV1VwNVJrTTJjM2RSVjJOSlFUVmlTemR4YWpsWGMyNVVUR0l3VldoNFducFZSVGhFU0dFdE5tbDFjVk41UlZneU1YVnFRamgxTFdGUGFtdHpaR0ZTUW1OcE1sSm1NV1JOTm5NeFJUbERNRmQ1ZDJwSVpsVlRNVGRUYW1WV2JWZHVObVpxVDB0VVdTMHRNR1l3VUVOSGNHMUlRVkJHVEU5UGQwbFVlR2c1ZW1KblFrNFNGM0ZWV0doaGRsOVhSR1EyYWpWT2IxQjZOMHQzZVZGSkdpSkJSSE55T1daVU1uaHliVU40ZEhwQlowZGFOaTFNZDA1RFlYVlljemQ0UjJobg",
+   "id": "jsr-X1lkWW5XTUVqUHc0V3pZM0FBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxZbVJyUzI5aVdVbHZZaTFoVEUwMFlTMW1kbTlvZW1wWFZXeG5kREJoTTI5aVRFUk1TMjVCVWpadVVHUkNkVWMxWTFWM1RVMVZPRU5vZUdsSk1tSk5jVXMxU0hwU1VHWk5OazVhYTFZMUxXb3lPR3hYVm1WblMxTkdNVFIxY1RneE1tTTNaQzFVYldSR01XTldZVkUxYjJWdlFTMHRVVWx1WWxsM1ZtSk9lbk51YnpKMFYyUVNGMlZRVkdsaGMxUmlURWxpWW5CMFVWQXdOekl5T0VGUkdpSkJTRTR3UlRkR00zVlBTekJwVkdWQk4wcEZlVlEyWW5RemNEQm5WVXhOYm1aQg",
    "source": "Google Jobs · JobLeads",
    "sourceKey": "jsearch",
    "direct": false,
@@ -14160,7 +14399,7 @@
     "variant": "master",
     "variantLabel": "Master"
    },
-   "firstSeen": "2026-11-06T18:50:52.721Z",
+   "firstSeen": "2026-11-11T00:58:34.726Z",
    "alsoOn": []
   },
   {
@@ -14762,7 +15001,7 @@
    "scheduleHints": [],
    "posted": "2026-11-10T10:38:15.000Z",
    "snippet": "Job Description Job Description Registered Behavior Technician (RBT) URGENT HIRE Classification: salary Non-Exempt Status – Part-time Reports To: BCBA/BCaBA Summary/Objective Responsible for providing intensive behavioral intervention services to clients with Autism Spectrum Disorder and other developmental delays in language, cognitive, adaptive behavior, social-emotional, self-care, fine motor, gross motor and communication development. The behavior therapist is ultimately responsible for dir…",
-   "url": "https://www.adzuna.com/land/ad/5960460482?se=-tG2V0Dd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=CA21345C4C52E983B674EEF105293ECA16C7EC02",
+   "url": "https://www.adzuna.com/land/ad/5960460482?se=ZOY5HGvd8RGW67hsumO50A&utm_medium=api&utm_source=91329da2&v=CA21345C4C52E983B674EEF105293ECA16C7EC02",
    "match": {
     "pct": 100,
     "covered": [
@@ -14842,7 +15081,7 @@
    "scheduleHints": [],
    "posted": "2026-11-10T11:18:51.000Z",
    "snippet": "Job Description Job Description Agape Behavioral Healthcare a top workplace three years running is currently seeking a Part-Time Behavioral Health technician for our Detox Facility in Port St. Lucie, FL! The Behavioral Health Technician is a member of the multidisciplinary team, who is directly involved in providing quality care for clients. The Behavioral Health Technician is responsible for providing structure and support services for the clinical team treating adults with substance abuse dia…",
-   "url": "https://www.adzuna.com/land/ad/5960494133?se=JKRuWEDd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=44ED6616FB1E824837C6F19A927A11D94CBC821C",
+   "url": "https://www.adzuna.com/land/ad/5960494133?se=NgjNHGvd8RGRTbZzUjwcZg&utm_medium=api&utm_source=91329da2&v=44ED6616FB1E824837C6F19A927A11D94CBC821C",
    "match": {
     "pct": 0,
     "covered": [],
@@ -14853,6 +15092,45 @@
     "variantLabel": "Clinic"
    },
    "firstSeen": "2026-11-10T19:52:43.074Z"
+  },
+  {
+   "id": "ta-630576428880693586",
+   "source": "Talent.com",
+   "sourceKey": "talent",
+   "direct": false,
+   "title": "Registered Behavior Technician (RBT)",
+   "company": "Abacus Therapies",
+   "location": "Fort Lauderdale, Florida, United States",
+   "area": "broward",
+   "fromMiami": 25,
+   "fromDavie": 7,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "part-time",
+    "full-time"
+   ],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 1,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": null,
+   "snippet": "Are you passionate about working with children on the autism spectrum? Abacus Therapies in Fort Lauderdale, FL, is seeking dedicated part-time and full-time RBTs to join our growing team.Abacus The... Show more",
+   "url": "https://www.talent.com/view?id=630576428880693586",
+   "match": {
+    "pct": 100,
+    "covered": [
+     "Autism / ASD experience"
+    ],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
   },
   {
    "id": "az-5954123764",
@@ -14923,7 +15201,7 @@
    "scheduleHints": [],
    "posted": "2026-11-10T10:38:57.000Z",
    "snippet": "Job Description Job Description Position Overview: We are seeking a fun, energetic, and responsible Registered Behavior Technician (RBT) who understands that effective therapy is built through connection, engagement, and consistency. The ideal candidate knows how to play with purpose while maintaining professionalism, structure, and clinical integrity. This role requires someone who can be playful when teaching, yet serious when implementing treatment plans and ensuring client safety and progre…",
-   "url": "https://www.adzuna.com/land/ad/5960461215?se=-tG2V0Dd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=0C64C56CE70A3D08D75A69039AC2BC926A3A8E1D",
+   "url": "https://www.adzuna.com/land/ad/5960461215?se=ZOY5HGvd8RGW67hsumO50A&utm_medium=api&utm_source=91329da2&v=0C64C56CE70A3D08D75A69039AC2BC926A3A8E1D",
    "match": {
     "pct": 92,
     "covered": [
@@ -15081,6 +15359,43 @@
    "firstSeen": "2026-11-10T14:46:29.626Z"
   },
   {
+   "id": "az-5960794270",
+   "source": "Adzuna",
+   "sourceKey": "adzuna",
+   "direct": false,
+   "title": "RBT with experience / 5 years old with ASD/ Lauderhill",
+   "company": "Autism Family",
+   "location": "Lazy Lake, Broward County",
+   "area": "broward",
+   "fromMiami": 27,
+   "fromDavie": 8,
+   "payText": "",
+   "payMin": 25,
+   "payMax": 25,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-10T18:36:53.000Z",
+   "snippet": "Job Description Job Description About the Role: Seeking an experienced RBT to work with a 5-year-old child with autism - No vocal. Target behaviors include climbing/jumping, elopement, and stereotypy. This job offers a $ 25 hourly rate. Candidates must hold an active RBT certification, have experience addressing these behaviors and teaching functional communication skills, maintain a professional appearance, and pass a pre-employment drug screening. Please send your résumé and availability.",
+   "url": "https://www.adzuna.com/land/ad/5960794270?se=uAhOHmvd8RGW67hsumO50A&utm_medium=api&utm_source=91329da2&v=1D22221BA6FACD019DA820E5BAF360F970779474",
+   "match": {
+    "pct": 100,
+    "covered": [
+     "RBT certification",
+     "Autism / ASD experience"
+    ],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
+  },
+  {
    "id": "pbs-1033477",
    "source": "Team PBS (company site)",
    "sourceKey": "teampbs",
@@ -15216,44 +15531,7 @@
    "firstSeen": "2026-11-10T14:46:29.626Z"
   },
   {
-   "id": "ukg-3accffab-0675-492c-9bdd-b0699f975498",
-   "source": "Cultivate BHE (company site)",
-   "sourceKey": "cultivate",
-   "direct": true,
-   "title": "Registered Behavior Technician- Part-Time",
-   "company": "Cultivate Behavioral Health & Education",
-   "location": "Weston, FL",
-   "area": "broward",
-   "fromMiami": 27,
-   "fromDavie": 11,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [
-    "part-time"
-   ],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 1,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-10-16T18:14:06.466Z",
-   "snippet": "If you are passionate about improving the lives of children on the spectrum and want to work for a company that prioritizes integrity, creativity, and compassion, please keep reading. We provide full training for those just starting their careers in the ABA (Applied Behavior Analysis) field and room for growth for more experienced candidates.",
-   "url": "https://cultivate.rec.pro.ukg.net/CUL1007CULTI/JobBoard/2ed8df62-4087-44cc-a9f5-ae2da8ac1569/OpportunityDetail?opportunityId=3accffab-0675-492c-9bdd-b0699f975498",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T14:46:29.626Z",
-   "stale": true
-  },
-  {
-   "id": "jsr-cmU2TWlNSWhhVTZDMUFxV0FBQUFBQT09OkVzd0JDb3dCUVVwcFZEUjBTMWN6V0ZKbE9YUnNXamsyZG5acFIzbHJka1F6WDFkYVRHUmhTVXRwZFU1Rk1rSXhjbXM0UmkxblF6QlhUVlpMV0U1TWMwcFliVlpFY1VKUlNXMTFOM1phTkhaT09FMXZXUzB5UzI5NmVIWkNaVGhEYjFCQlYxbERla2h5UW1Sc2JXbGFkM1puVjIxVlVtODNhMUJMV21KMk1raE9NVnBhVTFWb2JuQllVR3hZWVRoRWFpMFNGM0ZWV0doaGRsOVhSR1EyYWpWT2IxQjZOMHQzZVZGSkdpSkJSSE55T1daVE9XVlhSQzFpVmtWUVMwbHFWRUo2YVc5dVdWSjJaV3B4TUdGQg",
+   "id": "jsr-cmU2TWlNSWhhVTZDMUFxV0FBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxXbTltWkhSdVdsSnJVa2RCVjJaV1NWazNSMHB4ZG5oRVJFRklOMUV6Y2pKU2MxQmZRa3RDZVZOMFVTMUJXWHBqTFZKQllqZEpOV2N6VERWM1JtdHVZMlJMZDJOalpVRlFSRkV3WlRGSVJsSjFaMDlEU0Roc1NsTjZhR0ZrYUZodldXcDNORGgyTVdwYVRXUmtNR05tUTNKd2IzQTJhWFU0Y0hOb2IzSlFialJtT0hsM1FrWVNGMXBPV0doaGIybFVSVGMzY0hCMFVWQnFiM0UyYjBGSkdpSkJTRTR3UlRkSE1YZGxObkpUT1ZWME1rTkdSRWRhYzI5aExWTkpSbXRTZEVWMw",
    "source": "Google Jobs · Glassdoor",
    "sourceKey": "jsearch",
    "direct": false,
@@ -15305,8 +15583,7 @@
     "variant": "inhome",
     "variantLabel": "In-home"
    },
-   "firstSeen": "2026-11-10T04:36:51.237Z",
-   "alsoOn": []
+   "firstSeen": "2026-11-11T00:58:34.726Z"
   },
   {
    "id": "sh-J0EU6Ni8c05reVRPApIv677LD4Pmz08yl8JyNMs2vmwU-npMwz4MSw",
@@ -15359,85 +15636,7 @@
    "firstSeen": "2026-11-10T14:46:29.626Z"
   },
   {
-   "id": "ta-642543268739811119",
-   "source": "Talent.com",
-   "sourceKey": "talent",
-   "direct": false,
-   "title": "RBT/BT",
-   "company": "Little Rays ABA",
-   "location": "Sunrise, Florida, United States",
-   "area": "broward",
-   "fromMiami": 28,
-   "fromDavie": 7,
-   "payText": "$25.00 hour",
-   "payMin": 20,
-   "payMax": 25,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-08T00:00:00.000Z",
-   "snippet": "Join the Little Rays ABA Team!\n Position: Registered Behavior Technicians (RBT) / Behavior Technicians (BT)\n Location: Sunrise, FL\n Pay: Competitive($20 To $25 Hourly)\n Little Rays ABA is hiring RBTs and Behavior Technicians to staff cases across Florida! Be part of a growing team thats dedicated to transforming lives through high-quality ABA services for children with autism.\n What We Offer: \n • Competitive Pay We recognize and reward your dedication.\n• Flexible Locations Work in various locations across Florida, close to home.\n• Professional Growth Gain hands-on experience in the field of Ap",
-   "url": "https://www.talent.com/view?id=642543268739811119",
-   "match": {
-    "pct": 100,
-    "covered": [
-     "RBT certification",
-     "Driver's license / transportation",
-     "Data collection",
-     "Autism / ASD experience",
-     "BCBA supervision",
-     "Experience with children"
-    ],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T14:46:29.626Z"
-  },
-  {
-   "id": "ukg-430c8beb-7ec0-4f22-bad4-f0a04222b8b8",
-   "source": "Cultivate BHE (company site)",
-   "sourceKey": "cultivate",
-   "direct": true,
-   "title": "Behavior Technician",
-   "company": "Cultivate Behavioral Health & Education",
-   "location": "Sunrise, FL",
-   "area": "broward",
-   "fromMiami": 28,
-   "fromDavie": 7,
-   "payText": "",
-   "payMin": null,
-   "payMax": null,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [
-    "full-time"
-   ],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-09T17:47:24.548Z",
-   "snippet": "If you are passionate about improving the lives of children on the spectrum and want to work for a company that prioritizes integrity, creativity, and compassion, please keep reading. We provide full training for those just starting their careers in the ABA (Applied Behavior Analysis) field and room for growth for more experienced candidates.",
-   "url": "https://cultivate.rec.pro.ukg.net/CUL1007CULTI/JobBoard/2ed8df62-4087-44cc-a9f5-ae2da8ac1569/OpportunityDetail?opportunityId=430c8beb-7ec0-4f22-bad4-f0a04222b8b8",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-09T18:24:27.049Z",
-   "stale": true
-  },
-  {
-   "id": "jsr-UjRSYnJ1dW1QeHZ1blZnREFBQUFBQT09OkVzd0JDb3dCUVVwcFZEUjBURFUyTlUxRmVXazJZV1pSUVdoVFMxaEliWFJ1WVdKeFYzcHRTVTEyVFdWWlRTMHdkbEJ1VDNkTExURjVkSGhSTFhSMWNHNHhaa2wzVTFWRU1FdzNhVUZWVWxST01tOWtaa3AwYjNScWNFMXlRV1IxWWxVd1ZFSm1XbmgxZERaZlZrTkRkMjUwY0U1TmNuRldWbkpVWW1zeWVEUk9TRnBVYjFCclZUQjJhMFo1ZDNaRmVGOFNGM0ZWV0doaGRsOVhSR1EyYWpWT2IxQjZOMHQzZVZGSkdpSkJSSE55T1daVFkxbG5XakpsUjJ4NUxUbHVjMk5KV1hwaFRtUTFPR05vZEVwUg",
+   "id": "jsr-UjRSYnJ1dW1QeHZ1blZnREFBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxXamhMVGxoNFQycEJXSEF5WVMxclgxQTRRMjFHTTBoT2RuSnBXV3RmVUZOUU5sSlZOVGw0YjFKdVRXcFZkMlpQU0hoU1MwVmlWa1JCUTBweVZXSmFRamd5Y1ZSWlkxaEJXWEpHV1U5T2NHZFBNRXhxYWs5S1lVNXpVMFp0TmswNWJrNWtkVmgwTWtKSldsTXhUbTFWUjFZMU4wcEJRelZCV2xkSVNrRjZPR0ZqYzFGMFRtWVNGMlZRVkdsaGMxUmlURWxpWW5CMFVWQXdOekl5T0VGUkdpSkJTRTR3UlRkR1YyaFpZakpmUmxCWk9FOU5VRlF3TW01TWJXOXllRkpJV2xKUg",
    "source": "Google Jobs · Indeed",
    "sourceKey": "jsearch",
    "direct": false,
@@ -15467,7 +15666,7 @@
    "scheduleHints": [
     "4:30-5PM"
    ],
-   "posted": "2026-10-23T00:00:00.000Z",
+   "posted": "2026-10-22T00:00:00.000Z",
    "snippet": "Registered Behavior Technician (RBT)\n\nPLEASE DO NOT APPLY FOR THIS POSITION IF YOU DO NOT HAVE YOUR RBT CERTIFICATION OR ARE NOT ACTIVELY IN THE PROCESS OF OBTAINING IT.\n\nJoin the Most Heart-Driven ABA Team Around!\nPosition: Registered Behavior Technician (RBT)\nPay Range: $25–$33/hour + Bonus Opportunities\nLocation: In-Home & In-School (We come to the kiddos!)\nSchedule: All hours during the weekday are after 4:30-5PM and there are 2 sessions on both Saturday and Sunday.\nStart Date: ASAP—we can’t wait to meet you!\n\nFull Time/ Part Time Available\n\nHours: Based on the case (Ranging anywhere from ",
    "url": "https://www.indeed.com/viewjob?jk=07f412cd6f81bdc0",
    "match": {
@@ -15483,7 +15682,7 @@
     "variant": "school",
     "variantLabel": "School-based"
    },
-   "firstSeen": "2026-11-09T18:24:27.049Z",
+   "firstSeen": "2026-11-11T00:58:34.726Z",
    "alsoOn": [
     "SimplyHired / Indeed"
    ]
@@ -15625,9 +15824,7 @@
     "variantLabel": "Clinic"
    },
    "firstSeen": "2026-11-03T15:14:07.053Z",
-   "alsoOn": [
-    "SimplyHired / Indeed"
-   ]
+   "alsoOn": []
   },
   {
    "id": "az-5956024384",
@@ -15766,7 +15963,7 @@
    "scheduleHints": [],
    "posted": "2026-11-10T10:39:54.000Z",
    "snippet": "Job Description Job Description Responsible for Data Measurement, Assessment, Skill Acquisition, Behavior Reduction, Documentation and Reporting. Maintaining Professional Conduct. Work towards treatment goals and milestones with clients. Prepare daily and monthly progress reports. Communicate with lead analyst. Keeping consistent schedules with families -Ensuring that requirements for documentation of clinical services are implemented. Hours vary from Monday through Friday, weekends, and some h…",
-   "url": "https://www.adzuna.com/land/ad/5960462234?se=-tG2V0Dd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=CC155458B8A9BE1AC669F4DC0D6652BC03CABC28",
+   "url": "https://www.adzuna.com/land/ad/5960462234?se=ZOY5HGvd8RGW67hsumO50A&utm_medium=api&utm_source=91329da2&v=CC155458B8A9BE1AC669F4DC0D6652BC03CABC28",
    "match": {
     "pct": 100,
     "covered": [
@@ -16300,53 +16497,6 @@
    "firstSeen": "2026-11-10T14:46:29.626Z"
   },
   {
-   "id": "sh-1n2axJX81W9mbjas7rjfux3PpDfzesrgm-LSOyOJ_0mXfPs1nSzEBA",
-   "source": "SimplyHired / Indeed",
-   "sourceKey": "simplyhired",
-   "direct": false,
-   "title": "RBT",
-   "company": "The Reinforcement Zone",
-   "location": "Pompano Beach, FL",
-   "area": "broward",
-   "fromMiami": 33,
-   "fromDavie": 13,
-   "payText": "$22 - $28 an hour",
-   "payMin": 22,
-   "payMax": 28,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [
-    "full-time"
-   ],
-   "setting": [
-    "in-home"
-   ],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-11-09T15:23:05.046Z",
-   "snippet": "Company Overview \n The Reinforcement Zone provides Applied Behavior Analysis (ABA) therapy to empower individuals. The team uses positive reinforcement to strengthen socially appropriate behaviors and support meaningful change for clients and families.\n Job Summary \n As a Registered Behavior Technician (RBT), you'll deliver direct behavioral therapy to children and other clients with developmental needs. You'll implement ABA protocols, follow care plans, and communicate with clients and families while supporting safe, consistent care.\n Duties \n • Provide behavioral therapy and assist clients w",
-   "url": "https://www.simplyhired.com/job/1n2axJX81W9mbjas7rjfux3PpDfzesrgm-LSOyOJ_0mXfPs1nSzEBA",
-   "match": {
-    "pct": 100,
-    "covered": [
-     "RBT certification",
-     "Data collection",
-     "HIPAA",
-     "Autism / ASD experience",
-     "Session notes / documentation",
-     "Reinforcement / prompting",
-     "Experience with children",
-     "Developmental disabilities"
-    ],
-    "missing": [],
-    "variant": "inhome",
-    "variantLabel": "In-home"
-   },
-   "firstSeen": "2026-11-09T18:24:27.049Z"
-  },
-  {
    "id": "sh-OCI0RoDzn_eewJI1T-5ueAv-WAvDcK0baudKB8VOfIT2SjhOubzieQ",
    "source": "SimplyHired / Indeed",
    "sourceKey": "simplyhired",
@@ -16387,64 +16537,42 @@
    "firstSeen": "2026-11-06T13:43:53.922Z"
   },
   {
-   "id": "sh-buGFEIP5UkKziaDzKE_YHSHv45GF9MYbDyTOEkkdfa6jeVocqcn0Kw",
+   "id": "sh-1n2axJX81W9mbjas7rjfux3PpDfzesrgm-LSOyOJ_0mXfPs1nSzEBA",
    "source": "SimplyHired / Indeed",
    "sourceKey": "simplyhired",
    "direct": false,
-   "title": "Registered Behavior Technician (RBT)",
-   "company": "Mindful Sprouts",
-   "location": "Margate, FL",
+   "title": "RBT",
+   "company": "The Reinforcement Zone",
+   "location": "Pompano Beach, FL",
    "area": "broward",
    "fromMiami": 33,
-   "fromDavie": 13,
-   "payText": "$20 - $27 an hour",
-   "payMin": 20,
-   "payMax": 27,
+   "fromDavie": 14,
+   "payText": "$22 - $28 an hour",
+   "payMin": 22,
+   "payMax": 28,
    "hoursMin": null,
    "hoursMax": null,
    "jobTypes": [
     "full-time"
    ],
    "setting": [
-    "clinic"
+    "in-home"
    ],
-   "bilingual": true,
-   "afternoon": 2,
-   "shift": "afternoon",
-   "scheduleHints": [
-    "flexible availability, including afternoons and weekends as needed"
-   ],
-   "posted": "2026-07-28T23:23:17.813Z",
-   "snippet": "About the Job \n Mindful Sprouts is hiring Registered Behavior Technicians (RBTs) for a meaningful opportunity to help children with exceptionalities achieve their goals. As an RBT, you will provide consistent, individualized Applied Behavior Analysis (ABA) therapy in clinic, home, and school environments under the direction and supervision of a BCBA. \n This role is a great fit for someone who genuinely cares about children's well-being, takes feedback well, and can adapt their approach to meet each child's individual needs. Our strongest RBTs are compassionate and client-centered, coachable, a",
-   "url": "https://www.simplyhired.com/job/buGFEIP5UkKziaDzKE_YHSHv45GF9MYbDyTOEkkdfa6jeVocqcn0Kw",
+   "bilingual": false,
+   "afternoon": 0,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-09T15:23:05.046Z",
+   "snippet": "Relevant experience may include home-based behavioral therapy, direct patient care, school settings, special education, teaching, behavioral health, and applied…",
+   "url": "https://www.simplyhired.com/job/1n2axJX81W9mbjas7rjfux3PpDfzesrgm-LSOyOJ_0mXfPs1nSzEBA",
    "match": {
-    "pct": 89,
-    "covered": [
-     "RBT certification",
-     "40-hour RBT training",
-     "Competency assessment",
-     "Driver's license / transportation",
-     "Behavior intervention plans",
-     "Skill acquisition",
-     "HIPAA",
-     "Medicaid",
-     "Bilingual Spanish",
-     "Autism / ASD experience",
-     "BCBA supervision",
-     "Session notes / documentation",
-     "Reinforcement / prompting",
-     "Bachelor's degree",
-     "Experience with children",
-     "Developmental disabilities"
-    ],
-    "missing": [
-     "Level 2 background screening",
-     "CPR / First Aid"
-    ],
-    "variant": "clinic",
-    "variantLabel": "Clinic"
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "inhome",
+    "variantLabel": "In-home"
    },
-   "firstSeen": "2026-11-10T19:52:43.074Z"
+   "firstSeen": "2026-11-09T18:24:27.049Z"
   },
   {
    "id": "li-4485303361",
@@ -16680,46 +16808,6 @@
    "firstSeen": "2026-11-09T23:31:10.320Z"
   },
   {
-   "id": "sh-YylLlKZRyGX9qItBwhcKEDCHsV0SdtR5kOpWmLjMJ9l390j1n5ZikQ",
-   "source": "SimplyHired / Indeed",
-   "sourceKey": "simplyhired",
-   "direct": false,
-   "title": "Behavioral Health Technician",
-   "company": "Path To Purpose Recovery",
-   "location": "Pompano Beach, FL",
-   "area": "broward",
-   "fromMiami": 33,
-   "fromDavie": 14,
-   "payText": "$17 - $20 an hour",
-   "payMin": 17,
-   "payMax": 20,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [
-    "full-time"
-   ],
-   "setting": [
-    "clinic"
-   ],
-   "bilingual": false,
-   "afternoon": 2,
-   "shift": null,
-   "scheduleHints": [
-    "weekends as needed, full-time, evenings as needed"
-   ],
-   "posted": "2026-10-12T20:16:33.427Z",
-   "snippet": "You will collaborate closely with clinical staff, monitor patient progress, and ensure the highest standards of confidentiality and care are maintained.",
-   "url": "https://www.simplyhired.com/job/YylLlKZRyGX9qItBwhcKEDCHsV0SdtR5kOpWmLjMJ9l390j1n5ZikQ",
-   "match": {
-    "pct": null,
-    "covered": [],
-    "missing": [],
-    "variant": "clinic",
-    "variantLabel": "Clinic"
-   },
-   "firstSeen": "2026-11-10T19:52:43.074Z"
-  },
-  {
    "id": "pbs-1091629",
    "source": "Team PBS (company site)",
    "sourceKey": "teampbs",
@@ -16814,46 +16902,6 @@
     "variantLabel": "Clinic"
    },
    "firstSeen": "2026-11-07T20:20:26.834Z"
-  },
-  {
-   "id": "sh-PAVi_5alc6H6rwRcGKKTVCOf-D0MfJF4wT3S8rSogMdNm1pPidWMhg",
-   "source": "SimplyHired / Indeed",
-   "sourceKey": "simplyhired",
-   "direct": false,
-   "title": "Behavioral Health Technician",
-   "company": "Mastermind Care Inc",
-   "location": "Margate, FL",
-   "area": "broward",
-   "fromMiami": 33,
-   "fromDavie": 13,
-   "payText": "$16 - $18 an hour",
-   "payMin": 16,
-   "payMax": 18,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [
-    "full-time"
-   ],
-   "setting": [
-    "clinic"
-   ],
-   "bilingual": false,
-   "afternoon": 0,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-04-06T05:27:16.751Z",
-   "snippet": "Maintain credentials active and provide Human Resources with current active licensure and certification. Collaborate with Clinical Director and Lead Behavioral…",
-   "url": "https://www.simplyhired.com/job/PAVi_5alc6H6rwRcGKKTVCOf-D0MfJF4wT3S8rSogMdNm1pPidWMhg",
-   "match": {
-    "pct": 0,
-    "covered": [],
-    "missing": [
-     "Lead / senior technician role"
-    ],
-    "variant": "clinic",
-    "variantLabel": "Clinic"
-   },
-   "firstSeen": "2026-11-10T19:52:43.074Z"
   },
   {
    "id": "az-5960284173",
@@ -16959,7 +17007,7 @@
    "scheduleHints": [],
    "posted": "2026-11-09T00:21:11.000Z",
    "snippet": "Job Description Job Description Exciting Opportunity with Banyan Treatment Centers! We’re seeking a compassionate and dedicated Behavioral Health Technician (BHT) to provide essential peer and operational support to our patients during their recovery journey. As a BHT, you'll spend the most time with our patients and play an important role in fostering trust and connection while ensuring patient safety at all times. About Banyan Treatment Centers: Banyan Treatment Centers is a nationally recogn…",
-   "url": "https://www.adzuna.com/land/ad/5958744103?se=JKRuWEDd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=3F4C6DDD03457D67A8E1CC18C073C15AB47F1085",
+   "url": "https://www.adzuna.com/land/ad/5958744103?se=NgjNHGvd8RGRTbZzUjwcZg&utm_medium=api&utm_source=91329da2&v=3F4C6DDD03457D67A8E1CC18C073C15AB47F1085",
    "match": {
     "pct": null,
     "covered": [],
@@ -16995,7 +17043,7 @@
    "scheduleHints": [],
    "posted": "2026-11-10T11:18:56.000Z",
    "snippet": "Job Description Job Description Exciting Opportunity with Banyan Treatment Centers! We’re seeking a compassionate and dedicated Behavioral Health Technician (BHT) to provide essential peer and operational support to our patients during their recovery journey. As a BHT, you'll spend the most time with our patients and play an important role in fostering trust and connection while ensuring patient safety at all times. About Banyan Treatment Centers: Banyan Treatment Centers is a nationally recogn…",
-   "url": "https://www.adzuna.com/land/ad/5960494623?se=JKRuWEDd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=1DFF7180116E883CA758617F3E9239A8812EEBF2",
+   "url": "https://www.adzuna.com/land/ad/5960494623?se=NgjNHGvd8RGRTbZzUjwcZg&utm_medium=api&utm_source=91329da2&v=1DFF7180116E883CA758617F3E9239A8812EEBF2",
    "match": {
     "pct": null,
     "covered": [],
@@ -17213,6 +17261,47 @@
     "variantLabel": "Master"
    },
    "firstSeen": "2026-11-09T18:24:27.049Z"
+  },
+  {
+   "id": "js-54850318852",
+   "source": "Jobsora",
+   "sourceKey": "jobsora",
+   "direct": false,
+   "title": "Morning ABA Therapist (RBT/BT) Impact Autism Support",
+   "company": "Autism Family Services",
+   "location": "Pompano Beach 33072",
+   "area": "broward",
+   "fromMiami": 33,
+   "fromDavie": 14,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 1,
+   "shift": "morning",
+   "scheduleHints": [],
+   "posted": null,
+   "snippet": "Autism Family is seeking a dedicated Behavior Technician (BT) or Registered Behavior Technician (RBT) to join our team in Coral Springs, FL. The morning case offers a flexible schedule and the chance to make a real difference for children with autism and their families. Under BCBA supervision, you will implement ABA programs, collect data, and apply DTT/NET strategies to promote communication,...",
+   "url": "https://us.jobsora.com/job-54850318852?source=1",
+   "match": {
+    "pct": 100,
+    "covered": [
+     "Data collection",
+     "DTT",
+     "NET",
+     "Autism / ASD experience",
+     "BCBA supervision",
+     "Experience with children"
+    ],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
   },
   {
    "id": "jsr-MGNobVRPckZfN3NKOHI0M0FBQUFBQT09OkVzd0JDb3dCUVVSRVlsZGxZbXB4VUdWUVNWcGlRVFJ1Ym5kclgwOXlSMnRmTUZCTWVHOTRTbFoyTTFOclQyRkJPVVZXYTFacE1rVjZXVVZwUjJwaFV6WnlPR05uV2xkRk5GRm9hMTkxVFcxb2NXZHBTR3hSVGxwNVIxVmZObGg2YzAxUlQyZGhTMHBUZDFKMGRtTmlTMDlpV21vMVJYTkJTV3BKTWxVeVUxRlhiekZ2Um5JNFMydGpWMEpPUWxaWE1FUVNGMU15Ym5WaGRVUmlTamxFU0RRdFJWQTJORXgwYjBGM0dpSkJTRTR3UlRkSFRVUlRkMDFQZEdOeFoxRlZWamhJYkUxSkxXTlVTek5XVG1WUg",
@@ -17480,55 +17569,6 @@
    "firstSeen": "2026-11-10T14:46:29.626Z"
   },
   {
-   "id": "sh-c5734DgCNh5IeyWJ_qlMAwhFoZhGd5sGQcNVrjlBirgVTjdMl7t7xw",
-   "source": "SimplyHired / Indeed",
-   "sourceKey": "simplyhired",
-   "direct": false,
-   "title": "Registered Behavior Technician (RBT)",
-   "company": "Alex Dominguez & Associates ( Early Intervention Clinic)",
-   "location": "Coral Springs, FL",
-   "area": "broward",
-   "fromMiami": 35,
-   "fromDavie": 14,
-   "payText": "$26 - $30 an hour",
-   "payMin": 26,
-   "payMax": 30,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [
-    "full-time"
-   ],
-   "setting": [
-    "clinic"
-   ],
-   "bilingual": false,
-   "afternoon": -1,
-   "shift": "morning",
-   "scheduleHints": [
-    "8:00 a.m. to 2:00 p.m."
-   ],
-   "posted": "2026-09-23T13:54:12.772Z",
-   "snippet": "Employee(s) required to work in a clinic providing behavior analysis services to children with various intellectual disabilities. \n Our agency focuses on quality of services therefore, the new behavior technician will meet with the BCBA daily and will have access to a variety of materials on site to ensure ease/quality of training. \n Hours of operation \n &middot; Monday thru Friday - 8:00 a.m. to 2:00 p.m.\n Location: Clinic Base \n Must Haves \n .Medicaid Provider ID #\n .Registered Behavior Technician by BACB\n Qualification needed. (can be obtained during hiring process) \n &middot; Level 2 backg",
-   "url": "https://www.simplyhired.com/job/c5734DgCNh5IeyWJ_qlMAwhFoZhGd5sGQcNVrjlBirgVTjdMl7t7xw",
-   "match": {
-    "pct": 71,
-    "covered": [
-     "RBT certification",
-     "Data collection",
-     "Medicaid",
-     "BCBA supervision",
-     "Experience with children"
-    ],
-    "missing": [
-     "Level 2 background screening",
-     "CPR / First Aid"
-    ],
-    "variant": "clinic",
-    "variantLabel": "Clinic"
-   },
-   "firstSeen": "2026-11-10T14:46:29.626Z"
-  },
-  {
    "id": "sh-2rvzSNJwn5HS-thNz1gKWkWoIYp2QA0jSY_s-46jg_eZ3nhSDu505g",
    "source": "SimplyHired / Indeed",
    "sourceKey": "simplyhired",
@@ -17679,6 +17719,52 @@
    "firstSeen": "2026-11-06T18:50:52.721Z"
   },
   {
+   "id": "sh-rEkjlIxGaK-WroibXI8l3mFnWQES459Uzig0TVi6xsirR4EXIxak4w",
+   "source": "SimplyHired / Indeed",
+   "sourceKey": "simplyhired",
+   "direct": false,
+   "title": "REGISTERED BEHAVIOR TECHNICIAN",
+   "company": "Autism Family",
+   "location": "Parkland, FL",
+   "area": "broward",
+   "fromMiami": 35,
+   "fromDavie": 14,
+   "payText": "$25 - $27 an hour",
+   "payMin": 25,
+   "payMax": 27,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "part-time"
+   ],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 1,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-10-07T12:53:12.361Z",
+   "snippet": "Registered Behavior Technician (RBT)-Part Time-$25-$27 upon experience \n We are seeking a caring, reliable RBT to provide individualized ABA services to a 6-year-old child with Autism Spectrum Disorder (ASD), under the supervision of a BCBA.\n Requirements: \nCurrent, active RBT certification.\nFluent English for effective communication.\nProfessional appearance, including clean, neat attire appropriate for working with children.\nExperience working with children with ASD preferred.\nMust pass a drug test and background screening\n Responsibilities include implementing the behavior treatment plan, te",
+   "url": "https://www.simplyhired.com/job/rEkjlIxGaK-WroibXI8l3mFnWQES459Uzig0TVi6xsirR4EXIxak4w",
+   "match": {
+    "pct": 88,
+    "covered": [
+     "RBT certification",
+     "Data collection",
+     "Behavior intervention plans",
+     "Autism / ASD experience",
+     "BCBA supervision",
+     "Session notes / documentation",
+     "Experience with children"
+    ],
+    "missing": [
+     "Level 2 background screening"
+    ],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-10T14:46:29.626Z"
+  },
+  {
    "id": "az-5960488017",
    "source": "Adzuna",
    "sourceKey": "adzuna",
@@ -17702,7 +17788,7 @@
    "scheduleHints": [],
    "posted": "2026-11-10T11:17:40.000Z",
    "snippet": "Job Description Job Description Join the Little Rays ABA Team! Position: Registered Behavior Technicians (RBT) / Behavior Technicians (BT) Location: Coral springs, Florida Pay: Competitive ($20 To $25 Hourly) Little Rays ABA is hiring RBTs and Behavior Technicians to staff cases across Florida! Be part of a growing team thats dedicated to transforming lives through high-quality ABA services for children with autism. What We Offer: Competitive Pay We recognize and reward your dedication. Flexibl…",
-   "url": "https://www.adzuna.com/land/ad/5960488017?se=-tG2V0Dd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=05D06491F4065CDC7903EA31D029C270FB19C2F7",
+   "url": "https://www.adzuna.com/land/ad/5960488017?se=ZOY5HGvd8RGW67hsumO50A&utm_medium=api&utm_source=91329da2&v=05D06491F4065CDC7903EA31D029C270FB19C2F7",
    "match": {
     "pct": 100,
     "covered": [
@@ -17741,7 +17827,7 @@
    "scheduleHints": [],
    "posted": "2026-10-29T23:21:17.000Z",
    "snippet": "Job Description Job Description Registered Behavior Technician (RBT) URGENT HIRE Classification: salary Non-Exempt Status – part-time Reports To: BCBA/BCaBA Summary/Objective Responsible for providing intensive behavioral intervention services to clients with Autism Spectrum Disorder and other developmental delays in language, cognitive, adaptive behavior, social-emotional, self-care, fine motor, gross motor and communication development. The behavior therapist is ultimately responsible for dir…",
-   "url": "https://www.adzuna.com/land/ad/5946477238?se=-tG2V0Dd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=4D0F60B9EAEA3A729C18E8CFF2021F3A6B5099E3",
+   "url": "https://www.adzuna.com/land/ad/5946477238?se=ZOY5HGvd8RGW67hsumO50A&utm_medium=api&utm_source=91329da2&v=4D0F60B9EAEA3A729C18E8CFF2021F3A6B5099E3",
    "match": {
     "pct": 100,
     "covered": [
@@ -17973,6 +18059,46 @@
    "firstSeen": "2026-11-07T20:20:26.834Z"
   },
   {
+   "id": "sh-_GAq3bzYOUs42iV2mLzpkKWQSmvCXL5hkDzKGqbogMXVsuS26-c4Fg",
+   "source": "SimplyHired / Indeed",
+   "sourceKey": "simplyhired",
+   "direct": false,
+   "title": "Registered Behavior Technician- Part-Time",
+   "company": "Cultivate Behavioral Health",
+   "location": "Coral Springs, FL",
+   "area": "broward",
+   "fromMiami": 36,
+   "fromDavie": 15,
+   "payText": "From $21 an hour",
+   "payMin": 21,
+   "payMax": 21,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "part-time"
+   ],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 1,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-10-06T16:06:38.088Z",
+   "snippet": "Strong technology skills for data collection and entry. Work collaboratively with a BCBA (Board Certified Behavior Analyst) to implement basic principles and…",
+   "url": "https://www.simplyhired.com/job/_GAq3bzYOUs42iV2mLzpkKWQSmvCXL5hkDzKGqbogMXVsuS26-c4Fg",
+   "match": {
+    "pct": 100,
+    "covered": [
+     "Data collection",
+     "BCBA supervision",
+     "Microsoft Office / technology"
+    ],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
+  },
+  {
    "id": "pbs-1091628",
    "source": "Team PBS (company site)",
    "sourceKey": "teampbs",
@@ -18019,6 +18145,42 @@
     "variantLabel": "Clinic"
    },
    "firstSeen": "2026-11-07T20:20:26.834Z"
+  },
+  {
+   "id": "ukg-7358aa00-656f-4d0a-bc6f-3bf0f3601091",
+   "source": "Cultivate BHE (company site)",
+   "sourceKey": "cultivate",
+   "direct": true,
+   "title": "Registered Behavior Technician- Part-Time",
+   "company": "Cultivate Behavioral Health & Education",
+   "location": "Coral Springs, FL",
+   "area": "broward",
+   "fromMiami": 36,
+   "fromDavie": 15,
+   "payText": "",
+   "payMin": null,
+   "payMax": null,
+   "hoursMin": null,
+   "hoursMax": null,
+   "jobTypes": [
+    "part-time"
+   ],
+   "setting": [],
+   "bilingual": false,
+   "afternoon": 1,
+   "shift": null,
+   "scheduleHints": [],
+   "posted": "2026-11-10T21:39:58.648Z",
+   "snippet": "If you are passionate about improving the lives of children on the spectrum and want to work for a company that prioritizes integrity, creativity, and compassion, please keep reading. We provide full training for those just starting their careers in the ABA (Applied Behavior Analysis) field and room for growth for more experienced candidates.",
+   "url": "https://cultivate.rec.pro.ukg.net/CUL1007CULTI/JobBoard/2ed8df62-4087-44cc-a9f5-ae2da8ac1569/OpportunityDetail?opportunityId=7358aa00-656f-4d0a-bc6f-3bf0f3601091",
+   "match": {
+    "pct": null,
+    "covered": [],
+    "missing": [],
+    "variant": "master",
+    "variantLabel": "Master"
+   },
+   "firstSeen": "2026-11-11T00:58:34.726Z"
   },
   {
    "id": "sh-uwxTM2gOgV88ZFGtvCq8SO2Xe3W2mA4iSxjQo3kDGj7CUf53gRdfBA",
@@ -18170,44 +18332,6 @@
    "firstSeen": "2026-11-06T08:37:37.799Z"
   },
   {
-   "id": "sh-rEkjlIxGaK-WroibXI8l3mFnWQES459Uzig0TVi6xsirR4EXIxak4w",
-   "source": "SimplyHired / Indeed",
-   "sourceKey": "simplyhired",
-   "direct": false,
-   "title": "REGISTERED BEHAVIOR TECHNICIAN",
-   "company": "Autism Family",
-   "location": "Parkland, FL",
-   "area": "broward",
-   "fromMiami": 38,
-   "fromDavie": 17,
-   "payText": "$25 - $27 an hour",
-   "payMin": 25,
-   "payMax": 27,
-   "hoursMin": null,
-   "hoursMax": null,
-   "jobTypes": [
-    "part-time"
-   ],
-   "setting": [],
-   "bilingual": false,
-   "afternoon": 1,
-   "shift": null,
-   "scheduleHints": [],
-   "posted": "2026-10-07T12:53:12.361Z",
-   "snippet": "Responsibilities include implementing the behavior treatment plan, teaching communication and daily living skills, supporting replacement behaviors, collecting…",
-   "url": "https://www.simplyhired.com/job/rEkjlIxGaK-WroibXI8l3mFnWQES459Uzig0TVi6xsirR4EXIxak4w",
-   "match": {
-    "pct": 100,
-    "covered": [
-     "Behavior intervention plans"
-    ],
-    "missing": [],
-    "variant": "master",
-    "variantLabel": "Master"
-   },
-   "firstSeen": "2026-11-10T14:46:29.626Z"
-  },
-  {
    "id": "az-5945022095",
    "source": "Adzuna",
    "sourceKey": "adzuna",
@@ -18284,7 +18408,7 @@
    "scheduleHints": [],
    "posted": "2026-11-09T22:28:11.000Z",
    "snippet": "Job Description Job Description Acquiring Skills Inc. Making a difference in the lives of children with special needs across South Florida! Do you love working with children or teenagers with special needs? Do you want to be part of a team that works hard together to make a difference? Do you want to grow within a stable and caring company culture? If you answered yes to these questions, then Acquiring Skills is the place for you! We are looking for hardworking, passionate therapists to work wi…",
-   "url": "https://www.adzuna.com/land/ad/5959783771?se=-tG2V0Dd8RGxnsm2izC-GQ&utm_medium=api&utm_source=91329da2&v=5B4AB05AE502C8C220437BF2AADE1CF8EFD4D9CA",
+   "url": "https://www.adzuna.com/land/ad/5959783771?se=ZOY5HGvd8RGW67hsumO50A&utm_medium=api&utm_source=91329da2&v=5B4AB05AE502C8C220437BF2AADE1CF8EFD4D9CA",
    "match": {
     "pct": 50,
     "covered": [
@@ -18674,7 +18798,7 @@
    "scheduleHints": [],
    "posted": "2026-11-02T05:00:00.000Z",
    "snippet": "",
-   "url": "https://open.app.jobrapido.com/us/8747371120434348032/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.1.12&uuid=usF001a1c70a2c115ad3&page_item_id=-844752672",
+   "url": "https://open.app.jobrapido.com/us/8747371120434348032/?w=rbt&l=davie,%20fl&oc=sponsored&k=web.1.1.12&uuid=usF001a1c823271b6ba6&page_item_id=-659198452",
    "match": {
     "pct": null,
     "covered": [],
